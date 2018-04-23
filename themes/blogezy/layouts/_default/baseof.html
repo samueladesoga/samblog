@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
 
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Responsive blog template">
+        <meta property="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
         <meta name="author" content="Zoyothemes">
 
         <link rel="shortcut icon" href="images/favicon.ico">
 
-        <title>Blogezy - Responsive Blog Template</title>
+         <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}{{ end }}</title>
+
+        {{ .Hugo.Generator }}
+        {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
+        {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+            <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+        {{ else }}
+            <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        {{ end }}
+
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,600,700" rel="stylesheet">
@@ -33,81 +42,10 @@
         <!-- Begin page -->
         <div id="wrapper">
             <!-- Top Bar Start -->
-            <div class="topbar-mobile">
-                <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" alt="" class="" style="height: 44px;"></a>
-                    <button class="button-menu-mobile">
-                        <i class="mdi mdi-menu"></i>
-                    </button>
-                </div>
-            </div>
+            {{ partial "topbar-mobile.html" . }}
             <!-- Top Bar End -->
             <!-- ========== Left Sidebar Start ========== -->
-            <div class="left side-menu">
-
-                <div class="slimscroll-menu" id="remove-scroll">
-
-                    <div class="logo">
-                        <a href="index.html"><img src="images/logo.png" alt="" class="" style="height: 44px;"></a>
-                        <p class="text-muted">Graduating from the halls of the University Of Western Sydney in late 2011. </p>
-                    </div>
-
-                    <!--- Sidemenu -->
-                    <div id="sidebar-menu">
-                        <!-- Left Menu Start -->
-                        <ul class="metismenu" id="side-menu">
-                            
-                            <li>
-                                <a href="index.html"><span> Home</span></a>
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);"><span> Features </span></a>
-                                <ul class="nav-second-level" aria-expanded="false">
-                                    <li><a href="standard-post.html">Standard Post</a></li>
-                                    <li><a href="video-post.html">Video Post</a></li>
-                                    <li><a href="audio-post.html">Audio Post</a></li>
-                                    <li><a href="gallery-post.html">Gallery Post</a></li>
-                                    <li><a href="quote-post.html">Quote Post</a></li>
-                                    <li><a href="link-post.html">Link Post</a></li>
-                                    <li><a href="404.html">Error 404</a></li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);"><span> Lifestyle </span></a>
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);"><span> Travel </span></a>
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);"><span> Music </span></a>
-                            </li>
-
-                            <li>
-                                <a href="about.html">About</a>
-                            </li>
-
-                            <li>
-                                <a href="contact.html">Contact</a>
-                            </li>
-
-                        </ul>
-
-                        <div class="copyright-box">
-                            <p>2017 © Blogezy. </p>
-                        </div>
-
-                    </div>
-                    <!-- Sidebar -->
-                    <div class="clearfix"></div>
-
-                </div>
-                <!-- Sidebar -left -->
-
-            </div>
+            {{ partial "left-side-menu.html" . }}
             <!-- Left Sidebar End -->
 
             <div class="page-wrapper">
@@ -115,15 +53,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="page-title">
-                                    <div class="row">
-                                        <div class="col-md-9 col-xs-12">
-                                            <h2><span>News and Stories</span></h2>
-
-                                            <p class="subtitle text-muted">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                {{ partial "page-title.html" . }}                                
                             </div>
                         </div>
                     </div>
@@ -134,149 +64,7 @@
 
                         <div class="row">
                             <!-- Content-->
-                            <div class="col-xl-8">
-
-                                <!-- Post-->
-                                <article class="post">
-
-                                    <div class="post-header">
-                                        <h2 class="post-title"><a href="#">Beautiful Day With Friends In Paris</a></h2>
-                                        <ul class="post-meta">
-                                            <li><i class="mdi mdi-calendar"></i> July 03, 2017</li>
-                                            <li><i class="mdi mdi-tag-text-outline"></i> <a href="#">Branding</a>, <a href="#">Design</a></li>
-                                            <li><i class="mdi mdi-comment-multiple-outline"></i> <a href="#">3 Comments</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="post-preview">
-                                        <a href="#"><img src="images/blog/blog-1.jpg" alt="" class="img-fluid rounded"></a>
-                                    </div>
-
-                                    <div class="post-content">
-                                        <p>Whether an identity or campaign, we make your brand visible, relevant and effective by placing the digital at the center of its ecosystem, without underestimating the power of traditional media. Whether an identity or campaign, we make your brand visible.</p>
-                                    </div>
-
-                                    <div><a href="#" class="btn btn-outline-custom">Read More <i class="mdi mdi-arrow-right"></i></a></div>
-
-                                </article>
-                                <!-- Post end-->
-
-                                <!-- Post-->
-                                <article class="post">
-
-                                    <div class="post-header">
-                                        <h2 class="post-title"><a href="#">Nature valley with cooling environment</a></h2>
-                                        <ul class="post-meta">
-                                            <li><i class="mdi mdi-calendar"></i> July 07, 2017</li>
-                                            <li><i class="mdi mdi-tag-text-outline"></i> <a href="#">Branding</a>, <a href="#">Design</a></li>
-                                            <li><i class="mdi mdi-comment-multiple-outline"></i> <a href="#">3 Comments</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="post-preview">
-                                        <a href="#"><img src="images/blog/blog-2.jpg" alt="" class="img-fluid rounded"></a>
-                                    </div>
-
-                                    <div class="post-content">
-                                        <p>Whether an identity or campaign, we make your brand visible, relevant and effective by placing the digital at the center of its ecosystem, without underestimating the power of traditional media. Whether an identity or campaign, we make your brand visible.</p>
-                                    </div>
-
-                                    <div><a href="#" class="btn btn-outline-custom">Read More <i class="mdi mdi-arrow-right"></i></a></div>
-
-                                </article>
-                                <!-- Post end-->
-
-                                <!-- Post-->
-                                <article class="post">
-
-                                    <div class="post-header">
-                                        <h2 class="post-title"><a href="#">Elegant, Simple & Minimalist Blog Made With Love</a></h2>
-                                        <ul class="post-meta">
-                                            <li><i class="mdi mdi-calendar"></i> July 05, 2017</li>
-                                            <li><i class="mdi mdi-tag-text-outline"></i> <a href="#">Branding</a>, <a href="#">Design</a></li>
-                                            <li><i class="mdi mdi-comment-multiple-outline"></i> <a href="#">3 Comments</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="post-preview">
-                                        <a href="#"><img src="images/blog/blog-3.jpg" alt="" class="img-fluid rounded"></a>
-                                    </div>
-
-                                    <div class="post-content">
-                                        <p>Whether an identity or campaign, we make your brand visible, relevant and effective by placing the digital at the center of its ecosystem, without underestimating the power of traditional media. Whether an identity or campaign, we make your brand visible.</p>
-                                    </div>
-
-                                    <div><a href="#" class="btn btn-outline-custom">Read More <i class="mdi mdi-arrow-right"></i></a></div>
-
-                                </article>
-                                <!-- Post end-->
-
-                                <!-- Post-->
-                                <article class="post">
-
-                                    <div class="post-header">
-                                        <h2 class="post-title"><a href="#">15 Best Healthy and Easy Salad Recipes</a></h2>
-                                        <ul class="post-meta">
-                                            <li><i class="mdi mdi-calendar"></i> July 01, 2017</li>
-                                            <li><i class="mdi mdi-tag-text-outline"></i> <a href="#">Branding</a>, <a href="#">Design</a></li>
-                                            <li><i class="mdi mdi-comment-multiple-outline"></i> <a href="#">3 Comments</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="post-preview">
-                                        <a href="#"><img src="images/blog/blog-4.jpg" alt="" class="img-fluid rounded"></a>
-                                    </div>
-
-                                    <div class="post-content">
-                                        <p>Whether an identity or campaign, we make your brand visible, relevant and effective by placing the digital at the center of its ecosystem, without underestimating the power of traditional media. Whether an identity or campaign, we make your brand visible.</p>
-                                    </div>
-
-                                    <div><a href="#" class="btn btn-outline-custom">Read More <i class="mdi mdi-arrow-right"></i></a></div>
-
-                                </article>
-                                <!-- Post end-->
-
-                                <!-- Post-->
-                                <article class="post">
-
-                                    <div class="post-header">
-                                        <h2 class="post-title"><a href="#">Easy Homemade Candy Recipes and Ideas</a></h2>
-                                        <ul class="post-meta">
-                                            <li><i class="mdi mdi-calendar"></i> Jun 18, 2017</li>
-                                            <li><i class="mdi mdi-tag-text-outline"></i> <a href="#">Branding</a>, <a href="#">Design</a></li>
-                                            <li><i class="mdi mdi-comment-multiple-outline"></i> <a href="#">3 Comments</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="post-preview">
-                                        <a href="#"><img src="images/blog/blog-5.jpg" alt="" class="img-fluid rounded"></a>
-                                    </div>
-
-                                    <div class="post-content">
-                                        <p>Whether an identity or campaign, we make your brand visible, relevant and effective by placing the digital at the center of its ecosystem, without underestimating the power of traditional media. Whether an identity or campaign, we make your brand visible.</p>
-                                    </div>
-
-                                    <div><a href="#" class="btn btn-outline-custom">Read More <i class="mdi mdi-arrow-right"></i></a></div>
-
-                                </article>
-                                <!-- Post end-->
-
-                                <!-- Pagination-->
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <ul class="pagination">
-                                            <li class="next"><a href="#"><i class="mdi mdi-chevron-left"></i></a></li>
-                                            <li class="active"><a href="#">1</a></li>
-                                            <li><a href="#">2</a></li>
-                                            <li><a href="#">3</a></li>
-                                            <li><a href="#">4</a></li>
-                                            <li><a href="#">5</a></li>
-                                            <li class="prev"><a href="#"><i class="mdi mdi-chevron-right"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- Pagination end-->
-                            </div>
+                            {{ partial "article-list.html" . }}
                             <!-- Content end-->
 
                             <!-- Sidebar-->
