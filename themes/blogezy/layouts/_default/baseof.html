@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
-        <meta name="author" content="Zoyothemes">
+        <meta name="author" content="Samuel Adesoga">
 
         <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -24,17 +24,17 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,600,700" rel="stylesheet">
 
         <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ .Site.BaseURL }}css/bootstrap.min.css" rel="stylesheet">
 
         <!-- MENU CSS -->
-        <link href="css/metismenu.min.css" rel="stylesheet" type="text/css" />
+        <link href="{{ .Site.BaseURL }}css/metismenu.min.css" rel="stylesheet" type="text/css" />
 
         <!-- MATERIALDESIGN ICON -->
-        <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css">
+        <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/materialdesignicons.min.css">
 
         <!-- CUSTOM STYLESHEET -->
-        <link href="css/style.css" rel="stylesheet" type="text/css" />
-        <link href="css/default.css" rel="stylesheet" type="text/css" />
+        <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet" type="text/css" />
+        <link href="{{ .Site.BaseURL }}css/default.css" rel="stylesheet" type="text/css" />
 
     </head>
 
@@ -64,7 +64,10 @@
 
                         <div class="row">
                             <!-- Content-->
-                            {{ partial "article-list.html" . }}
+                            {{ block "main" . }}
+
+                            {{ end }}
+                        
                             <!-- Content end-->
 
                             <!-- Sidebar-->
