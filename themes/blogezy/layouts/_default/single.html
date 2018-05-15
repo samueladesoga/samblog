@@ -22,11 +22,13 @@
 	         <p>Quisque nec accumsan justo. Maecenas auctor in nulla nec tincidunt. Pellentesque rutrum molestie tortor, ut egestas risus commodo a. Praesent a orci nec libero fringilla euismod eu id massa. Nunc eget bibendum odio, sed sodales eros.Vivamus lacinia, mi eu ultrices mattis.</p>
 	         <div class="mt-5">
 	            <h6>Tags:</h6>
-	            <div class="tagcloud">
-	               <a href="#">logo</a>
-	               <a href="#">business</a>
-	               <a href="#">agency</a>
-	            </div>
+	            {{ with .Params.tags }}
+		            <div class="tagcloud">
+				      {{ range . }}
+				        <a href="{{ "tags" | absURL }}{{ . | urlize }}">{{ . }}</a>
+				      {{ end }}
+		            </div>
+	            {{ end }}
 	         </div>
 	         <div class="media post-author-box">
 	            <img class="d-flex mr-3 rounded-circle" src="images/user/user-5.png" alt="Generic placeholder image">
