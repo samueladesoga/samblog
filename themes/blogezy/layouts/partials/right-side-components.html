@@ -34,10 +34,9 @@
     <aside class="widget widget_categories">
         <div class="widget-title">Categories</div>
         <ul>
-            <li><a href="#">Journey</a> (40)</li>
-            <li><a href="#">Photography</a> (08)</li>
-            <li><a href="#">Lifestyle</a> (11)</li>
-            <li><a href="#">Food & Drinks</a> (21)</li>
+            {{ range $name, $items := .Site.Taxonomies.categories }}
+                <li><a href="{{ $.Site.BaseURL }}categories/{{ $name | urlize | lower }}">{{ humanize $name }} &nbsp;<span>({{ len $items }})</span></a></li>
+            {{ end }}
         </ul>
     </aside>
 
@@ -91,12 +90,9 @@
     <aside class="widget widget_tag_cloud">
         <div class="widget-title">Tags</div>
         <div class="tagcloud">
-            <a href="#">logo</a>
-            <a href="#">business</a>
-            <a href="#">corporate</a>
-            <a href="#">e-commerce</a>
-            <a href="#">agency</a>
-            <a href="#">responsive</a>
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                <a href="/tags/{{ $name | urlize }}">{{ $name }}</a>
+            {{ end }}
         </div>
     </aside>
 </div>
