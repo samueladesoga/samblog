@@ -6,7 +6,13 @@
 	         <h2 class="post-title"><a href="#"> {{.Title}} </a></h2>
 	         <ul class="post-meta">
 	            <li><i class="mdi mdi-calendar"></i> {{ .Date.Format "January 2, 2006" }}</li>
-	            <li><i class="mdi mdi-tag-text-outline"></i> <a href="#">Branding</a>, <a href="#">Design</a></li>
+	            <li><i class="mdi mdi-tag-text-outline"></i> 
+			        {{ with .Params.tags }}
+				      {{ range . }}
+				        <a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ humanize . }}</a>,
+				      {{ end }}
+		            {{ end }} 
+	            </li>
 	            <li><i class="mdi mdi-comment-multiple-outline"></i> <a href="#">3 Comments</a></li>
 	         </ul>
 	      </div>
@@ -25,7 +31,7 @@
 	            {{ with .Params.tags }}
 		            <div class="tagcloud">
 				      {{ range . }}
-				        <a href="{{ "tags" | absURL }}{{ . | urlize }}">{{ . }}</a>
+				        <a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ . }}</a>
 				      {{ end }}
 		            </div>
 	            {{ end }}
@@ -44,7 +50,7 @@
 	                  <div class="post-header">
 	                     <h6><a href="{{ .RelPermalink }}" title="">{{ .Title | markdownify }}</a></h6>
 	                     <p> {{ .Description | markdownify }}</p>
-	                     <p class="post-date">{{ .Date }}</p>
+	                     <p class="post-date">{{ .Date.Format "January 2, 2006" }}</p>
 	                  </div>
 	               	</article>
             	</div>
