@@ -47,40 +47,21 @@
 	            <h5 class="page-title-alt"><span>You Might Also Like</span></h5>
 	         </div>
 	         <div class="row">
-	            <div class="col-sm-4">
-	               <article class="related-post">
+			  {{ range first 3 ( where ( where .Site.Pages.ByDate.Reverse ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
+			   	<div class="col-sm-4">
+	               	<article class="related-post">
 	                  <div class="post-preview">
-	                     <a href="blog-single.html"><img src="images/blog/blog-2.jpg" alt="" class="img-fluid rounded"></a>
+	                     <a href="{{ .RelPermalink }}"><img src="images/blog/blog-2.jpg" alt="" class="img-fluid rounded"></a>
 	                  </div>
 	                  <div class="post-header">
-	                     <h6><a href="single-post2.html" title="">15 Best Healthy and Easy Salad Recipes</a></h6>
-	                     <p class="post-date">August 12, 2017</p>
+	                     <h6><a href="{{ .RelPermalink }}" title="">{{ .Title | markdownify }}</a></h6>
+	                     <p> {{ .Description | markdownify }}</p>
+	                     <p class="post-date">{{ .Date }}</p>
 	                  </div>
-	               </article>
-	            </div>
-	            <div class="col-sm-4">
-	               <article class="related-post">
-	                  <div class="post-preview">
-	                     <a href="blog-single.html"><img src="images/blog/blog-3.jpg" alt="" class="img-fluid rounded"></a>
-	                  </div>
-	                  <div class="post-header">
-	                     <h6><a href="single-post2.html" title="">The planet doesn’t need saving. We do.</a></h6>
-	                     <p class="post-date">August 17, 2017</p>
-	                  </div>
-	               </article>
-	            </div>
-	            <div class="col-sm-4">
-	               <article class="related-post">
-	                  <div class="post-preview">
-	                     <a href="blog-single.html"><img src="images/blog/blog-4.jpg" alt="" class="img-fluid rounded"></a>
-	                  </div>
-	                  <div class="post-header">
-	                     <h6><a href="single-post2.html" title="">Modern City With Amazing Dark Blue Sea</a></h6>
-	                     <p class="post-date">August 20, 2017</p>
-	                  </div>
-	               </article>
-	            </div>
-	         </div>
+	               	</article>
+            	</div>
+			  {{ end }}
+            </div>
 	         <div class="mt-5">
 	            <h5 class="page-title-alt"><span>Comments</span></h5>
 	         </div>
