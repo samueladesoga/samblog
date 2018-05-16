@@ -7,7 +7,7 @@
         <meta property="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
         <meta name="author" content="Samuel Adesoga">
 
-        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico">
 
          <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}{{ end }}</title>
 

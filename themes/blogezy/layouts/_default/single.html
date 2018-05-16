@@ -3,15 +3,15 @@
 	   <!-- Post-->
 	   <article class="post">
 	      <div class="post-header">
-	         <h2 class="post-title"><a href="#">Runaway A Road Adventure</a></h2>
+	         <h2 class="post-title"><a href="#"> {{.Title}} </a></h2>
 	         <ul class="post-meta">
-	            <li><i class="mdi mdi-calendar"></i> {{ .date.Format "January 2, 2006" }}</li>
+	            <li><i class="mdi mdi-calendar"></i> {{ .Date.Format "January 2, 2006" }}</li>
 	            <li><i class="mdi mdi-tag-text-outline"></i> <a href="#">Branding</a>, <a href="#">Design</a></li>
 	            <li><i class="mdi mdi-comment-multiple-outline"></i> <a href="#">3 Comments</a></li>
 	         </ul>
 	      </div>
 	      <div class="post-preview">
-	         <a href="blog-single.html"><img src="images/blog/blog-1.jpg" alt="" class="img-fluid rounded"></a>
+	         <a href="blog-single.html"><img src="{{ .Site.BaseURL }}images/blog/blog-1.jpg" alt="" class="img-fluid rounded"></a>
 	      </div>
 	      <div class="blog-detail-description">
 	         <p>Donec eleifend accumsan nibh eu efficitur. Vivamus lacinia ut turpis egestas convallis. Quisque nec accumsan justo. Maecenas auctor in nulla nec tincidunt. Pellentesque rutrum molestie tortor, ut egestas risus commodo a. Praesent a orci nec libero fringilla euismod eu id massa. Nunc eget bibendum odio, sed sodales eros.Vivamus lacinia, mi eu ultrices mattis.</p>
@@ -30,19 +30,7 @@
 		            </div>
 	            {{ end }}
 	         </div>
-	         <div class="media post-author-box">
-	            <img class="d-flex mr-3 rounded-circle" src="images/user/user-5.png" alt="Generic placeholder image">
-	            <div class="media-body">
-	               <h4 class="media-heading"><a href="">Michelle Durant</a></h4>
-	               <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-	               <ul class="socials list-unstyled mb-0 mt-3">
-	                  <li><a href="http://facebook.com"><i class="mdi mdi-facebook"></i></a></li>
-	                  <li><a href="http://twitter.com"><i class="mdi mdi-twitter"></i></a></li>
-	                  <li><a href="http://instagram.com"><i class="mdi mdi-instagram"></i></a></li>
-	                  <li><a href="http://pinterest.com"><i class="mdi mdi-pinterest"></i></a></li>
-	               </ul>
-	            </div>
-	         </div>
+
 	         <div class="mt-5 text-center">
 	            <h5 class="page-title-alt"><span>You Might Also Like</span></h5>
 	         </div>
@@ -51,7 +39,7 @@
 			   	<div class="col-sm-4">
 	               	<article class="related-post">
 	                  <div class="post-preview">
-	                     <a href="{{ .RelPermalink }}"><img src="images/blog/blog-2.jpg" alt="" class="img-fluid rounded"></a>
+	                     <a href="{{ .RelPermalink }}"><img src="{{ .Site.BaseURL }}images/blog/blog-2.jpg" alt="" class="img-fluid rounded"></a>
 	                  </div>
 	                  <div class="post-header">
 	                     <h6><a href="{{ .RelPermalink }}" title="">{{ .Title | markdownify }}</a></h6>
@@ -62,56 +50,29 @@
             	</div>
 			  {{ end }}
             </div>
-	         <div class="mt-5">
-	            <h5 class="page-title-alt"><span>Comments</span></h5>
-	         </div>
-	         <ul class="media-list list-unstyled">
-	            <li class="media">
-	               <img class="d-flex mr-3 rounded-circle" src="images/user/user-5.png" alt="Generic placeholder image">
-	               <div class="media-body">
-	                  <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
-	                  <h4 class="media-heading"><a href="">Michelle Durant</a></h4>
-	                  <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
-	                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-	               </div>
-	            </li>
-	            <li class="media">
-	               <img class="d-flex mr-3 rounded-circle" src="images/user/user-2.png" alt="Generic placeholder image">
-	               <div class="media-body">
-	                  <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
-	                  <h4 class="media-heading"><a href="">Ronda Otoole</a></h4>
-	                  <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
-	                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-	                  <div class="media">
-	                     <img class="d-flex mr-3 rounded-circle" src="images/user/user-3.png" alt="Generic placeholder image">
-	                     <div class="media-body">
-	                        <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
-	                        <h4 class="media-heading"><a href="">James Whitley</a></h4>
-	                        <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
-	                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-	                     </div>
-	                  </div>
-	               </div>
-	            </li>
-	            <li class="media">
-	               <img class="d-flex mr-3 rounded-circle" src="images/user/user-4.png" alt="Generic placeholder image">
-	               <div class="media-body">
-	                  <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
-	                  <h4 class="media-heading"><a href="">Kimberly Chretien</a></h4>
-	                  <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
-	                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-	               </div>
-	            </li>
-	            <li class="media">
-	               <img class="d-flex mr-3 rounded-circle" src="images/user/user-6.png" alt="Generic placeholder image">
-	               <div class="media-body">
-	                  <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
-	                  <h4 class="media-heading"><a href="">Michelle Durant</a></h4>
-	                  <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
-	                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-	               </div>
-	            </li>
-	         </ul>
+			<div class="mt-5">
+			    <h5 class="page-title-alt"><span>Comments</span></h5>
+			</div>
+			<ul class="media-list list-unstyled">
+			    <li class="media">
+			       <img class="d-flex mr-3 rounded-circle" src="{{ .Site.BaseURL }}images/user/user-2.png" alt="Generic placeholder image">
+			       <div class="media-body">
+			          <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
+			          <h4 class="media-heading"><a href="">Ronda Otoole</a></h4>
+			          <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
+			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+			          <div class="media">
+			             <img class="d-flex mr-3 rounded-circle" src="{{ .Site.BaseURL }}images/user/user-3.png" alt="Generic placeholder image">
+			             <div class="media-body">
+			                <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
+			                <h4 class="media-heading"><a href="">James Whitley</a></h4>
+			                <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
+			                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+			             </div>
+			          </div>
+			       </div>
+			    </li>
+			</ul>
 	         <div class="mt-5">
 	            <h5 class="page-title-alt"><span>Leave a reply</span></h5>
 	         </div>
