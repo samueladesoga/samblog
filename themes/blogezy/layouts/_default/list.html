@@ -1,7 +1,5 @@
 {{ define "main" }}
 	<div class="col-xl-8">
-
-
 	    {{ range .Data.Pages }}
 		    <article class="post">
 
@@ -12,7 +10,7 @@
 		                <li><i class="mdi mdi-tag-text-outline"></i>
 					        {{ with .Params.tags }}
 						      {{ range . }}
-						        <a href="{{ "tags" | absURL }}{{ . | urlize }}">{{ humanize . }}</a>,
+						        <a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ humanize . }}</a>,
 						      {{ end }}
 				            {{ end }} 
 		                </li>
@@ -50,4 +48,9 @@
 	    </div>
 	    <!-- Pagination end-->
 	</div>
+    <!-- Sidebar-->
+    <div class="col-xl-4">
+        {{ partial  "right-side-components.html" . }}
+    </div>
+    <!-- Sidebar end-->
 {{ end }}
