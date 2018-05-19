@@ -2,3 +2,27 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Sam Adesoga's Personal Blog"
 theme = "blogezy"
+
+# Nav links in the side bar
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "about/"
+weight = 2
+
+[[menu.main]]
+name = "Get in touch"
+url = "contact/"
+weight = 3
+
+[params.social]
+facebook      = "full profile url in facebook"
+email         = "samuel@thoughtstudiosng.com"
+twitter       = "https://twitter.com/sadesoga"
+linkedin      = "https://uk.linkedin.com/in/samueladesoga"
+instagram     = "https://www.instagram.com/mistaradesoga/"
+github        = "https://github.com/samueladesoga"

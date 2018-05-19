@@ -1,129 +1,153 @@
 {{ define "main" }}
-	<div class="col-xl-8">
-	   <!-- Post-->
-	   <article class="post">
-	      <div class="post-header">
-	         <h2 class="post-title"><a href="#"> {{.Title}} </a></h2>
-	         <ul class="post-meta">
-	            <li><i class="mdi mdi-calendar"></i> {{ .Date.Format "January 2, 2006" }}</li>
-	            <li><i class="mdi mdi-tag-text-outline"></i> 
-			        {{ with .Params.tags }}
-				      {{ range . }}
-				        <a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ humanize . }}</a>,
-				      {{ end }}
-		            {{ end }} 
-	            </li>
-	            <li><i class="mdi mdi-comment-multiple-outline"></i> <a href="#">3 Comments</a></li>
-	         </ul>
-	      </div>
-	      <div class="post-preview">
-	         <a href="blog-single.html"><img src="{{ .Site.BaseURL }}images/blog/blog-1.jpg" alt="" class="img-fluid rounded"></a>
-	      </div>
-	      <div class="blog-detail-description">
-	         <p>Donec eleifend accumsan nibh eu efficitur. Vivamus lacinia ut turpis egestas convallis. Quisque nec accumsan justo. Maecenas auctor in nulla nec tincidunt. Pellentesque rutrum molestie tortor, ut egestas risus commodo a. Praesent a orci nec libero fringilla euismod eu id massa. Nunc eget bibendum odio, sed sodales eros.Vivamus lacinia, mi eu ultrices mattis.</p>
-	         <blockquote class="blockquote text-center">
-	            <h6 class="mb-0 blockquote-text">Praesent consectetur vel dui sed molestie. Aliquam imperdiet cursus dapibus. Quisque vestibulum blandit tellus, nec volutpat turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</h6>
-	            <footer class="blockquote-footer mt-2">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-	         </blockquote>
-	         <p>Quisque nec accumsan justo. Maecenas auctor in nulla nec tincidunt. Pellentesque rutrum molestie tortor, ut egestas risus commodo a. Praesent a orci nec libero fringilla euismod eu id massa. Nunc eget bibendum odio, sed sodales eros.Vivamus lacinia, mi eu ultrices mattis.</p>
-	         <div class="mt-5">
-	            <h6>Tags:</h6>
-	            {{ with .Params.tags }}
-		            <div class="tagcloud">
-				      {{ range . }}
-				        <a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ . }}</a>
-				      {{ end }}
-		            </div>
-	            {{ end }}
-	         </div>
+	<section class="pb-5">
+	    <div class="container">
 
-	         <div class="mt-5 text-center">
-	            <h5 class="page-title-alt"><span>You Might Also Like</span></h5>
-	         </div>
-	         <div class="row">
-			  {{ range first 3 ( where ( where .Site.Pages.ByDate.Reverse ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
-			   	<div class="col-sm-4">
-	               	<article class="related-post">
-	                  <div class="post-preview">
-	                     <a href="{{ .RelPermalink }}"><img src="{{ .Site.BaseURL }}images/blog/blog-2.jpg" alt="" class="img-fluid rounded"></a>
-	                  </div>
-	                  <div class="post-header">
-	                     <h6><a href="{{ .RelPermalink }}" title="">{{ .Title | markdownify }}</a></h6>
-	                     <p> {{ .Description | markdownify }}</p>
-	                     <p class="post-date">{{ .Date.Format "January 2, 2006" }}</p>
-	                  </div>
-	               	</article>
-            	</div>
-			  {{ end }}
-            </div>
-			<div class="mt-5">
-			    <h5 class="page-title-alt"><span>Comments</span></h5>
-			</div>
-			<ul class="media-list list-unstyled">
-			    <li class="media">
-			       <img class="d-flex mr-3 rounded-circle" src="{{ .Site.BaseURL }}images/user/user-2.png" alt="Generic placeholder image">
-			       <div class="media-body">
-			          <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
-			          <h4 class="media-heading"><a href="">Ronda Otoole</a></h4>
-			          <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
-			          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-			          <div class="media">
-			             <img class="d-flex mr-3 rounded-circle" src="{{ .Site.BaseURL }}images/user/user-3.png" alt="Generic placeholder image">
-			             <div class="media-body">
-			                <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
-			                <h4 class="media-heading"><a href="">James Whitley</a></h4>
-			                <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
-			                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-			             </div>
-			          </div>
-			       </div>
-			    </li>
-			</ul>
-	         <div class="mt-5">
-	            <h5 class="page-title-alt"><span>Leave a reply</span></h5>
-	         </div>
-	         <form action="#" method="post" class="mt-4">
-	            <div class="row">
-	               <div class="col-sm-6">
-	                  <div class="form-group">
-	                     <input id="author" class="form-control" placeholder="Name*" name="author" type="text" required="">
-	                  </div>
-	               </div>
-	               <div class="col-sm-6">
-	                  <div class="form-group">
-	                     <input id="email" class="form-control" placeholder="Email*" name="email" type="text" required="">
-	                  </div>
-	               </div>
+	        <div class="row pt-5">
+	            <!-- Content-->
+	            <div class="col-xl-8">
+
+	                <!-- Post-->
+	                <article class="post">
+	                    <div class="post-header">
+	                        <h2 class="post-title"><a href="#">{{.Title}}</a></h2>
+	                        <ul class="post-meta">
+	                            <li><i class="mdi mdi-calendar"></i> {{ .Date.Format "January 2, 2006" }} </li>
+	                            <li><i class="mdi mdi-tag-text-outline"></i> 
+	                            	{{ with .Params.tags }}
+								      {{ range . }}
+								        <a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ humanize . }}</a>,
+								      {{ end }}
+		            				{{ end }} 
+	                            </li>
+	                            <li><i class="mdi mdi-comment-multiple-outline"></i> <a href="#">3 Comments</a>
+	                            </li>
+	                        </ul>
+	                    </div>
+
+	                    <div class="post-preview">
+	                        <a href="blog-single.html"><img src="{{ .Site.BaseURL }}images/blog/blog-1.jpg" alt="" class="img-fluid rounded"></a>
+	                    </div>
+
+	                    <div class="blog-detail-description">
+	                        {{ .Content }}
+
+	                        <div class="mt-5">
+	                            <h6>Tags:</h6>
+						            {{ with .Params.tags }}
+							            <div class="tagcloud">
+									      {{ range . }}
+									        <a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ . }}</a>
+									      {{ end }}
+							            </div>
+						            {{ end }}
+	                        </div>
+
+	                        <div class="mt-5 text-center">
+	                            <h5 class="page-title-alt"><span>You Might Also Like</span></h5>
+	                        </div>
+				           {{ range first 3 ( where ( where .Site.Pages.ByDate.Reverse ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
+						   	<div class="col-sm-4">
+				               	<article class="related-post">
+				                  <div class="post-preview">
+				                     <a href="{{ .RelPermalink }}"><img src="{{ .Site.BaseURL }}images/blog/blog-2.jpg" alt="" class="img-fluid rounded"></a>
+				                  </div>
+				                  <div class="post-header">
+				                     <h6><a href="{{ .RelPermalink }}" title="">{{ .Title | markdownify }}</a></h6>
+				                     <p> {{ .Description | markdownify }}</p>
+				                     <p class="post-date">{{ .Date.Format "January 2, 2006" }}</p>
+				                  </div>
+				               	</article>
+			            	</div>
+						  {{ end }}                   
+
+	                        <div class="mt-5">
+	                            <h5 class="page-title-alt"><span>Comments</span></h5>
+	                        </div>
+
+	                        <ul class="media-list list-unstyled">
+
+	                            <li class="media">
+	                                <img class="d-flex mr-3 rounded-circle" src="images/user/user-2.png" alt="Generic placeholder image">
+	                                <div class="media-body">
+	                                    <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
+	                                    <h4 class="media-heading"><a href="">Ronda Otoole</a></h4>
+	                                    <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
+	                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+
+	                                    <div class="media">
+	                                        <img class="d-flex mr-3 rounded-circle" src="images/user/user-3.png" alt="Generic placeholder image">
+	                                        <div class="media-body">
+	                                            <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
+	                                            <h4 class="media-heading"><a href="">James Whitley</a></h4>
+	                                            <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
+	                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </li>      
+
+	                        </ul>
+
+	                        <div class="mt-5">
+	                            <h5 class="page-title-alt"><span>Leave a reply</span></h5>
+	                        </div>
+
+	                        <form action="#" method="post" class="mt-4">
+	                            <div class="row">
+	                                <div class="col-sm-6">
+	                                    <div class="form-group">
+	                                        <input id="author" class="form-control" placeholder="Name*" name="author" type="text" required="">
+	                                    </div>
+	                                </div>
+
+	                                <div class="col-sm-6">
+	                                    <div class="form-group">
+	                                        <input id="email" class="form-control" placeholder="Email*" name="email" type="text" required="">
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="row">
+	                                <div class="col-sm-12">
+	                                    <div class="form-group">
+	                                        <input id="subject" class="form-control" placeholder="Website" name="subject" type="text">
+	                                    </div>
+	                                </div>
+	                            </div>
+
+	                            <div class="row">
+	                                <div class="col-sm-12">
+	                                    <div class="form-group">
+	                                        <textarea id="comment" class="form-control" rows="5" placeholder="Your Message*" name="comment" required=""></textarea>
+	                                    </div>
+	                                </div>
+	                            </div>
+
+	                            <div class="row">
+	                                <div class="col-sm-12">
+	                                    <div class="form-group">
+	                                        <button name="submit" type="submit" id="submit" class="btn btn-dark">Post Comment</button>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </form>
+
+	                    </div>
+
+	                </article>
+	                <!-- Post end-->
+
 	            </div>
-	            <div class="row">
-	               <div class="col-sm-12">
-	                  <div class="form-group">
-	                     <input id="subject" class="form-control" placeholder="Website" name="subject" type="text">
-	                  </div>
-	               </div>
-	            </div>
-	            <div class="row">
-	               <div class="col-sm-12">
-	                  <div class="form-group">
-	                     <textarea id="comment" class="form-control" rows="5" placeholder="Your Message*" name="comment" required=""></textarea>
-	                  </div>
-	               </div>
-	            </div>
-	            <div class="row">
-	               <div class="col-sm-12">
-	                  <div class="form-group">
-	                     <button name="submit" type="submit" id="submit" class="btn btn-dark">Post Comment</button>
-	                  </div>
-	               </div>
-	            </div>
-	         </form>
-	      </div>
-	   </article>
-	   <!-- Post end-->
-	</div>
-    <!-- Sidebar-->
-    <div class="col-xl-4">
-        {{ partial  "right-side-components.html" . }}
-    </div>
-    <!-- Sidebar end-->
+	            <!-- Content end-->
+
+				<!-- Sidebar-->
+	            <div class="col-xl-4">
+        			{{ partial  "right-side-components.html" . }}
+    			</div>
+				<!-- end Sidebar -->
+
+	        </div>
+
+	    </div>
+	    <!-- end container -->
+	</section>
 {{ end }}

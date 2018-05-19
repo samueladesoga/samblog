@@ -49,31 +49,9 @@
             <!-- Left Sidebar End -->
 
             <div class="page-wrapper">
-                <section>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                {{ partial "page-title.html" . }}                                
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {{ block "main" . }}
 
-                <section class="mt-5 pb-5">
-                    <div class="container">
-
-                        <div class="row">
-                            <!-- Content-->
-                            {{ block "main" . }}
-
-                            {{ end }}
-                        
-                            <!-- Content end-->
-                        </div>
-
-                    </div>
-                    <!-- end container -->
-                </section>
+                {{ end }}
             </div>
         </div>
         <!-- js placed at the end of the document so the pages load faster -->
