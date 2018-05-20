@@ -11,34 +11,12 @@
         <div id="sidebar-menu">
             <!-- Left Menu Start -->
             <ul class="metismenu" id="side-menu">
-                
-                <li>
-                    <a href="{{ .Site.BaseURL }}"><span> Home</span></a>
-                </li>
 
-                <li>
-                    <a href="javascript: void(0);"><span> Features </span></a>
-                </li>
-
-                <li>
-                    <a href="javascript: void(0);"><span> Lifestyle </span></a>
-                </li>
-
-                <li>
-                    <a href="javascript: void(0);"><span> Travel </span></a>
-                </li>
-
-                <li>
-                    <a href="javascript: void(0);"><span> Music </span></a>
-                </li>
-
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
+                {{ range .Site.Menus.main }}
+                    <li>
+                        <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+                    </li>
+                {{ end }}
 
             </ul>
 

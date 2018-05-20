@@ -10,17 +10,28 @@ url = "/"
 weight = 1
 
 [[menu.main]]
+name = "Feature"
+url = "categories/feature"
+weight = 2
+
+[[menu.main]]
+name = "Technology"
+url = "categories/technology"
+weight = 3
+
+
+[[menu.main]]
 name = "About"
 url = "about/"
-weight = 2
+weight = 4
 
 [[menu.main]]
 name = "Get in touch"
 url = "contact/"
-weight = 3
+weight = 5
 
 [params.social]
-facebook      = "full profile url in facebook"
+facebook      = "https://www.facebook.com/mistar.adesoga"
 email         = "samuel@thoughtstudiosng.com"
 twitter       = "https://twitter.com/sadesoga"
 linkedin      = "https://uk.linkedin.com/in/samueladesoga"
