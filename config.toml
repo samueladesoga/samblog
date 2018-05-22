@@ -15,20 +15,26 @@ url = "categories/feature"
 weight = 2
 
 [[menu.main]]
-name = "Technology"
-url = "categories/technology"
+name = "Technical"
+url = "categories/technical"
 weight = 3
+
+
+[[menu.main]]
+name = "Agile"
+url = "categories/agile"
+weight = 4
 
 
 [[menu.main]]
 name = "About"
 url = "about/"
-weight = 4
+weight = 5
 
 [[menu.main]]
 name = "Contact"
 url = "contact/"
-weight = 5
+weight = 6
 
 [params.social]
 facebook      = "https://www.facebook.com/mistar.adesoga"

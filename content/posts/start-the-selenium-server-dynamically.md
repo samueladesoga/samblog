@@ -1,0 +1,11 @@
++++
+date = "2009-11-16 15:26:00"
+title = "Start the Selenium Server dynamically"
+draft = "false"
+categories = ["Software Testing"]
+tags = ["Java", "selenium-server", "selenium", "selenium rc", "testng"]
+author = "samueladesoga"
++++
+
+&gt;I have been working on a test suite in java using testng as the testing framework. I could not have suggested any other test frame work as it allows me to do a lot of configurable setups and teardowns. Yeah am not gonna promote testng anymore, lol.<br /><br />I could have started using selenium server using a usual batch file that maven could call in one of its targets but i think doing it this way is cleaner.<br /><br />public class SeleniumManager {<br />   private SeleniumServer seleniumServer;<br /><br />   private static Selenium selenium;<br /><br />   private RemoteControlConfiguration rcc;<br /><br />   @BeforeSuite<br />   @Parameters( { "selenium.port" })<br />   public void startSeleniumServer(String port) {<br /><br />       rcc = new RemoteControlConfiguration();<br />       rcc.setPort(Integer.parseInt(port));         <br />     <br />       try {<br />           seleniumServer = new SeleniumServer(false, rcc);<br />       //    seleniumServer= new SeleniumServer();<br />           seleniumServer.start();<br />         <br />       } catch (Exception e) {<br />           throw new IllegalStateException("Can't start selenium server", e);<br />       }<br />   }<br /><br />   @AfterSuite(alwaysRun = true)<br />   public void stopSeleniumServer() {<br />       if (seleniumServer != null) {<br />           seleniumServer.stop();<br />       }<br />   }<br /><br />   public static Selenium startSelenium(String host, String port, String browser, String url) {<br />       selenium = new DefaultSelenium(host, Integer.parseInt(port), browser, url);<br />       selenium.start();<br />       return selenium;<br />   }<br /><br />   public static void stopSelenium(Selenium selenium) {<br />       selenium.stop();<br />   }<br /><br />}<br />As you can see i have a seleniumManager class which would dynamically start the selenium server before my testSuite starts and kill the SeleniumServer after the test suite is completed.<br /><br />Please try this out and leave comments
+

@@ -46,10 +46,12 @@
 					        </div>
 
 					        <div class="post-content">
-					            <p>Whether an identity or campaign, we make your brand visible, relevant and effective by placing the digital at the center of its ecosystem, without underestimating the power of traditional media. Whether an identity or campaign, we make your brand visible.</p>
+					           {{ .Summary }}
 					        </div>
 
-					        <div><a href="{{.Permalink}}" class="btn btn-outline-custom">Read More <i class="mdi mdi-arrow-right"></i></a></div>
+                            {{ if .Truncated }}
+					           <div><a href="{{.Permalink}}" class="btn btn-outline-custom">Read More <i class="mdi mdi-arrow-right"></i></a></div>
+                            {{ end }}
 
 					    </article>
 
