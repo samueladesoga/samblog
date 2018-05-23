@@ -1,9 +1,9 @@
 +++
 date = "2010-04-23 10:22:00"
-title = "&gt;Implement 'Select column_name from table_name where condition' in Active Record"
+title = "Implement 'Select column_name from table_name where condition' in Active Record"
 draft = "false"
-categories = ["Software Testing"]
-tags = ["active record", "legacy system", "ruby"]
+categories = ["Technical"]
+tags = ["active record", "legacy system"]
 author = "samueladesoga"
 +++
 

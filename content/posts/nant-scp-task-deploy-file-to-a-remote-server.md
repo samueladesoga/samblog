@@ -2,8 +2,8 @@
 date = "2008-08-29 11:10:00"
 title = "Nant SCP Task: deploy file to a remote server"
 draft = "false"
-categories = ["Programming"]
-tags = [".Net", "deploy", "nant", "scp", "ssh"]
+categories = ["Technical"]
+tags = ["Build", "Deployment"]
 author = "samueladesoga"
 +++
 

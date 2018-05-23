@@ -45,20 +45,22 @@
 	                        <div class="mt-5 text-center">
 	                            <h5 class="page-title-alt"><span>You Might Also Like</span></h5>
 	                        </div>
-				           {{ range first 3 ( where ( where .Site.Pages.ByDate.Reverse ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
-						   	<div class="col-sm-4">
-				               	<article class="related-post">
-				                  <div class="post-preview">
-				                     <a href="{{ .RelPermalink }}"><img src="{{ .Site.BaseURL }}images/blog/blog-2.jpg" alt="" class="img-fluid rounded"></a>
-				                  </div>
-				                  <div class="post-header">
-				                     <h6><a href="{{ .RelPermalink }}" title="">{{ .Title | markdownify }}</a></h6>
-				                     <p> {{ .Description | markdownify }}</p>
-				                     <p class="post-date">{{ .Date.Format "January 2, 2006" }}</p>
-				                  </div>
-				               	</article>
-			            	</div>
-						  {{ end }}                   
+	                        <div class="row">
+					           {{ range first 3 ( where ( where .Site.Pages.ByDate.Reverse ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
+							   	<div class="col-sm-4">
+					               	<article class="related-post">
+					                  <div class="post-preview">
+					                     <a href="{{ .RelPermalink }}"><img src="{{ .Site.BaseURL }}images/blog/blog-2.jpg" alt="" class="img-fluid rounded"></a>
+					                  </div>
+					                  <div class="post-header">
+					                     <h6><a href="{{ .RelPermalink }}" title="">{{ .Title | markdownify }}</a></h6>
+					                     <p> {{ .Description | markdownify }}</p>
+					                     <p class="post-date">{{ .Date.Format "January 2, 2006" }}</p>
+					                  </div>
+					               	</article>
+				            	</div>
+							  {{ end }}
+						  </div>                
 
 	                        <div class="mt-5">
 	                            <h5 class="page-title-alt"><span>Comments</span></h5>

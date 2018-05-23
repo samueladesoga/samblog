@@ -2,8 +2,8 @@
 date = "2012-02-01 15:30:39"
 title = "Performance Testing experience using Ant and Jmeter - Part 2"
 draft = "false"
-categories = ["Software Testing"]
-tags = ["performance testing", "ant", "Jmeter", "teamcity"]
+categories = ["Technical"]
+tags = ["performance testing", "Jmeter" , "Test Automation"]
 author = "samueladesoga"
 +++
 

@@ -2,8 +2,8 @@
 date = "2016-02-29 22:47:57"
 title = "Geb and Spock: My favourites for test automation"
 draft = "false"
-categories = ["Agile Delivery", "Software Testing"]
-tags = ["Geb", "Spock", "BDD", "Test Automation", "webdriver", "feature driven development"]
+categories = ["Agile Delivery", "Technical"]
+tags = ["BDD", "Test Automation"]
 author = "samueladesoga"
 +++
 

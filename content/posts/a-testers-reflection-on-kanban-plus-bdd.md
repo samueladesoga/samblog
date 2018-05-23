@@ -2,7 +2,7 @@
 date = "2010-09-03 14:55:00"
 title = "A tester's reflection on kanban plus BDD"
 draft = "false"
-categories = ["Agile", "Technical"]
+categories = ["Agile Delivery", "Technical"]
 tags = ["Kanban", "Test Automation", "BDD" ]
 author = "samueladesoga"
 +++

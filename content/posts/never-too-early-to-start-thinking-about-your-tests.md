@@ -2,8 +2,8 @@
 date = "2016-02-29 21:53:14"
 title = "Never too early to start thinking about your tests"
 draft = "false"
-categories = ["Agile Delivery", "Test Strategy"]
-tags = ["automation", "Test Automation", "Testing pyramid", "BDD", "testing"]
+categories = ["Agile Delivery", "Technical"]
+tags = ["Test Strategy", "Test Automation"]
 author = "samueladesoga"
 +++
 

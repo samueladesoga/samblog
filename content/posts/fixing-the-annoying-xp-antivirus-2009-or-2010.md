@@ -2,7 +2,7 @@
 date = "2010-03-27 13:02:00"
 title = "Fixing the annoying XP Antivirus 2009 OR 2010"
 draft = "false"
-categories = ["Software Testing"]
+categories = ["Technical"]
 tags = ["sysadmin", "windows", "xp antirus 2009"]
 author = "samueladesoga"
 +++

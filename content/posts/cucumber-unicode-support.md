@@ -2,8 +2,8 @@
 date = "2012-02-28 15:18:12"
 title = "Cucumber unicode support"
 draft = "false"
-categories = ["Software Testing"]
-tags = ["cucumber", "BDD", "Test Automation", "testing", "unicode", "UTF", "feature file"]
+categories = ["TEchnical"]
+tags = ["BDD", "Test Automation"]
 author = "samueladesoga"
 +++
 

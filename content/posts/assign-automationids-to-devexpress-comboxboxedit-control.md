@@ -2,8 +2,8 @@
 date = "2013-01-15 13:02:26"
 title = "Assign AutomationIds to DevExpress ComboxBoxEdit Control"
 draft = "false"
-categories = ["Software Testing"]
-tags = ["automation", "Dev Express", "Windows Application"]
+categories = ["Technical"]
+tags = ["Automation", "Windows Application"]
 author = "samueladesoga"
 +++
 

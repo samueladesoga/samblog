@@ -2,8 +2,8 @@
 date = "2010-12-22 11:27:00"
 title = "Rails3 'link_to' displays literal HTML on front end"
 draft = "false"
-categories = ["Software Testing"]
-tags = ["rails", "ruby", "html", "link_to"]
+categories = ["Technical"]
+tags = ["Development", "Ruby on Rails"]
 author = "samueladesoga"
 +++
 

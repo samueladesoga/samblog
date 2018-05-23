@@ -2,7 +2,7 @@
 date = "2017-08-24 22:07:38"
 title = "Should API test and UI Acceptance Tests be written in the same programming language?"
 draft = "false"
-categories = ["Agile", "Technical"]
+categories = ["Agile Delivery", "Technical"]
 tags = ["Test Automation"]
 author = "samueladesoga"
 +++

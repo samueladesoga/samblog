@@ -2,7 +2,8 @@
 date = "2011-11-30 09:58:04"
 title = "Screenshare tool for my trainings"
 draft = "false"
-categories = ["Software Testing"]
+categories = ["Technical"]
+tags = ["Training"]
 author = "samueladesoga"
 +++
 
@@ -14,7 +15,7 @@ I have recently come across the tool - join.me and it is awesome, it allow mwe t
 I think this is great !!!!!!
 
 
-And guess what it is a free tool, there is a pro-version which is a paid version, but i think the free one satisfy my need. One more tool for my testing and automation coaching.
+And guess what it is a free tool, there is a pro-version which is a paid version, but i think the free one satisfies my need. One more tool for my testing and automation coaching.
 
 Enjoy!!!!!
 

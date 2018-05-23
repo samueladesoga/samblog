@@ -3,7 +3,7 @@ date = "2011-07-25 15:06:02"
 title = "Writing acceptance test before development or implementation starts"
 draft = "false"
 categories = ["Agile Delivery"]
-tags = ["BDD", "testing", "waitr", "watir-webdriver", "automation", "cucumber", "feature driven development", "ruby", "Test Automation"]
+tags = ["BDD", "Test Automation"]
 author = "samueladesoga"
 +++
 

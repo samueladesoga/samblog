@@ -2,8 +2,8 @@
 date = "2011-04-26 14:16:00"
 title = "Redirecting blogger post to wordpress.com"
 draft = "false"
-categories = ["Programming"]
-tags = ["blogger", "redirect", "wordpress"]
+categories = ["Technical"]
+tags = ["blogger", "wordpress"]
 author = "samueladesoga"
 +++
 
