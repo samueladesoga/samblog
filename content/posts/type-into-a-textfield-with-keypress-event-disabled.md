@@ -1,9 +1,9 @@
 +++
 date = "2012-07-31 08:51:20"
-title = "type into a textfield with keypress event disabled"
+title = "Type into a textfield with keypress event disabled"
 draft = "false"
-categories = ["Software Testing"]
-tags = ["DOM", "Javascipt", "ruby", "watir-webdriver", "disabled html element", "browser", "testing", "automation"]
+categories = ["Technical"]
+tags = ["Test Automation", "watir-webdriver"]
 author = "samueladesoga"
 +++
 

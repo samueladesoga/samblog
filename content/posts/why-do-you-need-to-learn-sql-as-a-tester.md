@@ -2,8 +2,8 @@
 date = "2017-08-28 13:27:49"
 title = "Why do you need to learn SQL as a tester?"
 draft = "false"
-categories = ["Agile Delivery", "Software Testing"]
-tags = ["sql", "technical testing", "testing", "learning"]
+categories = ["Agile Delivery", "Technical"]
+tags = ["Technical Testing"]
 author = "samueladesoga"
 +++
 

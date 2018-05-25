@@ -2,7 +2,7 @@
 date = "2008-11-03 13:22:00"
 title = "Selenium: Xpath locator can not be used as Option Locator"
 draft = "false"
-categories = ["Software Testing"]
+categories = ["Technical"]
 tags = ["selenium", "xpath"]
 author = "samueladesoga"
 +++

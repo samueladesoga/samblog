@@ -2,7 +2,7 @@
 date = "2009-11-23 11:53:00"
 title = "selenium failed to start browser in iexplore mode when selenium server is started dynamically in code"
 draft = "false"
-categories = ["Software Testing"]
+categories = ["Technical"]
 tags = ["Java", "test", "iehta", "iexplore", "iexploreproxy", "selenium-server"]
 author = "samueladesoga"
 +++

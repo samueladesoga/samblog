@@ -2,7 +2,7 @@
 date = "2011-10-18 10:40:00"
 title = "Watir-Webdriver: Website certificate does not come from a trusted source"
 draft = "false"
-categories = ["Software Testing"]
+categories = ["Technical"]
 tags = ["automation", "watir-webdriver", "SSL Certificate", "testing"]
 author = "samueladesoga"
 +++

@@ -2,7 +2,7 @@
 date = "2009-02-25 11:08:00"
 title = "Waiting for Elements in an IFrame on a WebPage to Load"
 draft = "false"
-categories = ["Software Testing"]
+categories = ["Technical"]
 tags = ["Javascipt", "selenium", "IFrame", "WaitForCondition", "DOM"]
 author = "samueladesoga"
 +++

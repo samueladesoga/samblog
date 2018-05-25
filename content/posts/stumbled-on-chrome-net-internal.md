@@ -2,8 +2,8 @@
 date = "2011-11-11 16:29:46"
 title = "Stumbled on Chrome Net Internal"
 draft = "false"
-categories = ["Software Testing"]
-tags = ["exploratory testing", "browser", "web applications"]
+categories = ["Technical"]
+tags = ["Exploratory testing", "Software Testing"]
 author = "samueladesoga"
 +++
 

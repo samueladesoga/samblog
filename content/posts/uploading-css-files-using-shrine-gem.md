@@ -2,8 +2,8 @@
 date = "2017-04-02 22:46:32"
 title = "Uploading CSS files using \"Shrine\" gem"
 draft = "false"
-categories = ["Programming"]
-tags = ["rails", "shrine", "amazon s3", "file uploader", "Ruby On Rails", "carrierwave", "ruby"]
+categories = ["Technical"]
+tags = ["Development", "Image Upload", "Ruby On Rails"]
 author = "samueladesoga"
 +++
 
