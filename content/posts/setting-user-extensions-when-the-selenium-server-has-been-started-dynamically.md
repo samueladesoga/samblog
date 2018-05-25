@@ -3,7 +3,7 @@ date = "2009-11-16 15:17:00"
 title = "Setting user extensions when the Selenium Server has been started dynamically"
 draft = "false"
 categories = ["Technical"]
-tags = ["Javascipt", "selenium", "test", "user-extensions", "Java", "selenium-server", "selenium rc"]
+tags = ["Javascipt", "selenium", "Test Automation"]
 author = "samueladesoga"
 +++
 

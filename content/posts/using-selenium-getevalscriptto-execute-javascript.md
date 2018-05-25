@@ -3,7 +3,7 @@ date = "2008-12-23 08:55:00"
 title = "Using selenium.GetEval(script)to execute Javascript"
 draft = "false"
 categories = ["Technical"]
-tags = ["DOM", "Javascripts", "QA", "selenium", "Web Application"]
+tags = ["Test Automation", "Selenium", "Web Application"]
 author = "samueladesoga"
 +++
 

@@ -3,7 +3,7 @@ date = "2009-11-16 15:26:00"
 title = "Start the Selenium Server dynamically"
 draft = "false"
 categories = ["Technical"]
-tags = ["Java", "selenium-server", "selenium", "selenium rc", "testng"]
+tags = ["Java", "selenium", "Test Automation"]
 author = "samueladesoga"
 +++
 

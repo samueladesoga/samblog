@@ -7,9 +7,13 @@ tags = ["AWS s3", "Start Up"]
 author = "samueladesoga"
 +++
 
-<p>I have recently taken on ownership of a <a href="http://www.freelancify.com">website </a>and as part of the migration task i've had to copy over a few artefacts;I will be posting another blog about what i have learnt from this process.<br /><br />The website uses Amazon s3 for storing users' uploaded photos and document. I was faced with the task of copying these files over to my S3 account.<br /><br /><br />Quite a number of way to achieve this; but i stumbled on a <a href="https://github.com/paultuckey/s3-bucket-to-bucket-copy-py/blob/master/s3-bucket-to-bucket-copy.py">link </a>which is a python script that copies object between two buckets in the same account.<br /><br /><br />I have then updated this script to handle copying objects between two different accounts.<br /><br />The edited script is as below:
+I have recently taken on ownership of a <a href="http://www.freelancify.com">website </a>and as part of the migration task i've had to copy over a few artefacts;I will be posting another blog about what i have learnt from this process.
 
-[sourcecode language="css"]
+The website uses Amazon s3 for storing users' uploaded photos and document. I was faced with the task of copying these files over to my S3 account. Quite a number of ways to achieve this; but i stumbled on a <a href="https://github.com/paultuckey/s3-bucket-to-bucket-copy-py/blob/master/s3-bucket-to-bucket-copy.py">link </a>which is a python script that copies object between two buckets in the same account.
+
+I have then updated this script to handle copying objects between two different accounts.The edited script is as below:
+
+{{< code "python" >}}
 from boto.s3.connection import S3Connection
 from boto.s3.key import Key
 from Queue import LifoQueue
@@ -75,7 +79,7 @@ def copyBucket(maxKeys = 1000):
 if __name__ == &quot;__main__&quot;:
     copyBucket()
 
-[/sourcecode]
+{{< /code >}}
 
-Pre-requisites are you have to install python and install the <a href="https://github.com/boto/boto">boto s3</a> library.<br /><br />and obviously you have to put your credentials in there</p>
+Pre-requisites are you have to install python and install the <a href="https://github.com/boto/boto">boto s3</a> library and obviously you have to put your credentials in there.
 

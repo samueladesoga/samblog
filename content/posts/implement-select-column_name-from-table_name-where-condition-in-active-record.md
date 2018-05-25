@@ -3,7 +3,7 @@ date = "2010-04-23 10:22:00"
 title = "Implement 'Select column_name from table_name where condition' in Active Record"
 draft = "false"
 categories = ["Technical"]
-tags = ["active record", ""]
+tags = ["active record"]
 author = "samueladesoga"
 +++
 

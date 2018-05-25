@@ -3,7 +3,7 @@ date = "2009-11-23 12:04:00"
 title = "Workaround: Flash selenium test would not run in firefox 3.5 except when the browser mode is *firefoxProxy"
 draft = "false"
 categories = ["Technical"]
-tags = ["firefox", "flash selenium", "selenium", "firefox 3.5", "flash", "non-NPObject"]
+tags = ["Test Automation", "Web Application"]
 author = "samueladesoga"
 +++
 

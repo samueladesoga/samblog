@@ -3,7 +3,7 @@ date = "2008-10-18 10:18:00"
 title = "Sorting out devices - Wireless, Inbuilt Microphone on Ubuntu Hardy Heron"
 draft = "false"
 categories = ["Programming"]
-tags = ["microphone", "ubuntu", "wireless"]
+tags = ["Hardware", "Ubuntu"]
 author = "samueladesoga"
 +++
 

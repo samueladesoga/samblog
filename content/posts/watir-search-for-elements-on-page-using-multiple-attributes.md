@@ -3,7 +3,7 @@ date = "2010-06-25 15:41:00"
 title = "Watir: Search for elements on page using multiple attributes"
 draft = "false"
 categories = ["Technical"]
-tags = ["ruby", "Test Automation"]
+tags = ["Ruby", "Test Automation"]
 author = "samueladesoga"
 +++
 

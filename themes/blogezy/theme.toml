@@ -9,6 +9,7 @@ homepage = "http://example.com/"
 tags = []
 features = []
 min_version = "0.38"
+preserveTaxonomyNames = true
 
 [author]
   name = "Samuel Adesoga"

@@ -13,9 +13,9 @@
 	                        <ul class="post-meta">
 	                            <li><i class="mdi mdi-calendar"></i> {{ .Date.Format "January 2, 2006" }} </li>
 	                            <li><i class="mdi mdi-tag-text-outline"></i> 
-	                            	{{ with .Params.tags }}
+	                            	{{ with .Params.categories }}
 								      {{ range . }}
-								        <a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ humanize . }}</a>,
+								        <a href="{{ "categories" | absURL }}/{{ . | urlize }}">{{ lower . }}</a>,
 								      {{ end }}
 		            				{{ end }} 
 	                            </li>
