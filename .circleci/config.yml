@@ -2,13 +2,10 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cibuilds/hugo:latest
-    working_directory: ~/hugo
-    environment:
-      HUGO_BUILD_DIR: ~/hugo/public
+      - image: jnyo/docker-hugo-firebase:latest
+    working_directory: ~/samblog
     steps:
       - checkout
-      - run: npm install -g firebase-tools
       - run: hugo
       - run: |
           [ "${CIRCLE_BRANCH}" == "master" ] && firebase deploy --token ${FIREBASE_TOKEN} --non-interactive
