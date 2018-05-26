@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cibuilds/hugo:latest
+    working_directory: ~/hugo
+    environment:
+      HUGO_BUILD_DIR: ~/hugo/public
+    steps:
+      - checkout
+      - run: hugo
+      - run: |
+          [ "${CIRCLE_BRANCH}" == "master" ] && firebase deploy --token ${FIREBASE_TOKEN} --non-interactive
