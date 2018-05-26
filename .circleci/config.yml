@@ -6,7 +6,6 @@ jobs:
     working_directory: ~/samblog
     steps:
       - checkout
-      - rm -rf public
       - run: hugo
       - run: |
           [ "${CIRCLE_BRANCH}" == "master" ] && firebase deploy --token ${FIREBASE_TOKEN} --project ${PROJECT_ID} --non-interactive
