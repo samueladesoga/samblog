@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: jnyo/docker-hugo-firebase:latest
+      - image: alteroo/hugo-and-firebase
     working_directory: ~/samblog
     steps:
       - checkout
