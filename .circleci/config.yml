@@ -8,6 +8,7 @@ jobs:
       HUGO_BUILD_DIR: ~/hugo/public
     steps:
       - checkout
+      - run: npm install -g firebase-tools
       - run: hugo
       - run: |
           [ "${CIRCLE_BRANCH}" == "master" ] && firebase deploy --token ${FIREBASE_TOKEN} --non-interactive
