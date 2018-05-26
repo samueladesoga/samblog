@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sysadmin on Sam Adesoga&#39;s Personal Blog</title>
+    <link>http://example.org/tags/sysadmin/</link>
+    <description>Recent content in Sysadmin on Sam Adesoga&#39;s Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Mar 2010 13:02:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/sysadmin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fixing the annoying XP Antivirus 2009 OR 2010</title>
+      <link>http://example.org/posts/fixing-the-annoying-xp-antivirus-2009-or-2010/</link>
+      <pubDate>Sat, 27 Mar 2010 13:02:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/fixing-the-annoying-xp-antivirus-2009-or-2010/</guid>
+      <description>&amp;gt;This is not a post directly related to my blog but i am sure there are few people out there that might be facing same issues. In the last one week i had friends whose windows machines have been infected the XP Antivirus 2010, which seems to be a clone of XP Antivirus 2009. The symptoms include that you are get annoyings popups asking you to pay for an antivirus, i hope you have exposed yourself already.</description>
+    </item>
+    
+  </channel>
+</rss>

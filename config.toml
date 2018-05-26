@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://samblog-a664e.firebaseapp.com/"
 languageCode = "en-us"
 title = "Sam Adesoga's Personal Blog"
 theme = "blogezy"

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bdd on Sam Adesoga&#39;s Personal Blog</title>
+    <link>http://example.org/tags/bdd/</link>
+    <description>Recent content in Bdd on Sam Adesoga&#39;s Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Feb 2016 22:47:57 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/bdd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Geb and Spock: My favourites for test automation</title>
+      <link>http://example.org/posts/geb-and-spock-my-favourites-for-test-automation/</link>
+      <pubDate>Mon, 29 Feb 2016 22:47:57 +0000</pubDate>
+      
+      <guid>http://example.org/posts/geb-and-spock-my-favourites-for-test-automation/</guid>
+      <description>So I have used quite a number of tools in my time building test automation frameworks over the years; and in the last 2years i have evaluated a number of these tools and i am becoming more and more opinionated in my choice of tools.
+For someone that has used selenium/webdriver and cucumber a lot in the past, i find myself using Geb and Spock these days and it hasnt been much difficulty in switch to these tools.</description>
+    </item>
+    
+    <item>
+      <title>Cucumber unicode support</title>
+      <link>http://example.org/posts/cucumber-unicode-support/</link>
+      <pubDate>Tue, 28 Feb 2012 15:18:12 +0000</pubDate>
+      
+      <guid>http://example.org/posts/cucumber-unicode-support/</guid>
+      <description>I ran into a problem today where some french and spanish characters were being displayed strangely.
+And this made my test to fail,
+After some poking around in google i can across a post that suggested adding
+require &amp;lsquo;cucumber/formatter/unicode&amp;rsquo;
+to the env.rb and that seem to have sorted the problems i was having.
+Hopes this saves you some time.</description>
+    </item>
+    
+    <item>
+      <title>Writing acceptance test before development or implementation starts</title>
+      <link>http://example.org/posts/writing-acceptance-test-before-development-or-implementation-starts/</link>
+      <pubDate>Mon, 25 Jul 2011 15:06:02 +0000</pubDate>
+      
+      <guid>http://example.org/posts/writing-acceptance-test-before-development-or-implementation-starts/</guid>
+      <description>In my the few years, where i have pushed for testers developers to write acceptance test before development or implementation commences, I&amp;rsquo;ve had testers come up to me say its difficult to achieve this when you dont know what the UI would look like.
+This post would attempt to decribe how i have done this in the past and i still do this at the moment.
+NB: Ideally i would write my test using page object pattern, if this was a new project, I would start creating page objects</description>
+    </item>
+    
+    <item>
+      <title>Test automation click might not completely simulate an actual human click</title>
+      <link>http://example.org/posts/test-automation-click-might-not-completely-simulate-an-actual-human-click/</link>
+      <pubDate>Wed, 20 Jul 2011 14:24:55 +0000</pubDate>
+      
+      <guid>http://example.org/posts/test-automation-click-might-not-completely-simulate-an-actual-human-click/</guid>
+      <description>I have been working at this client where i am opportuned to use cucumber, watir-webdriver and i came across this problem today. The application i am testing is an e-commerce site and i am writing test for a page on which i click on an item and the item appears on the shopping basket area of the site.
+My code look like
+[code]
+def select_item(item_name) @browser.li(:text =&amp;gt; /#{item_name}/).link(:class_name =&amp;gt; &amp;ldquo;addOptions&amp;rdquo;).click Watir::Wait.</description>
+    </item>
+    
+    <item>
+      <title>A tester&#39;s reflection on kanban plus BDD</title>
+      <link>http://example.org/posts/a-testers-reflection-on-kanban-plus-bdd/</link>
+      <pubDate>Fri, 03 Sep 2010 14:55:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/a-testers-reflection-on-kanban-plus-bdd/</guid>
+      <description>Having just finished an engagement with a client where the development practices include kanban and BDD. Kanban for us meant that we give priority to work on the right side of the board. So as a tester, I would rather spend my time doing some manual testing on a story that is in the QA queue, than writing automated acceptance tests for a story in the queue for Acceptance Tests.</description>
+    </item>
+    
+    <item>
+      <title>Blank cells in step tables in cucumber 0.3.11 is represented as nil</title>
+      <link>http://example.org/posts/blank-cells-in-step-tables-in-cucumber-0-3-11-is-represented-as-nil/</link>
+      <pubDate>Wed, 10 Mar 2010 23:44:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/blank-cells-in-step-tables-in-cucumber-0-3-11-is-represented-as-nil/</guid>
+      <description>In my current job, I have been doing a lot of acceptance test using Cucumber, Watir and RSpec, obvious all in Ruby. I have been using Cucumber 0.6.x, in which blank cells in the step table are represented by empty string (&amp;ldquo;&amp;rdquo;). This was okay for me until today when i had to use a previous version of Cucumber 0.3.11 due to reasons including compatibility with other projects in the CI build.</description>
+    </item>
+    
+  </channel>
+</rss>
