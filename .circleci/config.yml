@@ -8,4 +8,4 @@ jobs:
       - checkout
       - run: hugo
       - run: |
-          [ "${CIRCLE_BRANCH}" == "master" ] && firebase deploy --token ${FIREBASE_TOKEN} --non-interactive
+          [ "${CIRCLE_BRANCH}" == "master" ] && firebase deploy --token ${FIREBASE_TOKEN} --project ${PROJECT_ID} --non-interactive
