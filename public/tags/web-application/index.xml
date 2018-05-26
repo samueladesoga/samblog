@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Application on Sam Adesoga&#39;s Personal Blog</title>
+    <link>https://samblog-a664e.firebaseapp.com/tags/web-application/</link>
+    <description>Recent content in Web Application on Sam Adesoga&#39;s Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Nov 2009 12:04:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://samblog-a664e.firebaseapp.com/tags/web-application/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Workaround: Flash selenium test would not run in firefox 3.5 except when the browser mode is *firefoxProxy</title>
+      <link>https://samblog-a664e.firebaseapp.com/posts/workaround-flash-selenium-test-would-not-run-in-firefox-3-5-except-when-the-browser-mode-is-firefoxproxy/</link>
+      <pubDate>Mon, 23 Nov 2009 12:04:00 +0000</pubDate>
+      
+      <guid>https://samblog-a664e.firebaseapp.com/posts/workaround-flash-selenium-test-would-not-run-in-firefox-3-5-except-when-the-browser-mode-is-firefoxproxy/</guid>
+      <description>I looked into flash selenium a few weeks back and i thought it was a great way for me to test certain part of the apps i have been ignoring for some time.
+However after knocking up a few test i discovered that my test would not run in my version of firefox (3.5). I got this error:
+ INFO - Got result: ERROR: Threw an exception: NPMethod called on non-NPObject wrapped JSObject!</description>
+    </item>
+    
+    <item>
+      <title>Selenium Remote cant start firefox session due to lock on file</title>
+      <link>https://samblog-a664e.firebaseapp.com/posts/selenium-remote-cant-start-firefox-session-due-to-lock-on-file/</link>
+      <pubDate>Fri, 04 Sep 2009 14:45:00 +0000</pubDate>
+      
+      <guid>https://samblog-a664e.firebaseapp.com/posts/selenium-remote-cant-start-firefox-session-due-to-lock-on-file/</guid>
+      <description>&amp;gt;I am sure you have on this page, because you have run into problem with selenium not been able to run due to a lock on some profile files. Yes, you know what the error is. I really found useful two blogs here and here. However, inas much as i don not want to repeat what has been saidin the blogs i would paste and quote what i found useful and explain a little bit more.</description>
+    </item>
+    
+    <item>
+      <title>Using selenium.GetEval(script)to execute Javascript</title>
+      <link>https://samblog-a664e.firebaseapp.com/posts/using-selenium-getevalscriptto-execute-javascript/</link>
+      <pubDate>Tue, 23 Dec 2008 08:55:00 +0000</pubDate>
+      
+      <guid>https://samblog-a664e.firebaseapp.com/posts/using-selenium-getevalscriptto-execute-javascript/</guid>
+      <description>&amp;gt;The task at hand was to navigate through the DOM of a particular webpage and check the
+style.display attribute of an object or element if you prefer. There are two elements on this page that displayed either success or failure messages.(msgSuccess and msgFailed)
+For perfomance reasons, if previously a successful message was displayed and subsequently the you get a failure message, what the developers of the page did was to amend the style.</description>
+    </item>
+    
+  </channel>
+</rss>

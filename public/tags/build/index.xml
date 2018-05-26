@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Build on Sam Adesoga&#39;s Personal Blog</title>
+    <link>https://samblog-a664e.firebaseapp.com/tags/build/</link>
+    <description>Recent content in Build on Sam Adesoga&#39;s Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Aug 2008 11:10:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://samblog-a664e.firebaseapp.com/tags/build/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nant SCP Task: deploy file to a remote server</title>
+      <link>https://samblog-a664e.firebaseapp.com/posts/nant-scp-task-deploy-file-to-a-remote-server/</link>
+      <pubDate>Fri, 29 Aug 2008 11:10:00 +0000</pubDate>
+      
+      <guid>https://samblog-a664e.firebaseapp.com/posts/nant-scp-task-deploy-file-to-a-remote-server/</guid>
+      <description>Actually started the task by attempting to use MSBuild to deploy my application to a remote server.
+which would require some secure means, scp, sftp or something of that sort.
+The closest i got was SSHSharp which was written by a third party and not thoroughly tested,
+i then decided maybe that wasn&amp;rsquo;t the path to go.
+Tried to go for Nant instead, and found that Nant core doesnt have a task for secure copy,</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kanban on Sam Adesoga&#39;s Personal Blog</title>
+    <link>https://samblog-a664e.firebaseapp.com/tags/kanban/</link>
+    <description>Recent content in Kanban on Sam Adesoga&#39;s Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Sep 2010 14:55:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://samblog-a664e.firebaseapp.com/tags/kanban/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A tester&#39;s reflection on kanban plus BDD</title>
+      <link>https://samblog-a664e.firebaseapp.com/posts/a-testers-reflection-on-kanban-plus-bdd/</link>
+      <pubDate>Fri, 03 Sep 2010 14:55:00 +0000</pubDate>
+      
+      <guid>https://samblog-a664e.firebaseapp.com/posts/a-testers-reflection-on-kanban-plus-bdd/</guid>
+      <description>Having just finished an engagement with a client where the development practices include kanban and BDD. Kanban for us meant that we give priority to work on the right side of the board. So as a tester, I would rather spend my time doing some manual testing on a story that is in the QA queue, than writing automated acceptance tests for a story in the queue for Acceptance Tests.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="description" content="I have written in my previous blog about how we need to distribute our tests across the testing pyramid for reasons which i have explained in the previous blog. This particular post is focussed on how we ought to design our tests across the higher levels of abstractions which includes the UI test and API tests.
+For the purpose of the blog, I would be using a case study of team that writes its UI Acceptance tests in protractor (Javascript) and the API tests in Java using RestAssured library." />
+        <meta name="author" content="Samuel Adesoga">
+
+        <link rel="shortcut icon" href="https://samblog-a664e.firebaseapp.com/images/favicon.ico">
+
+         <title>Sam Adesoga&#39;s Personal Blog  | Should API test and UI Acceptance Tests be written in the same programming language?</title>
+
+        <meta name="generator" content="Hugo 0.40.3" />
+        
+        
+            <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        
+
+
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,600,700" rel="stylesheet">
+
+        
+        <link href="https://samblog-a664e.firebaseapp.com/css/bootstrap.min.css" rel="stylesheet">
+
+        
+        <link href="https://samblog-a664e.firebaseapp.com/css/metismenu.min.css" rel="stylesheet" type="text/css" />
+
+        
+        <link rel="stylesheet" type="text/css" href="https://samblog-a664e.firebaseapp.com/css/materialdesignicons.min.css">
+
+        
+        <link href="https://samblog-a664e.firebaseapp.com/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="https://samblog-a664e.firebaseapp.com/css/default.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+        
+        <div id="wrapper">
+            
+            <div class="topbar-mobile">
+    <div class="logo">
+        <a href="https://samblog-a664e.firebaseapp.com/"><img src="https://samblog-a664e.firebaseapp.com/images/logo.png" alt="" class="" style="height: 84px;"></a>
+        <button class="button-menu-mobile">
+            <i class="mdi mdi-menu"></i>
+        </button>
+    </div>
+</div>
+            
+            
+            <div class="left side-menu">
+
+    <div class="slimscroll-menu" id="remove-scroll">
+
+        <div class="logo">
+            <a href="https://samblog-a664e.firebaseapp.com/"><img src="https://samblog-a664e.firebaseapp.com/images/logo.png" alt="" class="" style="height: 84px;"></a>
+            <p class="text-muted">A pragmatic problem solver and business leader with a very solid technical background.</p>
+        </div>
+
+        
+        <div id="sidebar-menu">
+            
+            <ul class="metismenu" id="side-menu">
+
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/">Home</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/categories/feature">Feature</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/categories/technical">Technical</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/categories/agile-delivery">Agile Delivery</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/about/">About</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/contact/">Contact</a>
+                    </li>
+                
+
+            </ul>
+
+            <div class="copyright-box">
+                <p>2018 © Samuel Adesoga. </p>
+            </div>
+
+        </div>
+        
+        <div class="clearfix"></div>
+
+    </div>
+    
+
+</div>
+            
+
+            <div class="page-wrapper">
+                
+	<section class="pb-5">
+	    <div class="container">
+
+	        <div class="row pt-5">
+	            
+	            <div class="col-xl-8">
+
+	                
+	                <article class="post">
+	                    <div class="post-header">
+	                        <h2 class="post-title"><a href="#">Should API test and UI Acceptance Tests be written in the same programming language?</a></h2>
+	                        <ul class="post-meta">
+	                            <li><i class="mdi mdi-calendar"></i> August 24, 2017 </li>
+	                            <li><i class="mdi mdi-tag-text-outline"></i> 
+	                            	
+								      
+								        <a href="https://samblog-a664e.firebaseapp.com/categories/agile-delivery">agile delivery</a>,
+								      
+								        <a href="https://samblog-a664e.firebaseapp.com/categories/technical">technical</a>,
+								      
+		            				 
+	                            </li>
+	                            <li><i class="mdi mdi-comment-multiple-outline"></i> <a href="#">3 Comments</a>
+	                            </li>
+	                        </ul>
+	                    </div>
+
+	                    <div class="post-preview">
+	                        <a href="blog-single.html"><img src="https://samblog-a664e.firebaseapp.com/images/blog/blog-1.jpg" alt="" class="img-fluid rounded"></a>
+	                    </div>
+
+	                    <div class="blog-detail-description">
+	                        <p>I have written in my previous <a href="/post/2016/02/29/never-too-early-to-start-thinking-about-your-tests/">blog</a> about how we need to distribute our tests across the testing pyramid for reasons which i have explained in the previous <a href="/post/2016/02/29/never-too-early-to-start-thinking-about-your-tests/">blog</a>. This particular post is focussed on how we ought to design our tests across the higher levels of abstractions which includes the UI test and API tests.</p>
+
+<p>For the purpose of the blog, I would be using a case study of team that writes its UI Acceptance tests in protractor (Javascript) and the API tests
+in Java using RestAssured library. The content of this post is an expression of my experience and observation and I am happy for other people to share their experiences.</p>
+
+<p><strong>1. Maintenance cost is even higher:</strong>  I have already established in my previous post how expensive these high level tests could be.
+For an application that requires a lot of data to be setup before the tests are run, the effort of setting up data is duplicated as these are effectively two different set of tests written in two different languages. Also these test would requiring two different build runners e.g gradle/maven for java and gulp for javascript which adds to the complexity in my own opinion.</p>
+
+<p><strong>2. Silos are Encouraged:</strong> One of the few practices, that I encourage on an Agile Team is ensuring that everyone works together and continuously collaborating on code and the tests. In my experience when team decides to split the higher end test as described above, i.e Java for API Tests and Javascript for UI Acceptance test, have observed that one of these could happen
+<ul>
+    <li>Testers and back end developers contribute to the API Tests while front end developers contribute to the UI Acceptance Test.</li>
+    <li>Testers and front end developers contribute to the UI Acceptance Tests while backend develops would write/maintain the Java API Tests.</li>
+</ul>
+This is <strong>bad</strong> as we have just reintroduced silos into the team. Another side effect is that the definition of &ldquo;Done&rdquo; becomes blurred. We expect that the definition of &ldquo;Done&rdquo; to be when all code has been written, tested, deployed and signed off by the product owner. However when we have two separate test suites, back end developers can write the Java API test as soon as the back end code is completed and provided the test are passing, the team is tempted to split stories in back end stories and front stories over time.</p>
+
+<p><strong>3. Higher chances of duplicating test scenario in both suites:</strong> For the reasons that have been described above, I have observed that the chances for similar test scenarios to be implemented in the UI Acceptance tests as well as in the API test suite is highly increased. This is because when the team doesn&rsquo;t work together on the tests and assumptions are made, most likely than not, a team that cares about test coverage would try to write as many test as possible which ends up in having the same scenarios implemented twice. Similarly, it is a lot easier to introduce gaps into the testing, this occurs for instance if a backend developer assumes a particular test should be written as part of the front end test and this is not communicated; the other person that is supposedly writing the front end test might not write the test for similar reasons.
+<h3>The advice</h3>
+In other to reduce the chances for some of these problems that i have observed, I would always advice for a single code base and single language for API Test and the UI Acceptance Test.
+I worked with a client a couple of years ago, and before i joined the team, the set of their API Tests and UI Acceptance Tests was as described above. The problem was even worse at the time, as the UI Acceptance tests were considered an optional set of tests.
+On joining the team, i got everyone together so that we could discuss how we were doing tests as a team and where we would like to be. It wasn&rsquo;t an easy task but the team decided to use a combination of Spock (for defining test scenarios), Geb (a browser automation tool based on WebDriver) and Rest Assured.</p>
+
+<p>There was always a tussle between front end developers and back end developers in that the front end developers weren&rsquo;t keen on writing full blown Java code whilst back end developers weren&rsquo;t keen on writing Javascript test. As a result of this we decided on the tool set as described as above for  the reason highlight below:
+<ul>
+    <li>Groovy: The base language used in the test suite was Groovy which is a JVM based language; this felt as a middle ground for both java developers
+and javascript developers. Groovy is not a difficult language to pick up for a front end developer as the syntax has some resemblance to javascript
+or any other scripted languages.</li>
+    <li>Geb: This library was the main reason we tilted towards Groovy, Geb has a nice syntax that is very jQuery like and this is the reason we decided
+to use this language.</li>
+</ul>
+After we had adopted these set of tools, below are some of the advantages that we experienced:</p>
+
+<ol>
+<li><p>Creation of Test Automation scripts became an atomic task in that “the automated tests have been written” meant that both front end and back end tests have been thought through
+and implemented accordingly.</p></li>
+
+<li><p>Reusability of set up data came naturally, as we had a single suite of test; hence a singular test set up.</p></li>
+
+<li><p>Reusability of code including helper class, page object and api wrappers.</p></li>
+
+<li><p>The feedback was much faster as we had a singular test suite and all we had to do was run one set of test.</p></li>
+
+<li><p>Singular source of Truth for Test as source of System Documentation.</p></li>
+</ol>
+
+<p>I really hope when team are just about to start your next set of tests, maybe on a brand new project or a rewrite of an existing test suite; you would think about some of the points discussed above, make sure your api tests and ui tests are in the same language and within the same project.</p>
+
+
+	                        <div class="mt-5">
+	                            <h6>Tags:</h6>
+						            
+							            <div class="tagcloud">
+									      
+									        <a href="https://samblog-a664e.firebaseapp.com/tags/test-automation">Test Automation</a>
+									      
+							            </div>
+						            
+	                        </div>
+
+	                        <div class="mt-5 text-center">
+	                            <h5 class="page-title-alt"><span>You Might Also Like</span></h5>
+	                        </div>
+	                        <div class="row">
+					           
+							   	<div class="col-sm-4">
+					               	<article class="related-post">
+					                  <div class="post-preview">
+					                     <a href="/posts/testing-an-asynchronous-system-2/"><img src="https://samblog-a664e.firebaseapp.com/images/blog/blog-2.jpg" alt="" class="img-fluid rounded"></a>
+					                  </div>
+					                  <div class="post-header">
+					                     <h6><a href="/posts/testing-an-asynchronous-system-2/" title="">Testing an Asynchronous System - Part 2</a></h6>
+					                     <p> </p>
+					                     <p class="post-date">January 6, 2017</p>
+					                  </div>
+					               	</article>
+				            	</div>
+							  
+							   	<div class="col-sm-4">
+					               	<article class="related-post">
+					                  <div class="post-preview">
+					                     <a href="/posts/testing-an-asynchronous-system/"><img src="https://samblog-a664e.firebaseapp.com/images/blog/blog-2.jpg" alt="" class="img-fluid rounded"></a>
+					                  </div>
+					                  <div class="post-header">
+					                     <h6><a href="/posts/testing-an-asynchronous-system/" title="">Testing an Asynchronous System</a></h6>
+					                     <p> </p>
+					                     <p class="post-date">January 6, 2017</p>
+					                  </div>
+					               	</article>
+				            	</div>
+							  
+							   	<div class="col-sm-4">
+					               	<article class="related-post">
+					                  <div class="post-preview">
+					                     <a href="/posts/geb-and-spock-my-favourites-for-test-automation/"><img src="https://samblog-a664e.firebaseapp.com/images/blog/blog-2.jpg" alt="" class="img-fluid rounded"></a>
+					                  </div>
+					                  <div class="post-header">
+					                     <h6><a href="/posts/geb-and-spock-my-favourites-for-test-automation/" title="">Geb and Spock: My favourites for test automation</a></h6>
+					                     <p> </p>
+					                     <p class="post-date">February 29, 2016</p>
+					                  </div>
+					               	</article>
+				            	</div>
+							  
+						  </div>                
+
+	                        <div class="mt-5">
+	                            <h5 class="page-title-alt"><span>Comments</span></h5>
+	                        </div>
+
+	                        <ul class="media-list list-unstyled">
+
+	                            <li class="media">
+	                                <img class="d-flex mr-3 rounded-circle" src="images/user/user-2.png" alt="Generic placeholder image">
+	                                <div class="media-body">
+	                                    <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
+	                                    <h4 class="media-heading"><a href="">Ronda Otoole</a></h4>
+	                                    <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
+	                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+
+	                                    <div class="media">
+	                                        <img class="d-flex mr-3 rounded-circle" src="images/user/user-3.png" alt="Generic placeholder image">
+	                                        <div class="media-body">
+	                                            <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
+	                                            <h4 class="media-heading"><a href="">James Whitley</a></h4>
+	                                            <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
+	                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </li>      
+
+	                        </ul>
+
+	                        <div class="mt-5">
+	                            <h5 class="page-title-alt"><span>Leave a reply</span></h5>
+	                        </div>
+
+	                        <form action="#" method="post" class="mt-4">
+	                            <div class="row">
+	                                <div class="col-sm-6">
+	                                    <div class="form-group">
+	                                        <input id="author" class="form-control" placeholder="Name*" name="author" type="text" required="">
+	                                    </div>
+	                                </div>
+
+	                                <div class="col-sm-6">
+	                                    <div class="form-group">
+	                                        <input id="email" class="form-control" placeholder="Email*" name="email" type="text" required="">
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="row">
+	                                <div class="col-sm-12">
+	                                    <div class="form-group">
+	                                        <input id="subject" class="form-control" placeholder="Website" name="subject" type="text">
+	                                    </div>
+	                                </div>
+	                            </div>
+
+	                            <div class="row">
+	                                <div class="col-sm-12">
+	                                    <div class="form-group">
+	                                        <textarea id="comment" class="form-control" rows="5" placeholder="Your Message*" name="comment" required=""></textarea>
+	                                    </div>
+	                                </div>
+	                            </div>
+
+	                            <div class="row">
+	                                <div class="col-sm-12">
+	                                    <div class="form-group">
+	                                        <button name="submit" type="submit" id="submit" class="btn btn-dark">Post Comment</button>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </form>
+
+	                    </div>
+
+	                </article>
+	                
+
+	            </div>
+	            
+
+				
+	            <div class="col-xl-4">
+        			<div class="sidebar">
+    
+    <aside class="widget widget_search">
+        <form>
+            <input class="form-control pr-5" type="search" placeholder="Search...">
+            <button class="search-button" type="submit"><span class="mdi mdi-magnify"></span></button>
+        </form>
+    </aside>
+
+    <aside class="widget about-widget">
+        <div class="widget-title">About Me</div>
+
+        <div class="text-center">
+            <img src="https://samblog-a664e.firebaseapp.com/images/photo.jpg" alt="About Me" class="rounded-circle">
+
+            <p>Quis vero phasellus hac nullam, in quam vitae duis adipiscing mauris leo, laoreet eget at quis, ante vestibulum vivamus vel. Sapien lobortis, eget orci purus amet pede, consectetur neque risus.</p>
+        </div>
+
+    </aside>
+
+    <aside class="widget about-widget">
+        <div class="widget-title">Subscribe & Follow</div>
+
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/mistar.adesoga"><i class="mdi mdi-facebook"></i></a></li>
+            <li><a href="https://twitter.com/sadesoga"><i class="mdi mdi-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/mistaradesoga/"><i class="mdi mdi-instagram"></i></a></li>
+            <li><a href="https://uk.linkedin.com/in/samueladesoga"><i class="mdi mdi-linkedin"></i></a></li>
+        </ul>
+
+    </aside>
+
+    
+    <aside class="widget widget_categories">
+        <div class="widget-title">Categories</div>
+        <ul>
+            
+                <li><a href="https://samblog-a664e.firebaseapp.com/categories/agile-delivery">Agile delivery &nbsp;<span>(8)</span></a></li>
+            
+                <li><a href="https://samblog-a664e.firebaseapp.com/categories/technical">Technical &nbsp;<span>(47)</span></a></li>
+            
+        </ul>
+    </aside>
+
+    
+    <aside class="widget widget_recent_entries_custom">
+        <div class="widget-title">Popular Posts</div>
+        <ul>
+            
+        </ul>
+    </aside>
+
+    
+    <aside class="widget">
+        <div class="widget-title">Archives</div>
+
+        <ul>
+            <li><a href="#">March 2017</a> (40)</li>
+            <li><a href="#">April 2017</a> (08)</li>
+            <li><a href="#">May 2017</a> (11)</li>
+            <li><a href="#">Jun 2017</a> (21)</li>
+        </ul>
+
+    </aside>
+
+    
+    <aside class="widget widget_tag_cloud">
+        <div class="widget-title">Tags</div>
+        <div class="tagcloud">
+            
+                <a href="/tags/active-record">active-record</a>
+            
+                <a href="/tags/automation">automation</a>
+            
+                <a href="/tags/aws-s3">aws-s3</a>
+            
+                <a href="/tags/bdd">bdd</a>
+            
+                <a href="/tags/blogger">blogger</a>
+            
+                <a href="/tags/build">build</a>
+            
+                <a href="/tags/conference">conference</a>
+            
+                <a href="/tags/cqrs">cqrs</a>
+            
+                <a href="/tags/css-selectors">css-selectors</a>
+            
+                <a href="/tags/database">database</a>
+            
+                <a href="/tags/deployment">deployment</a>
+            
+                <a href="/tags/development">development</a>
+            
+                <a href="/tags/event-based-architecture">event-based-architecture</a>
+            
+                <a href="/tags/exploratory-testing">exploratory-testing</a>
+            
+                <a href="/tags/feature-driven-development">feature-driven-development</a>
+            
+                <a href="/tags/firefox">firefox</a>
+            
+                <a href="/tags/hardware">hardware</a>
+            
+                <a href="/tags/iehta">iehta</a>
+            
+                <a href="/tags/iexplore">iexplore</a>
+            
+                <a href="/tags/iexploreproxy">iexploreproxy</a>
+            
+                <a href="/tags/image-upload">image-upload</a>
+            
+                <a href="/tags/jar">jar</a>
+            
+                <a href="/tags/java">java</a>
+            
+                <a href="/tags/javascipt">javascipt</a>
+            
+                <a href="/tags/javascript-events">javascript-events</a>
+            
+                <a href="/tags/jmeter">jmeter</a>
+            
+                <a href="/tags/kanban">kanban</a>
+            
+                <a href="/tags/meeting">meeting</a>
+            
+                <a href="/tags/microsoft">microsoft</a>
+            
+                <a href="/tags/outlook">outlook</a>
+            
+                <a href="/tags/performance-testing">performance-testing</a>
+            
+                <a href="/tags/qa">qa</a>
+            
+                <a href="/tags/regex">regex</a>
+            
+                <a href="/tags/ruby">ruby</a>
+            
+                <a href="/tags/ruby-on-rails">ruby-on-rails</a>
+            
+                <a href="/tags/selenium">selenium</a>
+            
+                <a href="/tags/selenium-server">selenium-server</a>
+            
+                <a href="/tags/software-testing">software-testing</a>
+            
+                <a href="/tags/start-up">start-up</a>
+            
+                <a href="/tags/sysadmin">sysadmin</a>
+            
+                <a href="/tags/technical-testing">technical-testing</a>
+            
+                <a href="/tags/test">test</a>
+            
+                <a href="/tags/test-automation">test-automation</a>
+            
+                <a href="/tags/test-strategy">test-strategy</a>
+            
+                <a href="/tags/testing">testing</a>
+            
+                <a href="/tags/training">training</a>
+            
+                <a href="/tags/ubuntu">ubuntu</a>
+            
+                <a href="/tags/watir-webdriver">watir-webdriver</a>
+            
+                <a href="/tags/web-application">web-application</a>
+            
+                <a href="/tags/windows">windows</a>
+            
+                <a href="/tags/windows-application">windows-application</a>
+            
+                <a href="/tags/wordpress">wordpress</a>
+            
+                <a href="/tags/xp-antirus-2009">xp-antirus-2009</a>
+            
+                <a href="/tags/xpath">xpath</a>
+            
+        </div>
+    </aside>
+</div>
+    			</div>
+				
+
+	        </div>
+
+	    </div>
+	    
+	</section>
+
+            </div>
+        </div>
+        
+        <script src="https://samblog-a664e.firebaseapp.com/js/jquery.min.js"></script>
+        <script src="https://samblog-a664e.firebaseapp.com/js/popper.min.js"></script>
+        <script src="https://samblog-a664e.firebaseapp.com/js/bootstrap.min.js"></script>
+        <script src="https://samblog-a664e.firebaseapp.com/js/jquery.easing.min.js"></script>
+        <script src="https://samblog-a664e.firebaseapp.com/js/metisMenu.min.js"></script>
+        
+        <script src="https://samblog-a664e.firebaseapp.com/js/jquery.app.js"></script>
+    </body>
+
+</html>

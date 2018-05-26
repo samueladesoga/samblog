@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Start Up on Sam Adesoga&#39;s Personal Blog</title>
+    <link>https://samblog-a664e.firebaseapp.com/tags/start-up/</link>
+    <description>Recent content in Start Up on Sam Adesoga&#39;s Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Feb 2013 15:15:03 +0000</lastBuildDate>
+    
+	<atom:link href="https://samblog-a664e.firebaseapp.com/tags/start-up/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Copying objects between two different amazon s3 accounts</title>
+      <link>https://samblog-a664e.firebaseapp.com/posts/copying-object-between-buckets-on-two-different-amazon-s3-account/</link>
+      <pubDate>Wed, 27 Feb 2013 15:15:03 +0000</pubDate>
+      
+      <guid>https://samblog-a664e.firebaseapp.com/posts/copying-object-between-buckets-on-two-different-amazon-s3-account/</guid>
+      <description>I have recently taken on ownership of a website and as part of the migration task i&amp;rsquo;ve had to copy over a few artefacts;I will be posting another blog about what i have learnt from this process.
+The website uses Amazon s3 for storing users&amp;rsquo; uploaded photos and document. I was faced with the task of copying these files over to my S3 account. Quite a number of ways to achieve this; but i stumbled on a link which is a python script that copies object between two buckets in the same account.</description>
+    </item>
+    
+  </channel>
+</rss>

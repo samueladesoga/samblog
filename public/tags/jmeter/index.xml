@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jmeter on Sam Adesoga&#39;s Personal Blog</title>
+    <link>https://samblog-a664e.firebaseapp.com/tags/jmeter/</link>
+    <description>Recent content in Jmeter on Sam Adesoga&#39;s Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Feb 2012 15:30:39 +0000</lastBuildDate>
+    
+	<atom:link href="https://samblog-a664e.firebaseapp.com/tags/jmeter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Performance Testing experience using Ant and Jmeter - Part 2</title>
+      <link>https://samblog-a664e.firebaseapp.com/posts/performance-testing-experience-using-ant-and-jmeter-part-2/</link>
+      <pubDate>Wed, 01 Feb 2012 15:30:39 +0000</pubDate>
+      
+      <guid>https://samblog-a664e.firebaseapp.com/posts/performance-testing-experience-using-ant-and-jmeter-part-2/</guid>
+      <description>In my last blog post, i described how i have used jmeter-plugins at my current client site, now i am faced with another problem , i need to be able to run these performance test from command line, in other for these performance tests to be executed in a CI environment such as teamcity.
+A quick search brings to light the ant jmeter task which is an ant task for running jmeter test.</description>
+    </item>
+    
+    <item>
+      <title>Performance Testing experience using Ant and Jmeter - Part 1</title>
+      <link>https://samblog-a664e.firebaseapp.com/posts/performance-testing-experience-using-ant-and-jmeter-part-1/</link>
+      <pubDate>Wed, 01 Feb 2012 15:18:59 +0000</pubDate>
+      
+      <guid>https://samblog-a664e.firebaseapp.com/posts/performance-testing-experience-using-ant-and-jmeter-part-1/</guid>
+      <description>Jmeter is a well known open source performance/load testing tool and to be fair it does a lot of stuff really well. if you wants to do some quick performance testing without a whole lots of infrastructure around it then it is great.
+I started out my task with jmeter with some objectives:
+&amp;lt;li&amp;gt; A tool that i could integrate into a CI tool such as teamcity&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; Meaningful graphs that could be easily interpreted by any one in the team&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; Able to integrate the graphs into teamcity&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; Able to monitor the performance of the website under test.</description>
+    </item>
+    
+  </channel>
+</rss>

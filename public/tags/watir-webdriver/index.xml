@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Watir Webdriver on Sam Adesoga&#39;s Personal Blog</title>
+    <link>https://samblog-a664e.firebaseapp.com/tags/watir-webdriver/</link>
+    <description>Recent content in Watir Webdriver on Sam Adesoga&#39;s Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Jul 2012 08:51:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://samblog-a664e.firebaseapp.com/tags/watir-webdriver/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Type into a textfield with keypress event disabled</title>
+      <link>https://samblog-a664e.firebaseapp.com/posts/type-into-a-textfield-with-keypress-event-disabled/</link>
+      <pubDate>Tue, 31 Jul 2012 08:51:20 +0000</pubDate>
+      
+      <guid>https://samblog-a664e.firebaseapp.com/posts/type-into-a-textfield-with-keypress-event-disabled/</guid>
+      <description>A colleague asked me how to automate a disabled text-box which has a calendar attached to it. The customer has specified that they want keyboard entries disabled for this text-field, hence every user of the website has to use the calendar drop down.
+Previously, this has been automated by using webdriver to type the text into the text box but as it was disabled, this was impossible.
+imagine, this is the html for the textbox:</description>
+    </item>
+    
+    <item>
+      <title>Watir-Webdriver: Website certificate does not come from a trusted source</title>
+      <link>https://samblog-a664e.firebaseapp.com/posts/watir-webdriver-website-certificate-does-not-come-from-a-trusted-source/</link>
+      <pubDate>Tue, 18 Oct 2011 10:40:00 +0000</pubDate>
+      
+      <guid>https://samblog-a664e.firebaseapp.com/posts/watir-webdriver-website-certificate-does-not-come-from-a-trusted-source/</guid>
+      <description>A colleague came across this problem while executing our acceptance tests.
+The issue was related to the fact that the SSL certificate for the site was named differently from the domain on which the test were being executed on .
+Hence, we got this error:
+&amp;ldquo;xxx.xxx.xxxx uses an invalid security certificate.The certificate does not come from a trusted source.The certificate is only valid for &amp;lt;a id=&amp;ldquo;cert_domain_link&amp;rdquo; title=&amp;ldquo;xxx.xxx.com&amp;rdquo;&amp;gt;xxxx.xxxxx.com&amp;lt;/a&amp;gt;The certificate will not be valid until 13-Jul-11 10:28 AM.</description>
+    </item>
+    
+    <item>
+      <title>Test automation click might not completely simulate an actual human click</title>
+      <link>https://samblog-a664e.firebaseapp.com/posts/test-automation-click-might-not-completely-simulate-an-actual-human-click/</link>
+      <pubDate>Wed, 20 Jul 2011 14:24:55 +0000</pubDate>
+      
+      <guid>https://samblog-a664e.firebaseapp.com/posts/test-automation-click-might-not-completely-simulate-an-actual-human-click/</guid>
+      <description>I have been working at this client where i am opportuned to use cucumber, watir-webdriver and i came across this problem today. The application i am testing is an e-commerce site and i am writing test for a page on which i click on an item and the item appears on the shopping basket area of the site.
+My code look like
+[code]
+def select_item(item_name) @browser.li(:text =&amp;gt; /#{item_name}/).link(:class_name =&amp;gt; &amp;ldquo;addOptions&amp;rdquo;).click Watir::Wait.</description>
+    </item>
+    
+  </channel>
+</rss>

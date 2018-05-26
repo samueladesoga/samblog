@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test Strategy on Sam Adesoga&#39;s Personal Blog</title>
+    <link>https://samblog-a664e.firebaseapp.com/tags/test-strategy/</link>
+    <description>Recent content in Test Strategy on Sam Adesoga&#39;s Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Feb 2016 21:53:14 +0000</lastBuildDate>
+    
+	<atom:link href="https://samblog-a664e.firebaseapp.com/tags/test-strategy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Never too early to start thinking about your tests</title>
+      <link>https://samblog-a664e.firebaseapp.com/posts/never-too-early-to-start-thinking-about-your-tests/</link>
+      <pubDate>Mon, 29 Feb 2016 21:53:14 +0000</pubDate>
+      
+      <guid>https://samblog-a664e.firebaseapp.com/posts/never-too-early-to-start-thinking-about-your-tests/</guid>
+      <description>This post is spurned by taking a reflection on my journey as a tester and it&amp;rsquo;s amazing to see how much i have moved from designing large UI test suites to very small UI test suites. For emphasis, the largest test suite had taken over 8 hrs and the smallest has been 3mins of execution time. There are a lot of posts on the internet about how fragile a UI test framework could be and i would expect the next question to be how have you been able to achieve this.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="description" content="Actually started the task by attempting to use MSBuild to deploy my application to a remote server.
+which would require some secure means, scp, sftp or something of that sort.
+The closest i got was SSHSharp which was written by a third party and not thoroughly tested,
+i then decided maybe that wasn&rsquo;t the path to go.
+Tried to go for Nant instead, and found that Nant core doesnt have a task for secure copy," />
+        <meta name="author" content="Samuel Adesoga">
+
+        <link rel="shortcut icon" href="https://samblog-a664e.firebaseapp.com/images/favicon.ico">
+
+         <title>Sam Adesoga&#39;s Personal Blog  | Nant SCP Task: deploy file to a remote server</title>
+
+        <meta name="generator" content="Hugo 0.40.3" />
+        
+        
+            <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        
+
+
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,600,700" rel="stylesheet">
+
+        
+        <link href="https://samblog-a664e.firebaseapp.com/css/bootstrap.min.css" rel="stylesheet">
+
+        
+        <link href="https://samblog-a664e.firebaseapp.com/css/metismenu.min.css" rel="stylesheet" type="text/css" />
+
+        
+        <link rel="stylesheet" type="text/css" href="https://samblog-a664e.firebaseapp.com/css/materialdesignicons.min.css">
+
+        
+        <link href="https://samblog-a664e.firebaseapp.com/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="https://samblog-a664e.firebaseapp.com/css/default.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+        
+        <div id="wrapper">
+            
+            <div class="topbar-mobile">
+    <div class="logo">
+        <a href="https://samblog-a664e.firebaseapp.com/"><img src="https://samblog-a664e.firebaseapp.com/images/logo.png" alt="" class="" style="height: 84px;"></a>
+        <button class="button-menu-mobile">
+            <i class="mdi mdi-menu"></i>
+        </button>
+    </div>
+</div>
+            
+            
+            <div class="left side-menu">
+
+    <div class="slimscroll-menu" id="remove-scroll">
+
+        <div class="logo">
+            <a href="https://samblog-a664e.firebaseapp.com/"><img src="https://samblog-a664e.firebaseapp.com/images/logo.png" alt="" class="" style="height: 84px;"></a>
+            <p class="text-muted">A pragmatic problem solver and business leader with a very solid technical background.</p>
+        </div>
+
+        
+        <div id="sidebar-menu">
+            
+            <ul class="metismenu" id="side-menu">
+
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/">Home</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/categories/feature">Feature</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/categories/technical">Technical</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/categories/agile-delivery">Agile Delivery</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/about/">About</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/contact/">Contact</a>
+                    </li>
+                
+
+            </ul>
+
+            <div class="copyright-box">
+                <p>2018 © Samuel Adesoga. </p>
+            </div>
+
+        </div>
+        
+        <div class="clearfix"></div>
+
+    </div>
+    
+
+</div>
+            
+
+            <div class="page-wrapper">
+                
+	<section class="pb-5">
+	    <div class="container">
+
+	        <div class="row pt-5">
+	            
+	            <div class="col-xl-8">
+
+	                
+	                <article class="post">
+	                    <div class="post-header">
+	                        <h2 class="post-title"><a href="#">Nant SCP Task: deploy file to a remote server</a></h2>
+	                        <ul class="post-meta">
+	                            <li><i class="mdi mdi-calendar"></i> August 29, 2008 </li>
+	                            <li><i class="mdi mdi-tag-text-outline"></i> 
+	                            	
+								      
+								        <a href="https://samblog-a664e.firebaseapp.com/categories/technical">technical</a>,
+								      
+		            				 
+	                            </li>
+	                            <li><i class="mdi mdi-comment-multiple-outline"></i> <a href="#">3 Comments</a>
+	                            </li>
+	                        </ul>
+	                    </div>
+
+	                    <div class="post-preview">
+	                        <a href="blog-single.html"><img src="https://samblog-a664e.firebaseapp.com/images/blog/blog-1.jpg" alt="" class="img-fluid rounded"></a>
+	                    </div>
+
+	                    <div class="blog-detail-description">
+	                        <p>Actually started the task by attempting to use MSBuild to deploy my application to a remote server.<br />which would require some secure means, scp, sftp or something of that sort.<br />The closest i got was <a href="http://www.tamirgal.com/home/dev.aspx?Item=SharpSsh">SSHSharp</a> which was written by a third party and not thoroughly tested,<br />i then decided maybe that wasn&rsquo;t the path to go.<br /><br />Tried to go for Nant instead, and found that Nant core doesnt have a task for secure copy,<br />Hence, the other option was <a href="http://nantcontrib.sourceforge.net/">NantContrib</a> which seem okay to an extent, except for incomplete documentation.<br /><br />Once big issue was having a &ldquo;scp&rdquo; failed to start &mdash;&gt; The file cannot be found error when i tried to execute the build file. I spent a great deal of my time trying to figure out what file was not found, thinking it was my file that i intend to copy that wasn&rsquo;t found.<br /><br />Actually it was the program &ldquo;<span class="blsp-spelling-error" id="SPELLING_ERROR_0">scp</span>.<span class="blsp-spelling-error" id="SPELLING_ERROR_1">exe</span>&rdquo; that could not be found, it took a lot of time and guesses, as there weren&rsquo;t a lot of resources on  the<br />search engines about this. May be i was just being dumb. So i had to install <span class="blsp-spelling-error" id="SPELLING_ERROR_2">pscp</span> on my machine and add that to the path.<br /><br />and it works fine&hellip;&hellip;&hellip;..<br /><br />Summary is that you for you to use the <span class="blsp-spelling-error" id="SPELLING_ERROR_3">scp</span> task,<br /><br />Download the <span class="blsp-spelling-error" id="SPELLING_ERROR_4">nantcontrib</span> <span class="blsp-spelling-error" id="SPELLING_ERROR_5">dll</span> files and read the &ldquo;<span class="blsp-spelling-error" id="SPELLING_ERROR_6">ReadMe</span>.<span class="blsp-spelling-error" id="SPELLING_ERROR_7">txt</span>&ldquo;<br /><br /><br />And add that to your Target with uses the <span class="blsp-spelling-error" id="SPELLING_ERROR_8">SCP</span> task<br /><br />loadtasks assembly=&ldquo;${project::get-base-directory()}/lib_build/nantcontrib-0.85/bin/NAnt.Contrib.Tasks.dll&rdquo;<br /><br />This would the directory where your .<span class="blsp-spelling-error" id="SPELLING_ERROR_9">dll</span> files are.<br />Make sure that that <span class="blsp-spelling-error" id="SPELLING_ERROR_10">scp</span> which is default is installed on your machine, you could actually use other application , e.g  <span class="blsp-spelling-error" id="SPELLING_ERROR_11">pscp</span>, ssh bu that would have to the specified in the <span class="blsp-spelling-error" id="SPELLING_ERROR_12">SCP</span> task.<br /><br />Finally, This is what my file looked like:<br /><br />&lt;?xml version=&ldquo;1.0&rdquo;?&gt;<br />&lt;project name=&ldquo;Project Name&rdquo; default=&ldquo;DeployToPlay&rdquo; basedir=&ldquo;.&rdquo;&gt;<br />&lt;property name=&ldquo;debug&rdquo; value=&ldquo;true&rdquo; overwrite=&ldquo;false&rdquo; /&gt;<br /><br />&lt;target name =&ldquo;DeployToServer&rdquo;&gt;<br />  &lt;loadtasks assembly=&ldquo;${project::get-base-directory()}/lib_build/nantcontrib-0.85/bin/NAnt.Contrib.Tasks.dll&rdquo; /&gt;<br /><br />  &lt;zip zipfile=&ldquo;myapplication.zip&rdquo; &gt;<br />    &lt;fileset&gt;<br />      &lt;include name = &ldquo;<em>.aspx;</em>.asax;web.config&rdquo;/&gt;<br />      &lt;include name = &ldquo;Content*<em>*.</em>&rdquo;/&gt;<br />      &lt;include name = &ldquo;home*<em>*.</em>&rdquo;/&gt;<br />      &lt;include name = &ldquo;Views*<em>*.</em>&rdquo;/&gt;<br />      &lt;include name = &ldquo;bin\Debug*<em>*.</em>&rdquo;/&gt;<br />    &lt;/fileset&gt;<br />  &lt;/zip&gt;<br />  &lt;scp file=&ldquo;myapplication.zip&rdquo; server=&ldquo;myservername&rdquo; path=&ldquo;/pathOnTheServer&rdquo; /&gt;<br />&lt;/target&gt;<br /><br />&lt;/project&gt;</code></p>
+
+
+	                        <div class="mt-5">
+	                            <h6>Tags:</h6>
+						            
+							            <div class="tagcloud">
+									      
+									        <a href="https://samblog-a664e.firebaseapp.com/tags/build">Build</a>
+									      
+									        <a href="https://samblog-a664e.firebaseapp.com/tags/deployment">Deployment</a>
+									      
+							            </div>
+						            
+	                        </div>
+
+	                        <div class="mt-5 text-center">
+	                            <h5 class="page-title-alt"><span>You Might Also Like</span></h5>
+	                        </div>
+	                        <div class="row">
+					           
+						  </div>                
+
+	                        <div class="mt-5">
+	                            <h5 class="page-title-alt"><span>Comments</span></h5>
+	                        </div>
+
+	                        <ul class="media-list list-unstyled">
+
+	                            <li class="media">
+	                                <img class="d-flex mr-3 rounded-circle" src="images/user/user-2.png" alt="Generic placeholder image">
+	                                <div class="media-body">
+	                                    <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
+	                                    <h4 class="media-heading"><a href="">Ronda Otoole</a></h4>
+	                                    <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
+	                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+
+	                                    <div class="media">
+	                                        <img class="d-flex mr-3 rounded-circle" src="images/user/user-3.png" alt="Generic placeholder image">
+	                                        <div class="media-body">
+	                                            <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
+	                                            <h4 class="media-heading"><a href="">James Whitley</a></h4>
+	                                            <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
+	                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </li>      
+
+	                        </ul>
+
+	                        <div class="mt-5">
+	                            <h5 class="page-title-alt"><span>Leave a reply</span></h5>
+	                        </div>
+
+	                        <form action="#" method="post" class="mt-4">
+	                            <div class="row">
+	                                <div class="col-sm-6">
+	                                    <div class="form-group">
+	                                        <input id="author" class="form-control" placeholder="Name*" name="author" type="text" required="">
+	                                    </div>
+	                                </div>
+
+	                                <div class="col-sm-6">
+	                                    <div class="form-group">
+	                                        <input id="email" class="form-control" placeholder="Email*" name="email" type="text" required="">
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="row">
+	                                <div class="col-sm-12">
+	                                    <div class="form-group">
+	                                        <input id="subject" class="form-control" placeholder="Website" name="subject" type="text">
+	                                    </div>
+	                                </div>
+	                            </div>
+
+	                            <div class="row">
+	                                <div class="col-sm-12">
+	                                    <div class="form-group">
+	                                        <textarea id="comment" class="form-control" rows="5" placeholder="Your Message*" name="comment" required=""></textarea>
+	                                    </div>
+	                                </div>
+	                            </div>
+
+	                            <div class="row">
+	                                <div class="col-sm-12">
+	                                    <div class="form-group">
+	                                        <button name="submit" type="submit" id="submit" class="btn btn-dark">Post Comment</button>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </form>
+
+	                    </div>
+
+	                </article>
+	                
+
+	            </div>
+	            
+
+				
+	            <div class="col-xl-4">
+        			<div class="sidebar">
+    
+    <aside class="widget widget_search">
+        <form>
+            <input class="form-control pr-5" type="search" placeholder="Search...">
+            <button class="search-button" type="submit"><span class="mdi mdi-magnify"></span></button>
+        </form>
+    </aside>
+
+    <aside class="widget about-widget">
+        <div class="widget-title">About Me</div>
+
+        <div class="text-center">
+            <img src="https://samblog-a664e.firebaseapp.com/images/photo.jpg" alt="About Me" class="rounded-circle">
+
+            <p>Quis vero phasellus hac nullam, in quam vitae duis adipiscing mauris leo, laoreet eget at quis, ante vestibulum vivamus vel. Sapien lobortis, eget orci purus amet pede, consectetur neque risus.</p>
+        </div>
+
+    </aside>
+
+    <aside class="widget about-widget">
+        <div class="widget-title">Subscribe & Follow</div>
+
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/mistar.adesoga"><i class="mdi mdi-facebook"></i></a></li>
+            <li><a href="https://twitter.com/sadesoga"><i class="mdi mdi-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/mistaradesoga/"><i class="mdi mdi-instagram"></i></a></li>
+            <li><a href="https://uk.linkedin.com/in/samueladesoga"><i class="mdi mdi-linkedin"></i></a></li>
+        </ul>
+
+    </aside>
+
+    
+    <aside class="widget widget_categories">
+        <div class="widget-title">Categories</div>
+        <ul>
+            
+                <li><a href="https://samblog-a664e.firebaseapp.com/categories/agile-delivery">Agile delivery &nbsp;<span>(8)</span></a></li>
+            
+                <li><a href="https://samblog-a664e.firebaseapp.com/categories/technical">Technical &nbsp;<span>(47)</span></a></li>
+            
+        </ul>
+    </aside>
+
+    
+    <aside class="widget widget_recent_entries_custom">
+        <div class="widget-title">Popular Posts</div>
+        <ul>
+            
+        </ul>
+    </aside>
+
+    
+    <aside class="widget">
+        <div class="widget-title">Archives</div>
+
+        <ul>
+            <li><a href="#">March 2017</a> (40)</li>
+            <li><a href="#">April 2017</a> (08)</li>
+            <li><a href="#">May 2017</a> (11)</li>
+            <li><a href="#">Jun 2017</a> (21)</li>
+        </ul>
+
+    </aside>
+
+    
+    <aside class="widget widget_tag_cloud">
+        <div class="widget-title">Tags</div>
+        <div class="tagcloud">
+            
+                <a href="/tags/active-record">active-record</a>
+            
+                <a href="/tags/automation">automation</a>
+            
+                <a href="/tags/aws-s3">aws-s3</a>
+            
+                <a href="/tags/bdd">bdd</a>
+            
+                <a href="/tags/blogger">blogger</a>
+            
+                <a href="/tags/build">build</a>
+            
+                <a href="/tags/conference">conference</a>
+            
+                <a href="/tags/cqrs">cqrs</a>
+            
+                <a href="/tags/css-selectors">css-selectors</a>
+            
+                <a href="/tags/database">database</a>
+            
+                <a href="/tags/deployment">deployment</a>
+            
+                <a href="/tags/development">development</a>
+            
+                <a href="/tags/event-based-architecture">event-based-architecture</a>
+            
+                <a href="/tags/exploratory-testing">exploratory-testing</a>
+            
+                <a href="/tags/feature-driven-development">feature-driven-development</a>
+            
+                <a href="/tags/firefox">firefox</a>
+            
+                <a href="/tags/hardware">hardware</a>
+            
+                <a href="/tags/iehta">iehta</a>
+            
+                <a href="/tags/iexplore">iexplore</a>
+            
+                <a href="/tags/iexploreproxy">iexploreproxy</a>
+            
+                <a href="/tags/image-upload">image-upload</a>
+            
+                <a href="/tags/jar">jar</a>
+            
+                <a href="/tags/java">java</a>
+            
+                <a href="/tags/javascipt">javascipt</a>
+            
+                <a href="/tags/javascript-events">javascript-events</a>
+            
+                <a href="/tags/jmeter">jmeter</a>
+            
+                <a href="/tags/kanban">kanban</a>
+            
+                <a href="/tags/meeting">meeting</a>
+            
+                <a href="/tags/microsoft">microsoft</a>
+            
+                <a href="/tags/outlook">outlook</a>
+            
+                <a href="/tags/performance-testing">performance-testing</a>
+            
+                <a href="/tags/qa">qa</a>
+            
+                <a href="/tags/regex">regex</a>
+            
+                <a href="/tags/ruby">ruby</a>
+            
+                <a href="/tags/ruby-on-rails">ruby-on-rails</a>
+            
+                <a href="/tags/selenium">selenium</a>
+            
+                <a href="/tags/selenium-server">selenium-server</a>
+            
+                <a href="/tags/software-testing">software-testing</a>
+            
+                <a href="/tags/start-up">start-up</a>
+            
+                <a href="/tags/sysadmin">sysadmin</a>
+            
+                <a href="/tags/technical-testing">technical-testing</a>
+            
+                <a href="/tags/test">test</a>
+            
+                <a href="/tags/test-automation">test-automation</a>
+            
+                <a href="/tags/test-strategy">test-strategy</a>
+            
+                <a href="/tags/testing">testing</a>
+            
+                <a href="/tags/training">training</a>
+            
+                <a href="/tags/ubuntu">ubuntu</a>
+            
+                <a href="/tags/watir-webdriver">watir-webdriver</a>
+            
+                <a href="/tags/web-application">web-application</a>
+            
+                <a href="/tags/windows">windows</a>
+            
+                <a href="/tags/windows-application">windows-application</a>
+            
+                <a href="/tags/wordpress">wordpress</a>
+            
+                <a href="/tags/xp-antirus-2009">xp-antirus-2009</a>
+            
+                <a href="/tags/xpath">xpath</a>
+            
+        </div>
+    </aside>
+</div>
+    			</div>
+				
+
+	        </div>
+
+	    </div>
+	    
+	</section>
+
+            </div>
+        </div>
+        
+        <script src="https://samblog-a664e.firebaseapp.com/js/jquery.min.js"></script>
+        <script src="https://samblog-a664e.firebaseapp.com/js/popper.min.js"></script>
+        <script src="https://samblog-a664e.firebaseapp.com/js/bootstrap.min.js"></script>
+        <script src="https://samblog-a664e.firebaseapp.com/js/jquery.easing.min.js"></script>
+        <script src="https://samblog-a664e.firebaseapp.com/js/metisMenu.min.js"></script>
+        
+        <script src="https://samblog-a664e.firebaseapp.com/js/jquery.app.js"></script>
+    </body>
+
+</html>

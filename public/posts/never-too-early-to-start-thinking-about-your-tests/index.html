@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="description" content="This post is spurned by taking a reflection on my journey as a tester and it&rsquo;s amazing to see how much i have moved from designing large UI test suites to very small UI test suites. For emphasis, the largest test suite had taken over 8 hrs and the smallest has been 3mins of execution time. There are a lot of posts on the internet about how fragile a UI test framework could be and i would expect the next question to be how have you been able to achieve this." />
+        <meta name="author" content="Samuel Adesoga">
+
+        <link rel="shortcut icon" href="https://samblog-a664e.firebaseapp.com/images/favicon.ico">
+
+         <title>Sam Adesoga&#39;s Personal Blog  | Never too early to start thinking about your tests</title>
+
+        <meta name="generator" content="Hugo 0.40.3" />
+        
+        
+            <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        
+
+
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,600,700" rel="stylesheet">
+
+        
+        <link href="https://samblog-a664e.firebaseapp.com/css/bootstrap.min.css" rel="stylesheet">
+
+        
+        <link href="https://samblog-a664e.firebaseapp.com/css/metismenu.min.css" rel="stylesheet" type="text/css" />
+
+        
+        <link rel="stylesheet" type="text/css" href="https://samblog-a664e.firebaseapp.com/css/materialdesignicons.min.css">
+
+        
+        <link href="https://samblog-a664e.firebaseapp.com/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="https://samblog-a664e.firebaseapp.com/css/default.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+        
+        <div id="wrapper">
+            
+            <div class="topbar-mobile">
+    <div class="logo">
+        <a href="https://samblog-a664e.firebaseapp.com/"><img src="https://samblog-a664e.firebaseapp.com/images/logo.png" alt="" class="" style="height: 84px;"></a>
+        <button class="button-menu-mobile">
+            <i class="mdi mdi-menu"></i>
+        </button>
+    </div>
+</div>
+            
+            
+            <div class="left side-menu">
+
+    <div class="slimscroll-menu" id="remove-scroll">
+
+        <div class="logo">
+            <a href="https://samblog-a664e.firebaseapp.com/"><img src="https://samblog-a664e.firebaseapp.com/images/logo.png" alt="" class="" style="height: 84px;"></a>
+            <p class="text-muted">A pragmatic problem solver and business leader with a very solid technical background.</p>
+        </div>
+
+        
+        <div id="sidebar-menu">
+            
+            <ul class="metismenu" id="side-menu">
+
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/">Home</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/categories/feature">Feature</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/categories/technical">Technical</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/categories/agile-delivery">Agile Delivery</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/about/">About</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://samblog-a664e.firebaseapp.com/contact/">Contact</a>
+                    </li>
+                
+
+            </ul>
+
+            <div class="copyright-box">
+                <p>2018 © Samuel Adesoga. </p>
+            </div>
+
+        </div>
+        
+        <div class="clearfix"></div>
+
+    </div>
+    
+
+</div>
+            
+
+            <div class="page-wrapper">
+                
+	<section class="pb-5">
+	    <div class="container">
+
+	        <div class="row pt-5">
+	            
+	            <div class="col-xl-8">
+
+	                
+	                <article class="post">
+	                    <div class="post-header">
+	                        <h2 class="post-title"><a href="#">Never too early to start thinking about your tests</a></h2>
+	                        <ul class="post-meta">
+	                            <li><i class="mdi mdi-calendar"></i> February 29, 2016 </li>
+	                            <li><i class="mdi mdi-tag-text-outline"></i> 
+	                            	
+								      
+								        <a href="https://samblog-a664e.firebaseapp.com/categories/agile-delivery">agile delivery</a>,
+								      
+								        <a href="https://samblog-a664e.firebaseapp.com/categories/technical">technical</a>,
+								      
+		            				 
+	                            </li>
+	                            <li><i class="mdi mdi-comment-multiple-outline"></i> <a href="#">3 Comments</a>
+	                            </li>
+	                        </ul>
+	                    </div>
+
+	                    <div class="post-preview">
+	                        <a href="blog-single.html"><img src="https://samblog-a664e.firebaseapp.com/images/blog/blog-1.jpg" alt="" class="img-fluid rounded"></a>
+	                    </div>
+
+	                    <div class="blog-detail-description">
+	                        <p>This post is spurned by taking a reflection on my journey as a tester and it&rsquo;s amazing to see how much i have moved from designing large UI test suites to very small UI test suites. For emphasis, the largest test suite had taken over 8 hrs and the smallest has been 3mins of execution time.
+There are a lot of posts on the internet about how fragile a UI test framework could be and i would expect the next question to be how have you been able to achieve this. I would try to address this in this post.</p>
+
+<p><strong>1. Thinking about tests while designing the system:</strong> There are some decisions made in the early stages of the projects that has a direct impact on how easy or how difficult It would be to test a system. E.g. a web application that has been built with RESTful api and with minimal business logic embedded within the UI lend itself to proper layering of test automation when compared to a system with loads of logic embedded in the UI logic.</p>
+
+<p><strong>2. Testing is done at the cheapest level:</strong>
+There is always a cost associated with test automation, cost in terms of test creation, test maintenance and test execution. As testers and developers we ought to think about the cost we incur and determine at what level the tests should be written.</p>
+
+<p><strong>Test Creation:</strong> The project test suite should be split between unit test, integration tests and end-to-end tests. The end to end tests can be further split into two categories, api tests and user interface tests. The cost associated with test creations would generally increase as we move up from lower levels of test automation to more abstract levels such as User interface tests. However, in some instances e.g. rewrite of legacy applications without any form of test automation,  it might be easier to create a quick UI test suite using record and play tools. There isn&rsquo;t any rule of the thumb on this but I would advise the team to have this conversation at all times discussing how to best automate tests  for new features and updates to existing features.</p>
+
+<p><strong>Test Maintenance:</strong> This is the cost associated with updating tests as the system continues to evolve, and in my experience its generally cheaper to update lower levels of test automation and this can be done in parallel with development of features.</p>
+
+<p><strong>Test Execution: </strong>This can best be expressed in amount of time it takes for a test suite to run from start to finish, and I would like to include the time elapsed when the tester and/or developer is waiting for the test result. It also makes sense to include efforts involved in interpreting the any test results including test failures. Bearing in mind that the automated test suite is expected to be executed several times in a day, over the life time of the project this is one aspect that could potential be the most expensive. The teams test strategy should ensure that the lower level tests which are generally faster needs to contain the majority of the tests I.e. unit, integration, api tests.</p>
+
+<p><strong>3. Collaboration with developers:</strong> No matter how solid a test automation strategy is, it would never be complete if there hasn&rsquo;t been any thoughts about how to collaborate with developers. It is very common to have the unit tests and integration test be designed and maintained by developers while testers would design and maintain the end-to-end test suite. The consequences of such practices include test duplication and test omission. At the end of the day we should all be working as a team, testers should take interest in Unit tests and integration tests; ensuring that these tests are relevant at the least and we should be able to suggest scenarios to be added to the test suite even if we do not have the skills to write such on our own.
+On the other end, developers need to be involved with design and maintenance of end to end tests, developers should be able to advice testers if a proposed end to end test (usually expensive) can be written cheaply in a unit test and/or integration test.</p>
+
+<p>These are some of the ideas that have helped me with achieving a lean UI test automation suite and i do hope you find this useful as well.</p>
+
+
+	                        <div class="mt-5">
+	                            <h6>Tags:</h6>
+						            
+							            <div class="tagcloud">
+									      
+									        <a href="https://samblog-a664e.firebaseapp.com/tags/test-strategy">Test Strategy</a>
+									      
+									        <a href="https://samblog-a664e.firebaseapp.com/tags/test-automation">Test Automation</a>
+									      
+							            </div>
+						            
+	                        </div>
+
+	                        <div class="mt-5 text-center">
+	                            <h5 class="page-title-alt"><span>You Might Also Like</span></h5>
+	                        </div>
+	                        <div class="row">
+					           
+							   	<div class="col-sm-4">
+					               	<article class="related-post">
+					                  <div class="post-preview">
+					                     <a href="/posts/api-tests-and-ui-test-should-be-written-in-same-programming-language/"><img src="https://samblog-a664e.firebaseapp.com/images/blog/blog-2.jpg" alt="" class="img-fluid rounded"></a>
+					                  </div>
+					                  <div class="post-header">
+					                     <h6><a href="/posts/api-tests-and-ui-test-should-be-written-in-same-programming-language/" title="">Should API test and UI Acceptance Tests be written in the same programming language?</a></h6>
+					                     <p> </p>
+					                     <p class="post-date">August 24, 2017</p>
+					                  </div>
+					               	</article>
+				            	</div>
+							  
+							   	<div class="col-sm-4">
+					               	<article class="related-post">
+					                  <div class="post-preview">
+					                     <a href="/posts/testing-an-asynchronous-system-2/"><img src="https://samblog-a664e.firebaseapp.com/images/blog/blog-2.jpg" alt="" class="img-fluid rounded"></a>
+					                  </div>
+					                  <div class="post-header">
+					                     <h6><a href="/posts/testing-an-asynchronous-system-2/" title="">Testing an Asynchronous System - Part 2</a></h6>
+					                     <p> </p>
+					                     <p class="post-date">January 6, 2017</p>
+					                  </div>
+					               	</article>
+				            	</div>
+							  
+							   	<div class="col-sm-4">
+					               	<article class="related-post">
+					                  <div class="post-preview">
+					                     <a href="/posts/testing-an-asynchronous-system/"><img src="https://samblog-a664e.firebaseapp.com/images/blog/blog-2.jpg" alt="" class="img-fluid rounded"></a>
+					                  </div>
+					                  <div class="post-header">
+					                     <h6><a href="/posts/testing-an-asynchronous-system/" title="">Testing an Asynchronous System</a></h6>
+					                     <p> </p>
+					                     <p class="post-date">January 6, 2017</p>
+					                  </div>
+					               	</article>
+				            	</div>
+							  
+						  </div>                
+
+	                        <div class="mt-5">
+	                            <h5 class="page-title-alt"><span>Comments</span></h5>
+	                        </div>
+
+	                        <ul class="media-list list-unstyled">
+
+	                            <li class="media">
+	                                <img class="d-flex mr-3 rounded-circle" src="images/user/user-2.png" alt="Generic placeholder image">
+	                                <div class="media-body">
+	                                    <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
+	                                    <h4 class="media-heading"><a href="">Ronda Otoole</a></h4>
+	                                    <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
+	                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+
+	                                    <div class="media">
+	                                        <img class="d-flex mr-3 rounded-circle" src="images/user/user-3.png" alt="Generic placeholder image">
+	                                        <div class="media-body">
+	                                            <a href="#" class="text-custom reply-btn"><i class="mdi mdi-reply"></i>&nbsp; Reply</a>
+	                                            <h4 class="media-heading"><a href="">James Whitley</a></h4>
+	                                            <p class="text-muted post-date">Jun 23, 2017, 11:45 am</p>
+	                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </li>      
+
+	                        </ul>
+
+	                        <div class="mt-5">
+	                            <h5 class="page-title-alt"><span>Leave a reply</span></h5>
+	                        </div>
+
+	                        <form action="#" method="post" class="mt-4">
+	                            <div class="row">
+	                                <div class="col-sm-6">
+	                                    <div class="form-group">
+	                                        <input id="author" class="form-control" placeholder="Name*" name="author" type="text" required="">
+	                                    </div>
+	                                </div>
+
+	                                <div class="col-sm-6">
+	                                    <div class="form-group">
+	                                        <input id="email" class="form-control" placeholder="Email*" name="email" type="text" required="">
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="row">
+	                                <div class="col-sm-12">
+	                                    <div class="form-group">
+	                                        <input id="subject" class="form-control" placeholder="Website" name="subject" type="text">
+	                                    </div>
+	                                </div>
+	                            </div>
+
+	                            <div class="row">
+	                                <div class="col-sm-12">
+	                                    <div class="form-group">
+	                                        <textarea id="comment" class="form-control" rows="5" placeholder="Your Message*" name="comment" required=""></textarea>
+	                                    </div>
+	                                </div>
+	                            </div>
+
+	                            <div class="row">
+	                                <div class="col-sm-12">
+	                                    <div class="form-group">
+	                                        <button name="submit" type="submit" id="submit" class="btn btn-dark">Post Comment</button>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </form>
+
+	                    </div>
+
+	                </article>
+	                
+
+	            </div>
+	            
+
+				
+	            <div class="col-xl-4">
+        			<div class="sidebar">
+    
+    <aside class="widget widget_search">
+        <form>
+            <input class="form-control pr-5" type="search" placeholder="Search...">
+            <button class="search-button" type="submit"><span class="mdi mdi-magnify"></span></button>
+        </form>
+    </aside>
+
+    <aside class="widget about-widget">
+        <div class="widget-title">About Me</div>
+
+        <div class="text-center">
+            <img src="https://samblog-a664e.firebaseapp.com/images/photo.jpg" alt="About Me" class="rounded-circle">
+
+            <p>Quis vero phasellus hac nullam, in quam vitae duis adipiscing mauris leo, laoreet eget at quis, ante vestibulum vivamus vel. Sapien lobortis, eget orci purus amet pede, consectetur neque risus.</p>
+        </div>
+
+    </aside>
+
+    <aside class="widget about-widget">
+        <div class="widget-title">Subscribe & Follow</div>
+
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/mistar.adesoga"><i class="mdi mdi-facebook"></i></a></li>
+            <li><a href="https://twitter.com/sadesoga"><i class="mdi mdi-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/mistaradesoga/"><i class="mdi mdi-instagram"></i></a></li>
+            <li><a href="https://uk.linkedin.com/in/samueladesoga"><i class="mdi mdi-linkedin"></i></a></li>
+        </ul>
+
+    </aside>
+
+    
+    <aside class="widget widget_categories">
+        <div class="widget-title">Categories</div>
+        <ul>
+            
+                <li><a href="https://samblog-a664e.firebaseapp.com/categories/agile-delivery">Agile delivery &nbsp;<span>(8)</span></a></li>
+            
+                <li><a href="https://samblog-a664e.firebaseapp.com/categories/technical">Technical &nbsp;<span>(47)</span></a></li>
+            
+        </ul>
+    </aside>
+
+    
+    <aside class="widget widget_recent_entries_custom">
+        <div class="widget-title">Popular Posts</div>
+        <ul>
+            
+        </ul>
+    </aside>
+
+    
+    <aside class="widget">
+        <div class="widget-title">Archives</div>
+
+        <ul>
+            <li><a href="#">March 2017</a> (40)</li>
+            <li><a href="#">April 2017</a> (08)</li>
+            <li><a href="#">May 2017</a> (11)</li>
+            <li><a href="#">Jun 2017</a> (21)</li>
+        </ul>
+
+    </aside>
+
+    
+    <aside class="widget widget_tag_cloud">
+        <div class="widget-title">Tags</div>
+        <div class="tagcloud">
+            
+                <a href="/tags/active-record">active-record</a>
+            
+                <a href="/tags/automation">automation</a>
+            
+                <a href="/tags/aws-s3">aws-s3</a>
+            
+                <a href="/tags/bdd">bdd</a>
+            
+                <a href="/tags/blogger">blogger</a>
+            
+                <a href="/tags/build">build</a>
+            
+                <a href="/tags/conference">conference</a>
+            
+                <a href="/tags/cqrs">cqrs</a>
+            
+                <a href="/tags/css-selectors">css-selectors</a>
+            
+                <a href="/tags/database">database</a>
+            
+                <a href="/tags/deployment">deployment</a>
+            
+                <a href="/tags/development">development</a>
+            
+                <a href="/tags/event-based-architecture">event-based-architecture</a>
+            
+                <a href="/tags/exploratory-testing">exploratory-testing</a>
+            
+                <a href="/tags/feature-driven-development">feature-driven-development</a>
+            
+                <a href="/tags/firefox">firefox</a>
+            
+                <a href="/tags/hardware">hardware</a>
+            
+                <a href="/tags/iehta">iehta</a>
+            
+                <a href="/tags/iexplore">iexplore</a>
+            
+                <a href="/tags/iexploreproxy">iexploreproxy</a>
+            
+                <a href="/tags/image-upload">image-upload</a>
+            
+                <a href="/tags/jar">jar</a>
+            
+                <a href="/tags/java">java</a>
+            
+                <a href="/tags/javascipt">javascipt</a>
+            
+                <a href="/tags/javascript-events">javascript-events</a>
+            
+                <a href="/tags/jmeter">jmeter</a>
+            
+                <a href="/tags/kanban">kanban</a>
+            
+                <a href="/tags/meeting">meeting</a>
+            
+                <a href="/tags/microsoft">microsoft</a>
+            
+                <a href="/tags/outlook">outlook</a>
+            
+                <a href="/tags/performance-testing">performance-testing</a>
+            
+                <a href="/tags/qa">qa</a>
+            
+                <a href="/tags/regex">regex</a>
+            
+                <a href="/tags/ruby">ruby</a>
+            
+                <a href="/tags/ruby-on-rails">ruby-on-rails</a>
+            
+                <a href="/tags/selenium">selenium</a>
+            
+                <a href="/tags/selenium-server">selenium-server</a>
+            
+                <a href="/tags/software-testing">software-testing</a>
+            
+                <a href="/tags/start-up">start-up</a>
+            
+                <a href="/tags/sysadmin">sysadmin</a>
+            
+                <a href="/tags/technical-testing">technical-testing</a>
+            
+                <a href="/tags/test">test</a>
+            
+                <a href="/tags/test-automation">test-automation</a>
+            
+                <a href="/tags/test-strategy">test-strategy</a>
+            
+                <a href="/tags/testing">testing</a>
+            
+                <a href="/tags/training">training</a>
+            
+                <a href="/tags/ubuntu">ubuntu</a>
+            
+                <a href="/tags/watir-webdriver">watir-webdriver</a>
+            
+                <a href="/tags/web-application">web-application</a>
+            
+                <a href="/tags/windows">windows</a>
+            
+                <a href="/tags/windows-application">windows-application</a>
+            
+                <a href="/tags/wordpress">wordpress</a>
+            
+                <a href="/tags/xp-antirus-2009">xp-antirus-2009</a>
+            
+                <a href="/tags/xpath">xpath</a>
+            
+        </div>
+    </aside>
+</div>
+    			</div>
+				
+
+	        </div>
+
+	    </div>
+	    
+	</section>
+
+            </div>
+        </div>
+        
+        <script src="https://samblog-a664e.firebaseapp.com/js/jquery.min.js"></script>
+        <script src="https://samblog-a664e.firebaseapp.com/js/popper.min.js"></script>
+        <script src="https://samblog-a664e.firebaseapp.com/js/bootstrap.min.js"></script>
+        <script src="https://samblog-a664e.firebaseapp.com/js/jquery.easing.min.js"></script>
+        <script src="https://samblog-a664e.firebaseapp.com/js/metisMenu.min.js"></script>
+        
+        <script src="https://samblog-a664e.firebaseapp.com/js/jquery.app.js"></script>
+    </body>
+
+</html>
