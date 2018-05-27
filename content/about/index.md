@@ -1,6 +1,6 @@
 ---
 title: About me
-type: about-me
+type: about
 ---
 
 A pragmatic problem solver with over 15 years’ experience in Product development and delivery; I have a massive interest in Agile / Lean ways of working. I have been described as an Agile Evangelist and recently taken on roles as an Agile Coach.
