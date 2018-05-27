@@ -29,12 +29,12 @@ weight = 4
 
 [[menu.main]]
 name = "About"
-url = "about/"
+url = "about-me"
 weight = 5
 
 [[menu.main]]
 name = "Contact"
-url = "contact/"
+url = "contact"
 weight = 6
 
 [params.social]
