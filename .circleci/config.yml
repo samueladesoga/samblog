@@ -2,8 +2,8 @@ version: 2
 jobs:
   build:
     docker:
-      - image: alteroo/hugo-and-firebase
-    working_directory: ~/samblog
+      - image: nohitme/hugo-firebase
+    working_directory: ~/sam
     steps:
       - checkout
       - run: hugo
