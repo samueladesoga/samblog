@@ -48,7 +48,9 @@
             {{ range shuffle (where .Data.Pages "Section" "posts")  | first 3 }}
                 <li class="clearfix">
                     <div class="wi">
-                        <a href="#"><img src="{{ .Site.BaseURL }}images/works/img1.jpg" alt="" class="img-fluid"></a>
+                        {{ if and (isset .Params "image") .Params.image }}                         
+                            <a href="#"><img src="{{ .Site.BaseURL  }}{{ .Params.image }}" alt="" class="img-fluid"></a>
+                        {{ end }}
                     </div>
                     <div class="wb"><a href="{{.Permalink}}">{{ .Title }}</a> <span class="post-date"> {{ .Date.Format "January 2, 2006" }}</span></div>
                 </li>

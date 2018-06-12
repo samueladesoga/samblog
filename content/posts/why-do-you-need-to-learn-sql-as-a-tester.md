@@ -5,6 +5,7 @@ draft = "false"
 categories = ["Agile Delivery", "Technical"]
 tags = ["Technical Testing"]
 author = "samueladesoga"
+image = "images/blog/blog-1.jpg"
 +++
 
 In the last 5 years or so, we have been <a href="http://www.dachtsolutions.com">training and mentoring</a> Software Testers and Business Analysts and as part of the mentoring session, I ask about their experience of interviews; generally I am looking for the sort of questions the mentees are being asked and more importantly what answers were provided to the interviewers. My observations in recent years is that there is an increasing demand for manual testers with technical skills and knowledge of databases is one that sits high on the list of technical skills.
