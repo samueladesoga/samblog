@@ -6,9 +6,6 @@ title = "Sam Adesoga's Personal Blog"
 theme = "blogezy"
 disqusShortname = "samueladesoga"
 
-[author]
-Samuel Adesoga
-
 # Nav links in the side bar
 [[menu.main]]
 name = "Home"
@@ -41,6 +38,9 @@ weight = 5
 name = "Contact"
 url = "contact"
 weight = 6
+
+[params]
+  author = "Samuel Adesoga"
 
 [params.social]
 facebook      = "https://www.facebook.com/mistar.adesoga"
