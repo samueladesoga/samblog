@@ -9,6 +9,8 @@
 
         <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico">
 
+        {{ partial "seo_schema" . }}
+
          <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}{{ end }}</title>
 
         {{ .Hugo.Generator }}

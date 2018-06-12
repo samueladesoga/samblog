@@ -1,8 +1,13 @@
 baseURL = "https://samadesoga.me/"
 languageCode = "en-us"
+enableRobotsTXT = true
+canonifyURLs = true
 title = "Sam Adesoga's Personal Blog"
 theme = "blogezy"
 disqusShortname = "samueladesoga"
+
+[author]
+Samuel Adesoga
 
 # Nav links in the side bar
 [[menu.main]]
