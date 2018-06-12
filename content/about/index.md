@@ -1,5 +1,5 @@
 ---
-title: Sam Adesoga
+title: More about me
 type: about
 ---
 
