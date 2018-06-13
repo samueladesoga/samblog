@@ -3,13 +3,13 @@ date = "2009-11-23 11:53:00"
 title = "selenium failed to start browser in iexplore mode when selenium server is started dynamically in code"
 draft = "false"
 categories = ["Technical"]
-tags = ["Java", "test", "iehta", "iexplore", "iexploreproxy", "selenium-server"]
+tags = ["Java", "Test Automation", "Selenium"]
 author = "samueladesoga"
 +++
 
-&gt;In a <a href="http://samadesoga.blogspot.com/2009/11/start-selenium-server-dynamically.html">previous post</a>, i have written about how i have been starting/ stoping the selenium server dynamically. What i didnt mention was that i was not able to run my tests using Internet Explorer. I got this error
+In a <a href="http://samadesoga.blogspot.com/2009/11/start-selenium-server-dynamically.html">previous post</a>, i have written about how i have been starting/ stoping the selenium server dynamically. What i didnt mention was that i was not able to run my tests using Internet Explorer. I got this error
 
-[sourcecode language="java"]
+{{< code "java" >}}
 
 11:56:55.272 INFO - Command request: getNewBrowserSession[*iexplore, http://localhost:8080, ] on session null
 11:56:55.272 INFO - creating new remote session
@@ -48,7 +48,9 @@ at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:379)
 at org.apache.tools.ant.util.FileUtils.copyFile(FileUtils.java:317)
 at org.openqa.selenium.server.browserlaunchers.HTABrowserLauncher.createHTAFiles(HTABrowserLauncher.java:97)
 ... 19 more
-[/sourcecode]
+
+
+{{< /code >}}
 
 This points out that selenium is trying to start in the iehta mode, even though i have specified that it start in iexplore mode. Doing i quick search i discovered that there has been <a href="http://clearspace.openqa.org/message/49240">some work</a> to start up selenium in iehta even when iexplore is being specified. And the only way to get the original *iexplore is to try *iexploreproxy or piiexplore
 

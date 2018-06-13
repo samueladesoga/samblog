@@ -13,8 +13,9 @@ I found a lot of effort by different people and all the stuff that was suggested
 
 With inspiration from this <a href="http://etairaz.wordpress.com/2011/02/21/redirecting-visitors-in-an-old-blogger-blog-to-new-location-on-wordpress-com/" target="_blank">post</a>, I decided to write my own piece of javascript to make sure that each post is redirected to its equivalent on the wordpress blog.
 
-<code>[sourcecode language="javascript"]
- <div>
+{{< code "javascript" >}}
+
+<div>
 <div style="position: fixed; top: <span class='hiddenSpellError'>30px</span>; left: 30px; border: solid 2px #333; color: #000; background-color: yellow; padding: 5px; width: 400px; z-index: 5; font-family: verdana, geneva, arial, helvetica, sans-serif; font-size: large;"></div>
 ```
 <div><strong>My blog has moved!</strong></div>
@@ -59,10 +60,9 @@ document.getElementsByClassName(&#039;redirectLink&#039;)[0].setAttribute(&#039;
 document.getElementsByClassName(&#039;redirectText&#039;)[0].innerText = m_wpUrl;
 
 
+{{< /code >}}
 
- [/sourcecode]
 
-```
 In this <a href="http://etairaz.wordpress.com/2011/02/21/redirecting-visitors-in-an-old-blogger-blog-to-new-location-on-wordpress-com/" target="_blank">post</a> which i have taken inspiration from, the writer advises to put a gadget anywhere on your blog, that didnt work for me because sometimes where i try to do a javascript
 <blockquote>document.getElementsByClassName('published');</blockquote>
 This part of the code fails because the page might not be fully loaded and if the gadget is placed above the post you want to redirect to its new location, the scripts would always fails.
