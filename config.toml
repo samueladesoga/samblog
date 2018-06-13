@@ -41,6 +41,7 @@ weight = 6
 
 [params]
   author = "Samuel Adesoga"
+  env = "production"
 
 [params.social]
 facebook      = "https://www.facebook.com/mistar.adesoga"
