@@ -7,7 +7,7 @@ tags = ["Test Automation"]
 author = "samueladesoga"
 +++
 
-I have written in my previous <a href="/post/2016/02/29/never-too-early-to-start-thinking-about-your-tests/">blog</a> about how we need to distribute our tests across the testing pyramid for reasons which i have explained in the previous <a href="/post/2016/02/29/never-too-early-to-start-thinking-about-your-tests/">blog</a>. This particular post is focussed on how we ought to design our tests across the higher levels of abstractions which includes the UI test and API tests.
+I have written in my previous <a href="/posts/never-too-early-to-start-thinking-about-your-tests/">blog</a> about how we need to distribute our tests across the testing pyramid for reasons which i have explained in the previous <a href="/posts/never-too-early-to-start-thinking-about-your-tests/">blog</a>. This particular post is focussed on how we ought to design our tests across the higher levels of abstractions which includes the UI test and API tests.
 
 For the purpose of the blog, I would be using a case study of team that writes its UI Acceptance tests in protractor (Javascript) and the API tests
 in Java using RestAssured library. The content of this post is an expression of my experience and observation and I am happy for other people to share their experiences.

@@ -47,7 +47,7 @@ QueryAndWaitForUpdateEntityToNeverPersisted()
 
 So i guess the question in your mind would be ... What are you proposing?
 
-As i have said in my previous <a href="/post/2016/02/29/never-too-early-to-start-thinking-about-your-tests/">post</a>, your test coverage is a combination of tests written at the different layers of the testing triangle.
+As i have said in my previous <a href="/posts/never-too-early-to-start-thinking-about-your-tests/">post</a>, your test coverage is a combination of tests written at the different layers of the testing triangle.
 I would push this test to a lower level such as unit test for the appropriate layer in the architecture. This is an activity that needs to be carried out in 
 conjunction with developers and being able to make a compelling case should get you the necessary support to write such unit and/or integration tests.
 

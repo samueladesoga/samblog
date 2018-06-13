@@ -25,7 +25,9 @@
 	                    </div>
 
 	                    <div class="post-preview">
-	                        <a href="blog-single.html"><img src="{{ .Site.BaseURL }}images/blog/blog-1.jpg" alt="" class="img-fluid rounded"></a>
+                    		{{ if and (isset .Params "image") .Params.image }}
+				            	<a href="{{.Permalink}}"><img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="" class="img-fluid rounded"></a>
+				            {{ end }}
 	                    </div>
 
 	                    <div class="blog-detail-description">
