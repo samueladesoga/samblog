@@ -7,5 +7,36 @@ tags = ["Javascipt", "selenium", "Test Automation"]
 author = "samueladesoga"
 +++
 
-&gt;I hope this helps someone someday, I needed to set user extension for a selenium test suite, dynamically in the code as i was starting the <a href="http://samadesoga.blogspot.com/2009/11/start-selenium-server-dynamically.html">Selenium server via same</a>.<br /><br />public void startSeleniumServer(String port) {<br /><br />      rcc = new RemoteControlConfiguration();<br />      rcc.setPort(Integer.parseInt(port));<br />  <br />   <br />      try {<br />          seleniumServer = new SeleniumServer(false, rcc);<br />          seleniumServer.start();<br />       <br />      } catch (Exception e) {<br />          throw new IllegalStateException("Can't start selenium server", e);<br />      }<br />  }<br /><br />   public void stopSeleniumServer() {<br />      if (seleniumServer != null) {<br />          seleniumServer.stop();<br />      }<br />  }<br /><br />i was setting the user extension file using the remoteControlConfiguration object<br /><br />so i had typed:<br />         <br />            rcc.setUserExtensions(new File({path_location_to_user_extension.js}));<br /><br />This didnt work and an extensive search in the api wasnt very useful.<br />A colleague however found out that doing a<br /><br />seleniumServer.boot(); would make the user-extension file to work.<br /><br />Great isn't it ...........
+I hope this helps someone someday, I needed to set user extension for a selenium test suite, dynamically in the code as i was starting the <a href="http://samadesoga.blogspot.com/2009/11/start-selenium-server-dynamically.html">Selenium server via same</a>.
+
+{{< code "ruby" >}}
+
+public void startSeleniumServer(String port) {
+	rcc = new RemoteControlConfiguration();     
+	rcc.setPort(Integer.parseInt(port));
+	try { 
+		 	seleniumServer = new SeleniumServer(false, rcc);
+		 	seleniumServer.start();
+	 	} catch (Exception e) {
+	 		throw new IllegalStateException("Can't start selenium server", e);  
+	 	} 
+	 }
+
+	 public void stopSeleniumServer() {
+	 	if (seleniumServer != null) {
+	 		seleniumServer.stop();
+	 		}
+	 	}
+
+{{< /code >}}
+
+I was setting the user extension file using the remoteControlConfiguration object so i had typed: 
+
+rcc.setUserExtensions(new File({path_location_to_user_extension.js}));
+
+This didnt work and an extensive search in the api wasnt very useful. A colleague however found out that doing a 
+
+	seleniumServer.boot(); 
+
+would make the user-extension file to work. Great isn't it ...........
 

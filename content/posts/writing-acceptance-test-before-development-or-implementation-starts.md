@@ -7,8 +7,7 @@ tags = ["BDD", "Test Automation"]
 author = "samueladesoga"
 +++
 
-In my the few years, where i have pushed for testers developers to write acceptance test before development or implementation commences,
-I've had testers come up to me say its difficult to achieve this when you dont know what the UI would look like.
+In my the few years, where i have pushed for testers developers to write acceptance test before development or implementation commences, I've had testers come up to me say its difficult to achieve this when you dont know what the UI would look like.
 
 This post would attempt to decribe how i have done this in the past and i still do this at the moment.
 
@@ -17,42 +16,38 @@ I would start creating page objects
 
 Supposing i have a feature file with this scenario
 
-[sourcecode]
+{{< code "ruby" >}}
+
 Given I am on the ebay website
 When I add &quot;Item A&quot; to my shopping basket
 Then I should be able to pay for my item using &quot;Paypal&quot;
 
-[/sourcecode]
-[sourcecode]
 class EbayHome
 
-def select_item item_name
-raise &quot;Not yet implemented&quot;
-end
+	def select_item item_name
+		raise "Not yet implemented"
+	end
 
 end
-
-[/sourcecode]
-[sourcecode]
 
 class ShoppingBasket
-def item_present? item_name
-raise &quot;Not yet implemented&quot;
+	def item_present? item_name
+		raise "Not yet implemented"
+	end
 end
-end
-[/sourcecode]
-[sourcecode]
 
 class PayPalPage
-def pay_for_shopping
-raise &quot;Not yet implemented&quot;
+	def pay_for_shopping
+		raise "Not yet implemented"
+	end
+
+	def get_item_cost item_name
+		raise "Not yet implemented"
+	end
 end
 
-def get_item_cost item_name
-raise &quot;Not yet implemented&quot;
-end
-end
-[/sourcecode]
+
+{{< /code >}}
 
 As you can see in the code above i have not written any specifics as to how this would be implemented on the page, but i have created my pageobjects
 and i have filled in empty methods block, which would raise an exception "Not yet implement" if this test were to be executed.
