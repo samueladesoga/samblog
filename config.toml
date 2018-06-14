@@ -42,6 +42,7 @@ weight = 6
 
 [params]
   author = "Samuel Adesoga"
+  email = "samuel@thoughtstudiosng.com"
   env = "production"
 
 [params.social]
