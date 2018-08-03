@@ -4,7 +4,7 @@ enableRobotsTXT = true
 canonifyURLs = true
 title = "Sam Adesoga's Personal Blog"
 theme = "blogezy"
-disqusShortname = "samueladesoga"
+disqusShortname = "samblog-a664e-firebaseapp-com"
 googleAnalytics = "UA-120857596-1"
 
 # Nav links in the side bar
