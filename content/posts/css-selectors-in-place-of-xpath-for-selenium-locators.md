@@ -3,7 +3,7 @@ date = "2009-07-13 07:38:00"
 title = "css selectors in place of xpath for selenium locators"
 draft = "false"
 categories = ["Technical"]
-tags = ["Test Automation", "CSS Selectors"]
+tags = ["Test Automation"]
 author = "samueladesoga"
 +++
 
