@@ -1,5 +1,5 @@
 +++
-title =  "Driving a Technical Spike Using Bdd"
+title =  "Driving a Technical Spike Using Behaviour Driven Development"
 date = 2018-10-22T23:37:26+01:00
 draft = false
 categories = ["Agile Delivery"]
