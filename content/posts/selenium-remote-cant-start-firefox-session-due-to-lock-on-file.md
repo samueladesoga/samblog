@@ -3,7 +3,7 @@ date = "2009-09-04 14:45:00"
 title = "Selenium Remote cant start firefox session due to lock on file"
 draft = "false"
 categories = ["Technical"]
-tags = ["firefox", "selenium", "Web Application", "jar", "QA"]
+tags = ["Firefox", "selenium", "Web Application"]
 author = "samueladesoga"
 +++
 

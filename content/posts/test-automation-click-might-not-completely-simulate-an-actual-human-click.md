@@ -3,7 +3,7 @@ date = "2011-07-20 14:24:55"
 title = "Test automation click might not completely simulate an actual human click"
 draft = "false"
 categories = ["Agile Delivery", "Technical"]
-tags = ["Test Automation", "javascript events", "watir-webdriver", "BDD"]
+tags = ["Test Automation", "javascript"]
 author = "samueladesoga"
 +++
 

@@ -3,7 +3,7 @@ date = "2013-02-27 15:15:03"
 title = "Copying objects between two different amazon s3 accounts"
 draft = "false"
 categories = ["Technical"]
-tags = ["AWS s3", "Start Up"]
+tags = ["AWS S3"]
 author = "samueladesoga"
 +++
 

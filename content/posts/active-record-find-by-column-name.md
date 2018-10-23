@@ -3,7 +3,7 @@ date = "2010-04-06 16:29:00"
 title = "Active Record find by Column Name"
 draft = "false"
 categories = ["Technical"]
-tags = ["active record", "database", "ruby"]
+tags = ["Active Record", "Ruby"]
 author = "samueladesoga"
 +++
 

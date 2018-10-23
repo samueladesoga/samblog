@@ -3,7 +3,7 @@ date = "2008-11-09 01:48:00"
 title = "Internet Explorer doesnt handle xpath to locate images exceptionally well"
 draft = "false"
 categories = ["Technical"]
-tags = ["Test Automation", "xpath"]
+tags = ["Test Automation"]
 author = "samueladesoga"
 +++
 

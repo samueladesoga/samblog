@@ -3,6 +3,7 @@ date = "2010-02-24 11:55:00"
 title = "selenium.open timeouts for strange reasons"
 draft = "false"
 categories = ["Technical"]
+tags = ["Firefox", "selenium", "Web Application"]
 author = "samueladesoga"
 +++
 
