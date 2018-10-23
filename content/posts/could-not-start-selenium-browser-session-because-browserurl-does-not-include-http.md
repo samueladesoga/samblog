@@ -5,7 +5,6 @@ draft = "false"
 categories = ["Technical"]
 tags = ["Test Automation", "Selenium"]
 author = "samueladesoga"
-image = "images/blog/blog-1.jpg"
 +++
 
 I was helping a friend out last weekend, and he was getting an error
