@@ -9,7 +9,7 @@ image = "images/blog/spike-bdd.jpg"
 +++
 
 Most Agile methodologies provide for the application of a Technical Spike for exploring a new technology or risky areas of a product. 
-The SAFe methodology [defines](https://www.scaledagileframework.com/spikes/) the Spike as a type of Exploration and Enabler Story.
+The Scaled Agile Framework (SAFe) methodology [defines](https://www.scaledagileframework.com/spikes/) the Spike as a type of Exploration and Enabler Story.
 
 There are a number of approaches that have been recommended for Technical Spikes. These include: 
 
@@ -36,7 +36,7 @@ Advantages of spec'ing the requirements / behavious upfront include the followin
 - A Baseline line of requirement for actual implementation evolves from the Technical Spike.
 
 
-As with every else, there isn't a silver bullet but care must be taken not to go over board with the requirement. As this is a technical spike, there is a need to ensure that the requirement are at a very high level sufficient to describe the goals of the Technical Spike; it must not be prescriptive.
+As with everything else, there isn't a silver bullet but care must be taken not to go over board with the requirements. Being a Technical spike, there is a need to ensure that the requirement are at a very high level sufficient to describe the goals of the Technical Spike and it should not be prescriptive.
 
 It seems to be working well for this project so feel free to try it out. 
 
