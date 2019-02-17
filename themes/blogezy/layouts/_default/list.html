@@ -25,7 +25,7 @@
 					                <li><i class="mdi mdi-tag-text-outline"></i>
 								        {{ with .Params.tags }}
 									      {{ range . }}
-									        <a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ humanize . }}</a>,
+									        <a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ upper . }}</a>,
 									      {{ end }}
 							            {{ end }} 
 					                </li>
