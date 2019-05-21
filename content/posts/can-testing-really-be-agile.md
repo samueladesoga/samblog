@@ -8,13 +8,13 @@ author =  "samueladesoga"
 +++
 
 
-## Introduction:** 
+###### Introduction:
 Agile has been around for a while and whilst there has been a lot of successes recorded for some aspect of the software development process such as analysis and development, it seems that testing is that “area” that is being pushed to the right and sometimes made optional. In my years of working in Agile, there are certainly a lot of moment that I had thought “everything else but testing is Agile”.
 
 This led to ask myself this question “Can testing really be agile?” and based on my personal experiences overlaid with influences the Agile Manifestos, this is an attempt to explain some agile testing practices and how it might benefit an Agile team.
 
 
-## “Individual and Interactions” over “Processes and Tools”
+###### “Individual and Interactions” over “Processes and Tools”
 
 ![Test Contest](https://samadesoga.me/images/blog/test-contest.jpg)
 
@@ -35,7 +35,7 @@ These are definitely practices that we do NOT want to encourage with our team; w
 - Over time this helps build the confidence of the business in the product being built.
 - A culture of the co-ownership of code and tests is a by-product of these sorts of working practices is encouraged.
 
-## “Working Software” over “Comprehensive Documentation”
+###### “Working Software” over “Comprehensive Documentation”
 
 ![Test Documentation](https://samadesoga.me/images/blog/test-documentation.jpg)
 
@@ -53,7 +53,7 @@ For anyone that has worked within a team using traditional development lifecycle
 - Adequate time is allowed for high value activities e.g. exploratory tests.
 - Having tests automated would encourage anyone with right skillsets to help out with test maintenance.
 
-## “Customer Collaboration” over “Contract Negotiation”
+###### “Customer Collaboration” over “Contract Negotiation”
 
 ![Stop UAT](https://samadesoga.me/images/blog/stop-uat.jpg)
 
@@ -70,8 +70,7 @@ Why do we need UAT? This was a question I posed to the project manager of team o
 
 - Business User’s time is very scare and precious and I would rather we use this scare resources upfront in the lifecycle and continuously.
 
-
-## “Responding to a Change” over “Following a Plan”
+###### “Responding to a Change” over “Following a Plan”
 
 ![Test Estimate](https://samadesoga.me/images/blog/test-estimate.jpg)
 
@@ -88,7 +87,7 @@ Can you remember a time when a feature change is being proposed and the test tea
 - As tests are integrated into the deliverable, there isn’t any extra effort to test changes apart from the actual effort to make the change.
 
 
-## Take Aways
+###### Take Aways
 
 - Tests are embedded in User Stories, Unit Tests and Acceptance Tests.
 - Create opportunities for conversations that potentially lead to removing the UAT Phase.
