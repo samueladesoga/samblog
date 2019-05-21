@@ -14,7 +14,7 @@ This led to ask myself this question “Can testing really be agile?” and base
 
 **“Individual and Interactions” over “Processes and Tools”**
 
-![Test Contest](images/blog/test-contest.jpg)
+![Test Contest](https://samadesoga.me/images/blog/test-contest.jpg)
 
 A very long time ago, I worked on a software development team where testers were not permitted to share their test scripts with developers and testers that found highest number of bugs were recognized within the team. 
 
@@ -35,7 +35,7 @@ These are definitely practices that we do NOT want to encourage with our team; w
 
 **“Working Software” over “Comprehensive Documentation”**
 
-![Test Documentation](images/blog/test-documentation.jpg)
+![Test Documentation](https://samadesoga.me/images/blog/test-documentation.jpg)
 
 For anyone that has worked within a team using traditional development lifecycle, it is common to have the test team being required to create elaborate documents such as Test plans and Test evidences. These documents typically takes a lot of time to create and get out of data very quickly; hence not as useful as they are being made to seem.
 
@@ -53,7 +53,7 @@ For anyone that has worked within a team using traditional development lifecycle
 
 **“Customer Collaboration” over “Contract Negotiation”**
 
-![Stop UAT](images/blog/stop-uat.jpg)
+![Stop UAT](https://samadesoga.me/images/blog/stop-uat.jpg)
 
 Why do we need UAT? This was a question I posed to the project manager of team on a client engagement I had about 10years ago. 10years later, I still believe that on Agile project done properly, UAT phase is irrelevant.
 
@@ -71,7 +71,7 @@ Why do we need UAT? This was a question I posed to the project manager of team o
 
 **“Responding to a Change” over “Following a Plan”**
 
-![Test Estimate](images/blog/test-estimate.jpg)
+![Test Estimate](https://samadesoga.me/images/blog/test-estimate.jpg)
 
 Can you remember a time when a feature change is being proposed and the test team is being asked estimate how long it would take to test the new changes. These are behaviors that suggest that testing is seen as a phase separate from development.
 
