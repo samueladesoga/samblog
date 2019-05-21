@@ -1,7 +1,7 @@
 +++
-title: "Can Testing Really Be Agile?"
-date: 2019-05-21T23:29:55+01:00
-draft: false
+title = "Can Testing Really Be Agile?"
+date = "2019-05-21T23:29:55+01:00"
+draft = "false"
 categories = ["Agile Delivery", "Conference Talk"]
 tags = ["Agile", "Software Testing", "UAT"]
 +++
