@@ -9,9 +9,9 @@ author =  "samueladesoga"
 
 
 ##### Introduction:
-Agile has been around for a while and whilst there has been a lot of successes recorded for some aspect of the software development process such as analysis and development, it seems that testing is that “area” that is being pushed to the right and sometimes made optional. In my years of working in Agile, there are certainly a lot of moment that I had thought “everything else but testing is Agile”.
+Agile has been around for a while and whilst there has been a lot of successes recorded for some aspects of the software development process such as analysis and development, it seems that testing is that “area” that is being pushed to the right and sometimes made optional. In my years of working in Agile, there are certainly a lot of moments that I had thought “everything else but testing is Agile”.
 
-This led to ask myself this question “Can testing really be agile?” and based on my personal experiences overlaid with influences the Agile Manifestos, this is an attempt to explain some agile testing practices and how it might benefit an Agile team.
+This led to ask myself this question “Can testing really be agile?” and based on my personal experiences overlaid with influences of the Agile Manifestos, this is an attempt to explain some agile testing practices and how it might benefit an Agile team.
 
 
 ##### “Individual and Interactions” over “Processes and Tools”
@@ -23,12 +23,14 @@ A very long time ago, I worked on a software development team where testers were
 These are definitely practices that we do NOT want to encourage with our team; we would rather want to see testers work closely Business Analysts, Developers and every other member of the team.  
 
 **Agile practices:**
+
 - Always conduct User stories Huddles.
 - Involve testers in architectural designs decisions sessions.
 - Have a conversation about defects found rather than “just” raising a ticket in a defect tracking tools such as Jira.
 - Writing high-level acceptance criteria or user scenarios with developers and Business Analysts.
 
 **Benefits include:**
+
 - Prevents duplication of tests across the different layers of testing within the testing pyramid
 - Testing and quality checks is pushed as far as possible to the left.
 - Bringing the Business close to testing means that testing has a far higher chance of representing business expectations.
@@ -50,6 +52,7 @@ For anyone that has worked within a team using traditional development lifecycle
 - Incorporate performance tests as part of the pipeline.
  
 **Benefits include:**
+
 - Adequate time is allowed for high value activities e.g. exploratory tests.
 - Having tests automated would encourage anyone with right skillsets to help out with test maintenance.
 
@@ -60,12 +63,14 @@ For anyone that has worked within a team using traditional development lifecycle
 Why do we need UAT? This was a question I posed to the project manager of team on a client engagement I had about 10years ago. 10years later, I still believe that on Agile project done properly, UAT phase is irrelevant.
 
 **Agile Practices:**
+
 - Tests should reflect expected behavior from the customer.
 - Choice of test framework should be one that allow test to be specified in an expressive language (use of a DSL).
 - Ensure Tests report is fluent so that customers can understand reports with interpretation.
 - Tests reports should be visible and accessible to all.
 
 **Benefits include:**
+
 - Being agile and collaborating with the Customer, UAT scripts and scenarios should be covered within the sprint, which could imply that we do away with need for a UAT phase.
 
 - Business User’s time is very scare and precious and I would rather we use this scare resources upfront in the lifecycle and continuously.
@@ -78,12 +83,14 @@ Can you remember a time when a feature change is being proposed and the test tea
 
 
 **Practices:**
+
 - Ensure that everyone regards tests as integral to the product. A feature developed and not tested is not “DONE”.
 - Everyone needs to understand the dynamics of the testing pyramid and consistently working to test feature at the cheapest level of the pyramid.
 - Test effort should not be estimated separately from the development efforts.
 - As much as possible tests should be automated
 
 **Benefits:**
+
 - As tests are integrated into the deliverable, there isn’t any extra effort to test changes apart from the actual effort to make the change.
 
 
