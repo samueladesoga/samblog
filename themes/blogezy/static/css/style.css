@@ -848,7 +848,7 @@ textarea.form-control {
 }
 
 img[src$='#center'] {
-  border-radius: .25rem!important;
-  max-width: 100%;
-  height: auto;
+  border-radius: .25rem !important;
+  max-width: 100% !important;
+  height: auto !important;
 }
