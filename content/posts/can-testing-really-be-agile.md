@@ -7,7 +7,8 @@ tags = ["Agile", "Software Testing", "UAT"]
 author =  "samueladesoga"
 +++
 
-Download actual conference slides here: [pptx](/documents/can_testing_be_agile.pptx.)
+Download actual conference slides here: [pptx](/documents/can_testing_be_agile.pptx)
+                                        [pdf](/documents/can_testing_be_agile.pdf)
 
 ##### Introduction:
 Agile has been around for a while and whilst there has been a lot of successes recorded for some aspects of the software development process such as analysis and development, it seems that testing is that “area” that is being pushed to the right and sometimes made optional. In my years of working in Agile, there are certainly a lot of moments that I had thought “everything else but testing is Agile”.
