@@ -16,7 +16,7 @@ This led to ask myself this question “Can testing really be agile?” and base
 
 ##### “Individual and Interactions” over “Processes and Tools”
 
-![Test Contest](https://samadesoga.me/images/blog/test-contest.jpg)
+{{< figure src="https://samadesoga.me/images/blog/test-contest.jpg" class="img-fluid rounded" title="Test Contest" >}}
 
 A very long time ago, I worked on a software development team where testers were not permitted to share their test scripts with developers and testers that found highest number of bugs were recognized within the team. 
 
