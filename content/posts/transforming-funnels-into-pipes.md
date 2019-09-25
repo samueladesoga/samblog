@@ -33,9 +33,9 @@ the rate at which the work arrives on the backlog. Moreover, in the event that t
 The first step would be to identify all Key Person dependencies and "recruit" more people in and around the team
 to execute these tasks for you. This will usually involve allocating some time for training, which is in a good investment for the team.
 Some of Key person dependencies include:
-  - Single tester allocated to test stories developed by a team of 10 developers.
-  - Single product owner required to sign off  stories in other to close off delivery of features. 
-  - Single Tech Lead to review and approve PRs.
+- Single tester allocated to test stories developed by a team of 10 developers.
+- Single product owner required to sign off  stories in other to close off delivery of features. 
+- Single Tech Lead to review and approve PRs.
 
 
 ##### Shift Left: 
