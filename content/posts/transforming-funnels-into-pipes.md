@@ -4,7 +4,7 @@ date: 2019-09-25T13:57:12+01:00
 draft: false
 categories: ["Agile Delivery"]
 tags: ["Agile Coaching", "Agile Transformation"]
-image: "images/blog/funnels-into-pipes-header.jpg"
+image: "images/blog/funnels-into-pipes-header-1.jpg"
 ---
 
 Usually when I join an organisation or team to help identify challenges with current processes
@@ -24,7 +24,7 @@ On the other hand, a "Pipe" provides a channel where throughput is constant and 
 
 ## Funnels into Pipes:
 There are a number of strategies that I have successful applied on a number of teams in other to transform a funnel shaped process into pipelines.
-![Funnels into Pipes](https://samadesoga.me/images/blog/funnels-into-pipes.jpg#center)
+![Funnels into Pipes](https://samadesoga.me/images/blog/funnels-into-pipes-1.jpg#center)
 
 ### Eliminate All Key Person Dependencies:
 
