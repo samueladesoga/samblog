@@ -45,7 +45,7 @@ Some of Key person dependencies include:
 Shift left is that term that implies a move of activities that would be typically be carried out later on in the development cycle to be done earlier. This term is commonly associated with quality checks and testing activities but I advice that this be applied to everything. Engaging the teams to ask itself questions around their processes and figure out which activities can be done earlier and not in a big bang approach. On a number of clients sites, I have advised and implemented, a continuous performance test stage as part of the build pipeline and that eliminated the need for a performance test phase which could be a bottleneck in the delivery cycle.
  
 
-##### Task Swarming:
+##### Task Swarming: 
 
 Task swarming is a process that is employed when a number of people come together to complete a task that could become a bottleneck if not done. A good example when developers swarm on testing activities after code implementation is complete, the developers could have moved on to a new user story but working with testers would ensure that the testers do not become a bottleneck to delivery. Another example is implementation of a peer review process for code rather than having one developer review all pull requests.
 
