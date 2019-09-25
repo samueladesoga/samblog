@@ -2,9 +2,9 @@
 title: "Transforming Funnels Into Pipes"
 date: 2019-09-25T13:57:12+01:00
 draft: false
-categories = ["Agile Delivery"]
-tags = ["Agile Coaching", "Agile Transformation"]
-image = "images/blog/funnels-into-pipes-header.jpg"
+categories: ["Agile Delivery"]
+tags: ["Agile Coaching", "Agile Transformation"]
+image: "images/blog/funnels-into-pipes-header.jpg"
 ---
 
 # Transformation: Funnels and Pipes
