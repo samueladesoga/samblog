@@ -4,7 +4,7 @@ date: 2019-09-25T13:57:12+01:00
 draft: false
 categories: ["Agile Delivery"]
 tags: ["Agile Coaching", "Agile Transformation"]
-image: "images/blog/funnels-into-pipes-header-1.jpg"
+image: "images/blog/funnels-into-pipes-header.jpg"
 ---
 
 Usually when I join an organisation or team to help identify challenges with current processes
@@ -22,31 +22,30 @@ A direct consequence of bottlenecks with the software development process is tha
 
 On the other hand, a "Pipe" provides a channel where throughput is constant and no part of the system constitutes a bottleneck to the overall throughput.
 
-## Funnels into Pipes:
+#### Funnels into Pipes:
 There are a number of strategies that I have successful applied on a number of teams in other to transform a funnel shaped process into pipelines.
-![Funnels into Pipes](https://samadesoga.me/images/blog/funnels-into-pipes-1.jpg#center)
+![Funnels into Pipes](https://samadesoga.me/images/blog/funnels-into-pipes.jpg#center)
 
-### Eliminate All Key Person Dependencies:
-
+##### Eliminate All Key Person Dependencies: 
 The challenges associated with Key Person Dependencies include inabilities to churn through a backlog of work at a fast enough rate compared to
 the rate at which the work arrives on the backlog. Moreover, in the event that the Key Person is unavailable due to illness or holiday that throughput is effectively Zero.
 
 The first step would be to identify all Key Person dependencies and "recruit" more people in and around the team
 to execute these tasks for you. This will usually involve allocating some time for training, which is in a good investment for the team.
 Some of Key person dependencies include:
-  * Single tester allocated to test stories developed by a team of 10 developers.
-  * Single product owner required to sign off  stories in other to close off delivery of features. 
-  * Single Tech Lead to review and approve PRs.
+  - Single tester allocated to test stories developed by a team of 10 developers.
+  - Single product owner required to sign off  stories in other to close off delivery of features. 
+  - Single Tech Lead to review and approve PRs.
 
 
-### Shift Left:
+##### Shift Left: 
 Shift left is that term that implies a move of activities that would be typically be carried out later on in the development cycle to be done earlier.
 This term is commonly associated with quality checks and testing activities but I advice that this be applied to everything. Engaging the teams to ask
 itself questions around their processes and figure out which activities can be done earlier and not in a big bang approach. On a number of clients sites,
 I have advised and implemented, a continuous performance test stage as part of the build pipeline and that eliminated the need for a performance test phase which could be a bottleneck in the delivery cycle.
  
 
-### Task Swarming:
+##### Task Swarming:
 Task swarming is a process that is employed when a number of people come together to complete a task that could become a bottleneck
 if not done. A good example when developers swarm on testing activities after code implementation is complete, the developers could have moved on to a new user story but working with testers would ensure that the testers do not become a bottleneck to delivery. Another example is implementation of a peer review process for code rather than having one developer review all pull requests.
 
