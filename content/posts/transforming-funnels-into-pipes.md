@@ -8,7 +8,7 @@ image = "images/blog/funnels-into-pipes-header.jpg"
 +++
 
 Usually when I join an organisation or team to help identify challenges with current processes
-and help channel the teams fix their processes, I would usually look for bottlenecks within the organisation. Once identified, bottlenecks are usually not difficult to eliminate compared to the effort that is required to ensure that behaviours that have introduced the bottlenecks are unlearnt.
+and help the teams fix their processes, I would usually look for bottlenecks within the organisation. Once identified, bottlenecks are usually not difficult to eliminate compared to the effort that is required to ensure that behaviours that have introduced the bottlenecks are unlearnt.
 
 A bottleneck can be described as a process within a chain of processes that reduces the overall capacity of the entire system
 due to the limitation of that single process. Some examples of bottlenecks in typical software development team include:
