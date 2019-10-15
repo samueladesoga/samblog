@@ -23,8 +23,7 @@ As you can i am waiting for an image which is the icon that represent the item i
 
 [code]
 
-Element is not currently visible and so may not be interacted with (Selenium::WebDriver::Error::ElementNotDisplaye
-dError)
+Element is not currently visible and so may not be interacted with (Selenium::WebDriver::Error::ElementNotDisplayedError)
 
 ```
 And on visual inspection, i can see that the item is being added into the shopping basket, this led me to inspect the source to look for any event that might need to be triggered and i found an "onclick"
