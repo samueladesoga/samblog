@@ -1,7 +1,7 @@
 +++
 title = "5 Symptoms of a Failing Agile Transformation Program"
 date = "2019-10-15T22:27:44+01:00"
-draft = "true"
+draft = "false"
 categories = ["Agile Delivery"]
 tags = ["Agile Coaching", "Agile Transformation"]
 author = "samueladesoga"
