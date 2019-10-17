@@ -1,5 +1,5 @@
 +++
-title = "5 Symptoms of a Failing Agile Transformation Program"
+title = "5 Symptoms of a Failing Agile Transformation Programme"
 date = "2019-10-15T22:27:44+01:00"
 draft = "false"
 categories = ["Agile Delivery"]
