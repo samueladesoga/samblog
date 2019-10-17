@@ -1,7 +1,7 @@
 +++
 title = "5 Symptoms of a Failing Agile Transformation Program"
 date = "2019-10-15T22:27:44+01:00"
-draft = "true"
+draft = "false"
 categories = ["Agile Delivery"]
 tags = ["Agile Coaching", "Agile Transformation"]
 author = "samueladesoga"
@@ -19,4 +19,6 @@ At the beginning of an Agile Transformation Programme, the team would lean to th
 ##### Team Transformation would NEVER be a success if Management is not on the same journey.
 A group of people i.e team cannot be said to be have successfully gone through an Agile Transformation program if the management is not aligned with the same programme. The best examples of a successful Agile Transformation program are ones that are done Top to Bottom; there are certain pratices within Human Resources, Accounting, Budgeting, Line Management, Yearly review and Compensation that would be required to be aligned in other for the Agile Transformation to be successful. 
 
-##### Ignoring context(Culture and background is important), No two teams are the same.
+##### Ignoring context(Culture and background is important), No two organisations are the same.
+A great coach understands that context plays a major part in differentiating between a failing Transformation program and one that is on it way to be successful. No two organisational structures would be exactly the same and one of the greatest mistakes an Agile Coach can make is to bring a 'golden' template along on the engagement.
+
