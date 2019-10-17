@@ -14,8 +14,8 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Feature"
-url = "categories/feature"
+name = "Agile Delivery"
+url = "categories/agile-delivery"
 weight = 2
 
 [[menu.main]]
@@ -23,12 +23,10 @@ name = "Technical"
 url = "categories/technical"
 weight = 3
 
-
 [[menu.main]]
-name = "Agile Delivery"
-url = "categories/agile-delivery"
+name = "Feature"
+url = "categories/feature"
 weight = 4
-
 
 [[menu.main]]
 name = "About"
