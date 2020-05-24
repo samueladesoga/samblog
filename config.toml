@@ -19,6 +19,11 @@ url = "categories/agile-delivery"
 weight = 2
 
 [[menu.main]]
+name = "Coaching"
+url = "categories/coaching"
+weight = 2
+
+[[menu.main]]
 name = "Technical"
 url = "categories/technical"
 weight = 3
