@@ -1,10 +1,11 @@
 +++
-title = "Extended Hours Within Agile Teams"
+title = "Working Extended Hours Within Agile Teams"
 date = 2020-05-25T00:49:09+01:00
 draft = false
 categories = ["Coaching"]
 tags = ["Agile Coaching", "Team Coaching", "Scrum"]
 author = "samueladesoga"
+image = "images/blog/extended-hours.jpg"
 +++
 
 A very long time ago, I was coaching a Scrum team where a team member was on an hourly contract and was regularly billing 70-80hrs a week. Among many other ideas that I discussed with client, I advised my client was to transition this consultant away from an hourly contract to a full time with a full-time (40hours a week) contract. With this new arrangement, my client can recruit two full time consultants instead of one person at 70-80hrs week. 
