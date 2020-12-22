@@ -3,6 +3,7 @@ languageCode = "en-us"
 enableRobotsTXT = true
 canonifyURLs = true
 title = "Sam Adesoga's Personal Blog"
+description = "Enterprise Agility, Leadership, Entreprenuership, Personal Develop and Africa."
 theme = "blogezy"
 disqusShortname = "samblog-a664e-firebaseapp-com"
 googleAnalytics = "UA-120857596-1"
