@@ -4,14 +4,35 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="{{ .Site.description }}" />
         <meta name="author" content="Samuel Adesoga">
-
         <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico">
 
         {{ partial "seo_schema" . }}
 
          <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}{{ end }}</title>
+
+
+   <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}"/>
+    <link rel="canonical" href="{{ .Permalink }}" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
+    <meta name="twitter:title" content="{{ .Title }}{{ if .IsHome }} - {{ .Site.Params.Tagline }}{{ else }} - {{ .Site.Title }}{{ end }}" />
+    <meta name="twitter:site" content="{{ .Site.Params.twitter }}" />
+    <meta name="twitter:creator" content="{{ .Site.Params.twitter }}" />
+    <!-- OG data -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+    <meta content="{{ .Title }}{{ if .IsHome }} - {{ .Site.Params.Tagline }}{{ else }} - {{ .Site.Title }}{{ end }}" property="og:title">
+    <meta content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" property="og:description">
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    {{ range .Params.categories }}<meta property="article:section" content="{{ . }}" />{{ end }}
+    {{ if isset .Params "date" }}<meta property="article:published_time" content="{{ time .Date }}" />{{ end }}
+
+
+
 
         {{ .Hugo.Generator }}
         {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
