@@ -13,9 +13,9 @@ The process of ideating and developing products (including software products) fa
 There are several Agile Frameworks and Practices used within Software Development & Design that help with solving complex (adaptive) problems e.g Discovery process; and sometimes the manner in which these practices are executed seem as though the very nature of Software development is forgotten or undermined..
 
 Agile Framework and Agile Practices attempt to solve complex adaptive problems by optimising for Value using one of more of these principles:
-Promote the use of experiments in other to Understand the problem.
-Provide transparency to the process and the outcome.
-Encourage Feedback as a critical path to Learning.
+- Promote the use of experiments in other to Understand the problem.
+- Provide transparency to the process and the outcome.
+- Encourage Feedback as a critical path to Learning.
 
 The Discovery process is a good example of an Agile Practice that helps with managing the complexity of Software Development and the purpose of Discovery is to established a shared understanding at the current point in time. I mention current point in time as the understanding would continually evolve over time and the goal of discovery is to understand enough in other to proceed. Cynefin describes an approach of “Probe - Sense - Respond” for  complex problems which ties back to the purpose for Discovery. There are a number activities that are deployed during discovery and these include: Research, Prototyping and User walkthroughs. It is important that a multi-disciplinary team including User Experience Designers, Technical Authority and representatives of the Business & Users be involved in the Discovery phase.
 
