@@ -10,4 +10,3 @@ jobs:
     - uses: samueladesoga/github-action-hugo-deploy-to-firebase@master
       with:
         firebase-token: ${{ secrets.FIREBASE_TOKEN }}
-        alias: ${{ some_alias }} // OPTIONAL
