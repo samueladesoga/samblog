@@ -138,13 +138,9 @@ h6 {
     z-index: 1;
 }
 
-.logo {
-    padding: 40px;
-}
-
 .logo p {
     font-size: 14px;
-    margin: 30px 0 0 0;
+    padding: 20px;
 }
 
 .nav-second-level > li > a {
@@ -856,7 +852,4 @@ img[src$='#center'] {
 
 img.logo {
     height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
 }
