@@ -29,7 +29,7 @@ function addToSearchIndex(lunrIndex, indexLoadedFunction) {
             // so we have to keep track of any other values 
             // we want to display ourselves
             titles[item.ref] = item.title;
-        }
+        })
         indexLoadedFunction(lunrIndex, titles);
     } 
 }

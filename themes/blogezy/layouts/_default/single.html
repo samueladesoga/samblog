@@ -52,7 +52,11 @@
 							   	<div class="col-sm-4">
 					               	<article class="related-post">
 					                  <div class="post-preview">
-					                     <a href="{{ .RelPermalink }}"><img src="{{ .Site.BaseURL }}images/blog/blog-2.jpg" alt="" class="img-fluid rounded"></a>
+								        {{ if and (isset .Params "image") .Params.image }}
+							            	<a href="{{.RelPermalink}}"><img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="" class="img-fluid rounded"></a>
+							            {{ else }}
+							            	 <a href="{{ .RelPermalink }}"><img src="{{ .Site.BaseURL }}images/blog/default-blog-image.jpg" alt="" class="img-fluid rounded"></a>
+							            {{ end }}
 					                  </div>
 					                  <div class="post-header">
 					                     <h6><a href="{{ .RelPermalink }}" title="">{{ .Title | markdownify }}</a></h6>
