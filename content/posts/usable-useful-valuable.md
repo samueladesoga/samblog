@@ -28,9 +28,7 @@ a Usable Increment.
 ##### Useful
 
 Usefulness means to "find a use" for a feature or product. Referring to the example above for a mobile phone, closing or minimising a window allows a user to switch between multiple 
-windows on their phone. I cannot imagine how a product can be Useful without being Usable, hence the phrase above which reads
-
-> For a product to be Useful, it needs to be Usable"
+windows on their phone. I cannot imagine how a product can be Useful without being Usable, hence the reason I belive that for a product to be Useful, it must be usable.
 
 ##### Valuable
 
