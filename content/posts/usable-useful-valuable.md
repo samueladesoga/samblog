@@ -9,7 +9,7 @@ image = "images/blog/UsableUsefulValuable.png"
 +++
 
 In the latest version of the Scrum Guide, these words (Usable, Useful and Valuable) appear in a number of instances and its very easy to use these work interchangeably.
-Useful, Usable and Valuable should not be used interchangeably and  this is an attempts to document my thoughts following conversations I had with some peers in the Scrum community.
+Useful, Usable and Valuable should not be used interchangeably and  this is an attempt to document my thoughts following conversations I had with some peers in the Scrum community.
 
 {{< quote author="Sam Adesoga">}}
 For a product to be useful, it must be usable; and for a product to be valuable, it must be useful.
@@ -17,22 +17,24 @@ For a product to be useful, it must be usable; and for a product to be valuable,
 
 
 ##### Usable
+For a product, A usable is product is one that is fit for use and there is a closely associated measure for Usability know as "Ease of Use".
 
-For a product, Usability is ability to "physically" use that product and there is a closely associated measure for Usability know as "Ease of Use".
-A mobile browser can be said to be "Usable" because a user can close a mobile window by the use of a "swipe" gesture; if the feature to close a window wasn't implemented,
-then a user will be stuck on the current window and as a result, that could be a defect in the product.
+On a mobile phone, a browser can referred to be "Usable" because a user can minimise a browser using a gestures such as the swipe. If the browser is missing such a feature, then this could referred as a defect and in effect the browser is not usable.
 
-In the scrum guide, there are multiple mentions of a Usable Increment as an outcome of a Sprint which imply that the "Definition of Done" must include conditions to ensure 
-a Usable Increment.
+In the scrum guide, there are multiple mentions of a Usable Increment as an outcome of a Sprint which implies that the "Definition of Done" must include conditions to ensure a Usable Increment is created for each Sprint.
 
 ##### Useful
 
-Usefulness means to "find a use" for a feature or product. Referring to the example above for a mobile phone, closing or minimising a window allows a user to switch between multiple 
-windows on their phone. I cannot imagine how a product can be Useful without being Usable, hence the reason I belive that for a product to be Useful, it must be usable.
+Usefulness means to "find a use" for a feature or product. Referring to the example above for a mobile phone, minimising a window is the "Usability" allows a user to switch between multiple 
+windows on their phone. 
+
+The usability part is "ability to minimise a browser" and this is useful for "switching between different browsers".
+
+I cannot imagine how a product can be Useful without being Usable, hence the reason I belive that for a product to be Useful, it must be usable.
 
 ##### Valuable
 
-A useful product can be Valuable when its purposed users validates the value that it provides.There many facets to defining Value but for the purpose of the article, I would like to focus more on Value from the point of View of a Customer. Using the example about, the Value in the ability to switch between multiple windows could be that it helps to increase efficiency and saves users' time.
+There many facets to defining Value but for the purpose of the article, I would like to focus more on Value from the point of View of a Customer. In the mobile browser example, the Value be that the ability to switch between multiple browser windows helps to increase efficiency and saves users' time.
 
 Lets consider another example:
 
