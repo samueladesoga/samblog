@@ -19,7 +19,7 @@ For a product to be useful, it must be usable; and for a product to be valuable,
 ##### Usable
 
 For a product, Usability is ability to "physically" use that product and there is a closely associated measure for Usability know as "Ease of Use".
-A mobile browser can be said to be "Usable" because a user can close a mobile window ny the use of a "swipe" gesture; if the feature to close a window wasn't implemented,
+A mobile browser can be said to be "Usable" because a user can close a mobile window by the use of a "swipe" gesture; if the feature to close a window wasn't implemented,
 then a user will be stuck on the current window and as a result, that could be a defect in the product.
 
 In the scrum guide, there are multiple mentions of a Usable Increment as an outcome of a Sprint which imply that the "Definition of Done" must include conditions to ensure 
