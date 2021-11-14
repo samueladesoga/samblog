@@ -36,8 +36,12 @@ I cannot imagine how a product can be Useful without being Usable, hence the rea
 
 There many facets to defining Value but for the purpose of the article, I would like to focus more on Value from the point of View of a Customer. In the mobile browser example, the Value be that the ability to switch between multiple browser windows helps to increase efficiency and saves users' time.
 
-Lets consider another example:
+###### Lets consider another example - WhatsApp
 
-Whatsapp could be useful because a user is able to send text, audio and video to their contacts but the Value could be that it helps users to stay connected to their loved one.
+Whatapps is an instant messaging tool that we all use.
+
+Whatsapp is Usable because we can launch and use all the feature in the application.
+
+Its usefulness come from the users ability to send text, audio and video to their contacts but the Value could be that it helps users to stay connected to their loved ones.
 
 In Scrum, the Scrum Team and its stakeholders should devise techniques to validate that Value is being delivered each Sprint.
