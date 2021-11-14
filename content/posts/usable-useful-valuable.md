@@ -32,11 +32,10 @@ windows on their phone. I cannot imagine how a product can be Useful without bei
 
 ##### Valuable
 
-A useful product can be Valuable when its purposed users validates the value that it provides.There many facets to defining Value but for the purpose of the article, I would like to focus 
-more on Value from the point of View of a Customer. 
+A useful product can be Valuable when its purposed users validates the value that it provides.There many facets to defining Value but for the purpose of the article, I would like to focus more on Value from the point of View of a Customer. Using the example about, the Value in the ability to switch between multiple windows could be that it helps to increase efficiency and saves users' time.
 
-Lets consider an example:
+Lets consider another example:
 
-Whatsapp could be useful because a user is able to send text, audio and video to their contacts but the Value could be allows its' users to stay connected to their loved one.
+Whatsapp could be useful because a user is able to send text, audio and video to their contacts but the Value could be that it helps users to stay connected to their loved one.
 
 In Scrum, the Scrum Team and its stakeholders should devise techniques to validate that Value is being delivered each Sprint.
