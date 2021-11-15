@@ -34,7 +34,7 @@ I cannot imagine how a product can be Useful without being Usable, hence the rea
 
 ##### Valuable
 
-There many facets to defining Value but for the purpose of the article, I would like to focus more on Value from the point of View of a Customer. In the mobile browser example, the Value be that the ability to switch between multiple browser windows helps to increase efficiency and saves users' time.
+There many facets to defining Value but for the purpose of the article, I would like to focus more on Value from the point of View of a Customer. In the mobile browser example, the Value could be that the ability to switch between multiple browser windows helps to increase efficiency and saves users' time.
 
 ###### Lets consider another example - WhatsApp
 
