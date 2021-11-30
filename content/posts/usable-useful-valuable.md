@@ -8,8 +8,14 @@ author = "samueladesoga"
 image = "images/blog/UsableUsefulValuable.png"
 +++
 
-In the latest version of the Scrum Guide, these words (Usable, Useful and Valuable) appear in a number of instances and its very easy to use these work interchangeably.
-Useful, Usable and Valuable should not be used interchangeably and  this is an attempt to document my thoughts following conversations I had with some peers in the Scrum community.
+In the 2020 version of the Scrum Guide, the Developers as one of the accountabilities in Scrum is defined as set of people that are committed to creating any aspect of a ***usable*** increment each Sprint. 
+
+In the same version of the Scrum Guide, it is mentioned that the Scrum Team is accountable for creating a ***valuable***, ***useful*** Increment every Sprint.
+
+
+I have been in a number of conversations that suggested that maybe Usable, Valuable and Useful could mean the same within the context of Scrum and this is my attempt to explore my understanding.
+
+Useful, Usable and Valuable should not be used interchangeably as they do NOT share the same meaning.
 
 {{< quote author="Sam Adesoga">}}
 For a product to be useful, it must be usable; and for a product to be valuable, it must be useful.
@@ -19,9 +25,9 @@ For a product to be useful, it must be usable; and for a product to be valuable,
 ##### Usable
 For a product, A usable product is one that is fit for use and there is a closely associated measure for Usability known as "Ease of Use".
 
-On a mobile phone, a browser can referred to be "Usable" because a user can minimise a browser using a gestures such as the swipe. If the browser is missing such a feature, then this could referred as a defect and in effect the browser is not usable. (Note: This is debatable, as a user could still browse but just not able to do anything else.)
+On a mobile phone, a browser can referred to be "Usable" because a user can minimise the browser using a gestures such as the swipe. If the browser is missing such a feature, then this could referred as a defect and in effect the browser is not usable. (Note: This is debatable, as a user could still browse but just not able to do anything else.)
 
-In the scrum guide, there are multiple mentions of a Usable Increment as an outcome of a Sprint which implies that the "Definition of Done" must include conditions to ensure a Usable Increment is created for each Sprint.
+The "Definition of Done" which is a commitment for an Increment should include statement that ensure that the Developers are able to produce a Usable Increment each Sprint. 
 
 ##### Useful
 
@@ -44,4 +50,4 @@ Whatsapp is Usable because we can launch and use all the feature in the applicat
 
 Its usefulness come from the users ability to send text, audio and video to their contacts but the Value could be that it helps users to stay connected to their loved ones.
 
-In Scrum, the Scrum Team and its stakeholders should devise techniques to validate that Value is being delivered each Sprint.
+Within the context of Scrum, Value is the ultimate that the Scrum Team and its stakeholders works to deliver consistently at the end of the each sprint. 
