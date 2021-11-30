@@ -13,7 +13,7 @@ In the 2020 version of the Scrum Guide, the Developers as one of the accountabil
 In the same version of the Scrum Guide, it is mentioned that the Scrum Team is accountable for creating a ***valuable***, ***useful*** Increment every Sprint.
 
 
-I have been in a number of conversations that suggested that maybe Usable, Valuable and Useful could mean the same within the context of Scrum and this is my attempt to explore my understanding.
+A number of people have asked me if Usable, Valuable and Useful could be used interchangeably within the context of Scrum and this is my attempt to document my understanding.
 
 Useful, Usable and Valuable should not be used interchangeably as they do NOT share the same meaning.
 
