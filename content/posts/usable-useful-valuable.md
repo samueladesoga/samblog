@@ -8,7 +8,7 @@ author = "samueladesoga"
 image = "images/blog/UsableUsefulValuable.png"
 +++
 
-In the 2020 version of the [Scrum Guide](https://scrumguides.org/scrum-guide.html"Scrum Guide"), the Developers as one of the accountabilities in Scrum is defined as set of people that are committed to creating any aspect of a ***usable*** increment each Sprint. 
+In the 2020 version of the [Scrum Guide](https://scrumguides.org/scrum-guide.html "Scrum Guide"), the Developers as one of the accountabilities in Scrum is defined as set of people that are committed to creating any aspect of a ***usable*** increment each Sprint. 
 
 In the same version of the Scrum Guide, it is mentioned that the Scrum Team is accountable for creating a ***valuable***, ***useful*** Increment every Sprint.
 
