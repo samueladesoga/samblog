@@ -5,7 +5,7 @@ canonifyURLs = true
 title = "Sam Adesoga's Personal Blog"
 theme = "blogezy"
 disqusShortname = "samblog-a664e-firebaseapp-com"
-googleAnalytics = "177393170"
+googleAnalytics = "G-PL5WFD5XRN"
 
 # Nav links in the side bar
 [[menu.main]]
