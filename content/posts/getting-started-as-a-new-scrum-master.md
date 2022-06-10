@@ -21,16 +21,23 @@ There are a number of complimentary practices would help you support any Scrum t
 
 Below is a list of things to try that might help you get the experience required.
 
+##### Current Employment
+
+The Scrum Master is one of the 3 accountabilities defined in the Scrum Framework, which implies that you do NOT need a job title of a Scrum Master to help implement Scrum. Be transparent and speak to your team members that you have recently acquired some knowledge of Scrum and you believe that Scrumm can improve the outcomes of your work. Ask for permission to try the principles of Scrum with the team and teach your team about Scrum.
+
+
 ##### Start-up community
 
-Start-up are naturally agile at inception and would benenfit from application of the Scrum Framework, if there arent already practicing Scrum. I would advise you reach out to the start-up community in your region by sending them a nice cover letter or email explain what you want and the value you can provide to them. 
+Start-up are naturally agile at inception and would benenfit from application of the Scrum Framework, if there arent already practicing Scrum. I would advise you reach out to the start-up community in your region by sending them a nice cover letter or email explain what you want and the value you can provide to them.
 
 I know a lot of people that have done this and have been able to gather some experience doing this. Also be prepared to volunteer and you might not be paid initially but what you want is the experience to help then deliver value to their stakeholder. My believe is that, if you truly help them deliver value, an unpaid experience could turn out to be your first paid job as a scrum master.
 
 
-##### Start where you are
+##### Local communities
 
-As you already know, Scrum can be applied to deliver value within a complex domain and most of us already work in teams, it could be your current place of work, place of worship, sport team or even at home. Start by defining your Product and build out your product backlog. Implement as much as you can from the Scrum Framework and you can experience with the people that you know already.
+You have to start with what you have and where are by implementing scrum in your local community. You probably already volunteer within a team in church, mosque, a Non Governmental organisation or charity; these are good places to experiment with newly found Scrum Knowledge. Organise learning sessions on Scrum and apply scrum to some of the projects you already do in these communities.
+
+As you already know, Scrum can be applied to deliver value within a complex domain. Start by defining your Product and build out your product backlog. Implement as much as you can from the Scrum Framework and you can experience with the people that you know already.
 
 
 ##### Remote opportunities to Volunteer
