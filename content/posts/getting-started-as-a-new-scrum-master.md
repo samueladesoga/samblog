@@ -19,7 +19,7 @@ There are a number of complimentary practices would help you support any Scrum t
 
 #### Practical Experience for a New Scrum Master
 
-Below is a list of things to try that might help you get the experience required.
+Below is a list of ideas that might help you get the experience required.
 
 ##### Current Employment
 
