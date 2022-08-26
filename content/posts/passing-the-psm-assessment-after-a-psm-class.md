@@ -11,7 +11,7 @@ Passing the PSM 1 assessment could be considered an indicator that you understan
 
 There are a number of exercises that Professional Scrum Trainers invite students to partake in the course of the PSM 1 class; these exercises have been designed on practical experiences of Professional Scrum Masters and these exercises create a solid foundation for you as you commence your Scrum Master career.
 
-As a result, I expect every student that has attended a PSM class to pass their PSM assessment provided they have been fully present during the 2 days class and participated in every exercise in class.
+As a result, I expect every student that has attended a [PSM class](https://www.valuehut.co/services/training/professional-scrum-master) to pass their PSM assessment provided they have been fully present during the 2 days class and participated in every exercise in class.
 
 Having trained almost 100 Students, I have some data to back up the information that I am sharing with you in this blog. After the PSM class, Students should attempt both the Scrum Open and Product Owner Open assessments; for each of these assessments students should aim to pass these open assessments with a score of 100% for 3 times consecutively. I advice students not to sit the PSM 1 until they are able to score 100% consecutively.
 
