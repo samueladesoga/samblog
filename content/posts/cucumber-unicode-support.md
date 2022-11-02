@@ -2,7 +2,7 @@
 date = "2012-02-28 15:18:12"
 title = "Cucumber unicode support"
 draft = "false"
-categories = ["TEchnical"]
+categories = ["Technical"]
 tags = ["BDD", "Test Automation"]
 author = "samueladesoga"
 +++

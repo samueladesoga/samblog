@@ -7,7 +7,7 @@ tags = ["Test Automation", "selenium"]
 author = "samueladesoga"
 +++
 
-Have you ver been in situattion when you have typed a value into a text box and you expect a
+Have you ver been in situation when you have typed a value into a text box and you expect a
 Javascript event to be triggered such as “OnBlur”
 
 Well selenium has a method “FireEvent” which triggers the event for you, but then the trick is you have to strip the “on” and name for the event wouldbe “OnBlur”
