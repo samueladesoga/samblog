@@ -28,7 +28,7 @@ Over the years I have come to understand that the purpose of estimation is for e
 In addition if the team is to provide a forecast of how many items it can complete within the sprint, then all Product Back Items (feature and defects) should be estimated. 
 
  ##### Reserve a portion of the sprint capacity for defect fixes and tech debt 
-Almost every single product backlog that i have worked contains tech debt itens and defects. An  approach might be to reserve a portion of the sprint timebox, for instance 10 percent of the time for fixing defects and tech debt. The implication is that the agile team works on as many defects and tech debt item that it can complete within the alloted timebox.
+Almost every single product backlog that i have worked contains tech debt items and defects. An  approach might be to reserve a portion of the sprint timebox, for instance 10 percent of the time for fixing defects and tech debt. The implication is that the agile team works on as many defects and tech debt item that it can complete within the alloted timebox.
 e.g if the average velocity of a team is 40points a sprint and the team decided to reserve 10 percent of its capacity for fixing defect and tech debt, then the team should 
 just plan for 36 points (40point minus (10% of 40)).
 
