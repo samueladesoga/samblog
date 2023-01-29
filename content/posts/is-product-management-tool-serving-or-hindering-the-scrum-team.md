@@ -25,7 +25,6 @@ A typical product backlog will consist of various items, such as requirements, t
 The Product Owner and other team members can search and filter for items during Scrum events and the refinement process. For instance, the product should be able to count all technical debt items or defects that have been recorded in the Product Backlog Management Tool. 
 
 
-
 ###### Reordering and removing product backlog items: 
 The Product Owner is responsible for ordering the product backlog, and the tool should enable the Product Owner to make the order visible and persist the ordering
 decision made by the Product Owner. Often time, Product Backlog item become obsolete and not required, the Product Owner should be able to remove such items from the backlog.
@@ -43,7 +42,8 @@ Some Product Backlog Management tools provide these datapoints and are bundled w
 The Scrum master has a responsibility to support the organisation in choosing the Product Management Tool that best support the Scrum team as the choice of the Product Backlog Management Tool
 has to direct correlation to the  Scrum Team's ability to inspect and adapt effectively.
 
-
-
 Credit: Photo by Alex Lion on Unsplash
+
+
+To learn more about Scrum, join me in one of our scheduled [Professional Scrum Master](https://www.valuehut.co/services/training/professional-scrum-master) public classes.
 
