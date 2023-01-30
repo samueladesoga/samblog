@@ -16,8 +16,8 @@ As a Scrum Master, it's important not to view yourself as an administrator for t
 The Product Owner is accountable for effective product backlog management. The product backlog management tool should assist the Product Owner in: 
 
 ###### Making the Product Goal Transparent: 
-The product goal describes a future state of the product, serving as a target for the Scrum Team and stakeholders. And because every product backlog item emerges to deliver the Product Goal, the tool should increase transparency of the entire Product Goal by providing features that allow of progress towards the product goal. The Scrum Master should collaborate with the Product Owner to decide on a structure that supports the product goal to be expressed as part of the Product Backlog.
-For instance, In Jira the Product Owner could use Labels to capture the product goal or could use Epics issue type to capture the product goal.
+The product goal describes a future state of the product, serving as a target for the Scrum Team and stakeholders. And because every product backlog item emerges to deliver the Product Goal, the tool should increase the transparency of the entire Product Goal by providing features that allow progress towards the product goal to be inspected. The Scrum Master should collaborate with the Product Owner to decide on a structure that supports the product goal to be expressed as part of the Product Backlog.
+For instance, In Jira the Product Owner could use Labels to capture the product goal or could use the Epics issue type to capture the product goal.
 
 
 ###### Creating different types of product backlog items: 
@@ -27,7 +27,7 @@ The Product Owner and other team members can search and filter for items during 
 
 ###### Reordering and removing product backlog items: 
 The Product Owner is responsible for ordering the product backlog, and the tool should enable the Product Owner to make the order visible and persist the ordering
-decision made by the Product Owner. Often time, Product Backlog item become obsolete and not required, the Product Owner should be able to remove such items from the backlog.
+decision made by the Product Owner. Often time, Product Backlog item become obsolete and are no longer required; the Product Owner should be able to remove such items from the backlog.
 
 
 ##### Support self-management of the Scrum Team: 
@@ -36,8 +36,8 @@ The product management tool should provide data points for the following
 - measuring progress toward the Sprint Goal.
 - measuring progress toward the Product Goal.
 - Measuring the quality of the increments being produced for every PBI done.
-These are just examples and not an exhaustive list.
-Some Product Backlog Management tools provide these datapoints and are bundled with visualisations, others provide datapoints api that can easily be integrated with other tools. 
+
+These are examples and not an exhaustive list of data points that a product backlog management tool should provide. Some Product Backlog Management tools provide these datapoints and are bundled with visualisations, while others provide datapoints api that can easily be integrated with other tools. 
 
 The Scrum master has a responsibility to support the organisation in choosing the Product Management Tool that best support the Scrum team as the choice of the Product Backlog Management Tool
 has to direct correlation to the  Scrum Team's ability to inspect and adapt effectively.
