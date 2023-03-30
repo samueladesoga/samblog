@@ -17,7 +17,7 @@ There are so many ways to facilitates a Product Backlog Refinement session but I
 ###### Break down Product Backlog Items (PBIs): 
 In the Product backlog refinement session, the scrum team should aim to break down PBIs until these PBIs are small enough to fit into the sprint. The definition of done should be used as a guide to discuss the work that needs to completed for every PBI within the sprint. There so many techniques that can be used to break down PBIs but I prefer vertical slicing of PBIs as the scrum team has a higher probability of delivering a usable increment out of a PBI when the PBI is sliced vertically.
 
-######Estimate PBIs: 
+###### Estimate PBIs: 
 Scrum teams that practice estimation as a complimentary practice, should provide a forecast of effort required to deliver PBIs using the definition of done for the product as a guide. For these teams, estimation of PBIs helps the scrum team select items from the product backlog up to the capacity of the developers. If estimates have already been provided for PBIs, then the facilitator of the Product Backlog Refinement session should re-confirm that every developers remains comfortable with the estimate that have been previously recorded on the PBIs.
 
 Some common techniques for estimation include Story Pointing, T-Shirt Sizing and Planning Poker.
