@@ -45,7 +45,7 @@ weight = 6
 
 [params]
   author = "Samuel Adesoga"
-  email = "samuel@thoughtstudiosng.com"
+  email = "samuel@valuehut.co"
   env = "production"
   description = "Enterprise Agility, Leadership, Entreprenuership, Personal Develop and Africa."
   tagline = "Agile Coach and Scrum Master"
@@ -55,7 +55,7 @@ weight = 6
 
 [params.social]
 facebook      = "https://www.facebook.com/mistar.adesoga"
-email         = "samuel@thoughtstudiosng.com"
+email         = "samuel@valuehut.co"
 twitter       = "https://twitter.com/sadesoga"
 linkedin      = "https://uk.linkedin.com/in/samueladesoga"
 instagram     = "https://www.instagram.com/mistaradesoga/"
