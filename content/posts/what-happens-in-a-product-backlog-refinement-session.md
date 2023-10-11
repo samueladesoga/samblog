@@ -35,7 +35,7 @@ The Product Owner is accountable for ordering the product backlog and there are 
 As stated in the introduction, the product backlog refinement session isn’t a mandatory Scrum event, however a very useful complimentary practices that helps the scrum team and their stakeholder achieve shared understanding of the product backlog, the product goal contained in it and the product backlog items that have emerged to deliver the product goal.
 
 
-To learn more about Professional Scrum, join me in one of our scheduled [Professional Scrum Master](https://www.valuehut.co/services/training/professional-scrum-master) public classes.
+To learn more about Professional Scrum, join me in one of our scheduled [Professional Scrum Product Owner](https://www.valuehut.co/services/training/professional-scrum-product-owner) or [Professional Scrum Product Backlog Management Skills](https://www.valuehut.co/services/training/professional-scrum-product-backlog-management-skills) public classes.
 
 
 
