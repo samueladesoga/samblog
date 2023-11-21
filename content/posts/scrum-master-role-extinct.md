@@ -5,7 +5,7 @@ draft: false
 categories: ["Agile Delivery", "Agile Coaching"]
 tags:  ["Scrum Master", "Delivery Manager", "Agile Roles", "Agile Coaches"]
 author: "samueladesoga"
-image: "images/blog/scrum-master-extinct.png"
+image: "images/blog/scrum-master-extinct.jpg"
 ---
  
 With the recent news about Scrum Masters and Agile Coaches being laid off in organizations, the question that comes to mind is whether we are at the end of the road with regard to these roles that have in the past focused on building agile capabilities in organizations on a full time basis.
