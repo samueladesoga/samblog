@@ -61,18 +61,35 @@
         </ul>
     </aside>
 
-    <!-- Archives widget-->
+
     <aside class="widget">
+      {{ $archives := site.Data.archives }}
+      {{ with $archives }}
         <div class="widget-title">Archives</div>
-
         <ul>
-            <li><a href="#">March 2017</a> (40)</li>
-            <li><a href="#">April 2017</a> (08)</li>
-            <li><a href="#">May 2017</a> (11)</li>
-            <li><a href="#">Jun 2017</a> (21)</li>
+          {{ range $archive := . }}
+            <li>
+              {{ $archive.year }}
+              <ul>
+                {{ range $month := $archive.months }}
+                  <li>
+                    {{ $month.month | dateFormat "January" }} ({{ len $month.pages }})
+                    <ul>
+                      {{ range $page := $month.pages }}
+                        <li><a href="{{ $page.permalink }}">{{ $page.title }}</a></li>
+                      {{ end }}
+                    </ul>
+                  </li>
+                {{ end }}
+              </ul>
+            </li>
+          {{ end }}
         </ul>
-
+      {{ end }}
     </aside>
+
+
+
 
     <!-- Tags widget-->
     <aside class="widget widget_tag_cloud">
