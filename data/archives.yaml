@@ -1,0 +1,14 @@
+- year: 2023
+  months:
+    - month: 01
+      pages:
+        - title: "January Post 1"
+          permalink: "/january-post-1/"
+        - title: "January Post 2"
+          permalink: "/january-post-2/"
+    - month: 02
+      pages:
+        - title: "February Post 1"
+          permalink: "/february-post-1/"
+        - title: "February Post 2"
+          permalink: "/february-post-2/"
