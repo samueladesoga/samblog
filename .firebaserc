@@ -1,5 +1,15 @@
 {
-   "projects": {
-     "default": "samblog-a664e"
-   }
+  "projects": {
+    "default": "samblog-a664e"
+  },
+  "targets": {
+    "samblog-a664e": {
+      "hosting": {
+        "blog": [
+          "samblog-a664e"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
