@@ -20,18 +20,18 @@ image: "images/blog/faces-micro-management.jpg"
 10. You need to make a decision, even when your subordinate  could have made these decisions; at the end of the day you are the BOSS.
 
 
-Does any of  these resonates with you; managers can be helpful and in fact too helpful that you get into the way of effective work; sometimee  our ways of working attempts to optimise for efficiency which ultimately affects the effectiveness of the team. The behaviours listed above might be appropriate in the complicate domain such as Manufacturing, where managers have a desire to optimise the utilqmization of “machines”. In the complex domain such as product developments, these have adverse effects on people.
+Does any of these resonates with you? Managers have a crucial role to play in organisations but managers can become too helpful that they get in the way of effective work. Oftentimes, the ways of working is an attempt to optimise for efficiency which ultimately affects the effectiveness of the team. The behaviours listed above might be appropriate in the complicate domain such as Manufacturing, where managers have a desire to maximise the utilization of “machines”. In the complex domain such as product development, these sorts of behaviours tend to have adverse effects on people and are counter-productive.
+People are a product of their environment and Managers micro-manage for a myriad of reasons, include pressure of deliver, lack of trust, immature teams among others.
 
-People are a product of their environment and Managers micro-manage for a myriad of reasons, include pressure of deliver, lack of trust,  immature teams among others.
-
-Below  are some consequences of micromanagement: 
+Below are some consequences of micromanagement:
 
 
 - Burn out: Employee are going to burn out by continuously ensuring that they are always working 40hrs of the week, without time to think, time to develop their skills and time to breathe, reflect on their learnings and decide on how best to tackle future objectives.
 
-- Lack of Creativity: You will never truly get your employees to unlock and tap into the creativity that resides in them; knowledge workers work in a complex domain and will require a lot of creativity to be truly success in this domain; micro-managers will never get the best of their employees.
+- Lack of Creativity: You will never truly get your employees to unlock and tap into the creativity that is inherent in them; knowledge workers work in a complex domain and will require a lot of creativity to be truly successful in this domain; micro-managers will never get the best of their employees.
 
-- High rate of Employee Turnover: Its only a matter of time and these employees will leave your organisation  for better employment when they are valued as professionals that they truly are. 
+- High rate of Employee Turnover: People that work for a leader that micro-manages are usually low and morale, not committed to the objectives being set for them and It’s only a matter of time and these employees will leave your organisation for better employment when they are valued as professionals that they truly are.
+ 
 
 The Scrum Framework is a team management framework that I recommend if you want to learn how to build effective individuals that work within effective teams  for an effective organisation and you can join one of our [Scrum and Agile Leadership workshops](https://www.valuehut.co/services/training/professional-scrum-master) to learn how to build effective teams.
 
