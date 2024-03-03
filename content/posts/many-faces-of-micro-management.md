@@ -33,4 +33,5 @@ Below  are some consequences of micromanagement:
 
 - High rate of Employee Turnover: Its only a matter of time and these employees will leave your organisation  for better employment when they are valued as professionals that they truly are. 
 
-The Scrum Framework is a team management framework that I recommend if you want to learn how to build effective individuals that work within effective teams  for an effective organisation and you can join one of my workshops so learn how to build effective teams.
+The Scrum Framework is a team management framework that I recommend if you want to learn how to build effective individuals that work within effective teams  for an effective organisation and you can join one of our [Scrum and Agile Leadership workshops](https://www.valuehut.co/services/training/professional-scrum-master) to learn how to build effective teams.
+
