@@ -15,9 +15,9 @@ image: "images/blog/faces-micro-management.jpg"
 5. You feel that your subordinate should be able to multitask as that’s inherent in humans.
 6. Your subordinate shared a better idea but you don’t trust that they are smart enough; so you insist it must be done your way.
 7. You subordinates are part of a product team but you want to keep them in a siloed functional team where they report to you. 
-8. You really need a daily status report for what they are working and what they did the previous day.
+8. You really need a daily status report - What they are current working on and what they did the previous day.
 9. You believe that  you need to help your subordinate prioritise their work as they must be struggling.
-10. You need to make a decision, even when your subordinate  could have made these decisions; at the end of the day you are the BOSS.
+10. You need to make a decision, even when your subordinate could have made these decisions; at the end of the day you are the BOSS.
 
 
 Does any of these resonates with you? Managers have a crucial role to play in organisations but managers can become too helpful that they get in the way of effective work. Oftentimes, the ways of working is an attempt to optimise for efficiency which ultimately affects the effectiveness of the team. The behaviours listed above might be appropriate in the complicate domain such as Manufacturing, where managers have a desire to maximise the utilization of “machines”. In the complex domain such as product development, these sorts of behaviours tend to have adverse effects on people and are counter-productive.
@@ -33,5 +33,4 @@ Below are some consequences of micromanagement:
 - High rate of Employee Turnover: People that work for a leader that micro-manages are usually low and morale, not committed to the objectives being set for them and It’s only a matter of time and these employees will leave your organisation for better employment when they are valued as professionals that they truly are.
  
 
-The Scrum Framework is a team management framework that I recommend if you want to learn how to build effective individuals that work within effective teams  for an effective organisation and you can join one of our [Scrum and Agile Leadership workshops](https://www.valuehut.co/services/training/professional-scrum-master) to learn how to build effective teams.
-
+There is a better way to manage people! and the Scrum Framework is a team management framework that I recommend to learn how to build effective individuals that work within effective teams  for an effective organisation. You should join one of our [Scrum and Agile Leadership workshops](https://www.valuehut.co/services/training/professional-scrum-master) to begin to unlearn Micro-Management and learn how to manage people with Goals in the workplace.
