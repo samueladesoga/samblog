@@ -7,8 +7,6 @@ tags:  ["Team Work", "Future of Work", "Remote Working"]
 author: "samueladesoga"
 image: "images/blog/hang-and-code.jpeg"
 ---
-Let's Hang and Code 
-
 I was invited to a meeting titled "Let's hang and code"; it was for 2hrs and out of curiosity, I attended. 
 
 This meeting was an idea by the Tech Lead of a startup that I am currently working with. This is a startup where the entire team works remotely and the purpose, I learnt was to foster relationships between the team members and support people who might need help with the task they have picked up for the current sprint.
