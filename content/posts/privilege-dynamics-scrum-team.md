@@ -22,6 +22,8 @@ Accorded to individuals experienced in the required domain or skillset, this pri
 **Cultural Privilege:**
 In geographically distributed Scrum Teams, cultural nuances can create privilege dynamics. Team members from more expressive cultures may unintentionally dominate discussions, leaving others less inclined to confrontations. Recognizing and mitigating this cultural privilege fosters a truly inclusive and collaborative environment.
 
+<blockquote>"Privilege is when you think that something's not a problem because it's not a problem for you personally..." - David Gaider</blockquote>
+
 These privileges often lead to a few team members making decisions for the entire Scrum team, deviating from the essence of self-management.
 
 As the Scrum Master serves the Scrum team, interventions are essential:
