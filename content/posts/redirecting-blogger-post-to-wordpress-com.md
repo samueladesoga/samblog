@@ -64,7 +64,11 @@ document.getElementsByClassName(&#039;redirectText&#039;)[0].innerText = m_wpUrl
 
 
 In this <a href="http://etairaz.wordpress.com/2011/02/21/redirecting-visitors-in-an-old-blogger-blog-to-new-location-on-wordpress-com/" target="_blank">post</a> which i have taken inspiration from, the writer advises to put a gadget anywhere on your blog, that didnt work for me because sometimes where i try to do a javascript
-<blockquote>document.getElementsByClassName('published');</blockquote>
+
+
+document.getElementsByClassName('published');
+
+
 This part of the code fails because the page might not be fully loaded and if the gadget is placed above the post you want to redirect to its new location, the scripts would always fails.
 
 So what I have done is to use two gadgets, use one gadget above the post and this gadget would contain the html bit that displays the information that the blog has moved and the second gadget I place lower down on the page; this is the gadget that  contains the JavaScript to be executed.

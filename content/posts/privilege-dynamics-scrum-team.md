@@ -8,10 +8,14 @@ author: "samueladesoga"
 image: "images/blog/privilege-scrum-team.jpg"
 ---
 
-
-<blockquote>“Within a Scrum Team, there are no sub-teams or hierarchies.” - Scrum Guide, 2020</blockquote>
+{{< quote author="Scrum Guide, 2020">}} 
+Within a Scrum Team, there are no sub-teams or hierarchies.
+{{< /quote >}}
 
 An autonomous and self-managing team thrives when hierarchies take a backseat, allowing Scrum accountabilities to drive the ways of working. While organizational hierarchies persist, especially during the formation of Scrum Teams, it's crucial to discuss privileges and their impact on a team's ability to self-manage.
+
+{{< quote author="David Gaider">}} 
+Privilege is when you think that something's not a problem because it's not a problem for you personally...{{< /quote >}}
 
 **Hierarchical Privilege:**
 This explicit form of privilege arises when a Scrum Team comprises employees with varying levels of seniority. Senior employees wield influence, sometimes making unilateral decisions that affect the entire team. For instance, a line manager, also a developer within the Scrum Team, might cancel a Sprint retrospective without consulting other team members.
@@ -21,8 +25,6 @@ Accorded to individuals experienced in the required domain or skillset, this pri
 
 **Cultural Privilege:**
 In geographically distributed Scrum Teams, cultural nuances can create privilege dynamics. Team members from more expressive cultures may unintentionally dominate discussions, leaving others less inclined to confrontations. Recognizing and mitigating this cultural privilege fosters a truly inclusive and collaborative environment.
-
-<blockquote>"Privilege is when you think that something's not a problem because it's not a problem for you personally..." - David Gaider</blockquote>
 
 These privileges often lead to a few team members making decisions for the entire Scrum team, deviating from the essence of self-management.
 
