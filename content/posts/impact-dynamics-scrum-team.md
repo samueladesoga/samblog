@@ -1,5 +1,5 @@
 ---
-title: "Dynamics of privileges in a Scrum Team"
+title: "Impact of privileges on Self Management within a Scrum Team"
 date: 2023-12-01T22:27:41+03:00
 draft: false
 categories: ["Agile Coaching"]
