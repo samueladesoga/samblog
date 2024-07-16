@@ -7,7 +7,6 @@ tags = ["Scrum", "Sperint Retrospectives", "Self Management", "LIberarting Struc
 author =  "samueladesoga"
 image = "images/blog/sprint-retro-difficult-team-member.jpeg"
 +++
-Sprint Retrospective: Dealing with difficult team members’ behaviours.
 
 Most Teams that regularly run a Sprint Retrospective use the dreaded quadrant, What worked well, What Didn’t work Well, Ideas and Actions (and variants of this quadrants). I am sure your team has used this format many times. I coach Scrum Masters and their team to always prepare for Sprint Retrospective, and part of planning is observing the team all through the Sprint and experiment with different formats for running the Sprint Retrospective.
 
