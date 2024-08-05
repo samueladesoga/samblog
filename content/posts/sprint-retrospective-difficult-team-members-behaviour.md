@@ -21,3 +21,5 @@ We had a scenario in the last [Professional Scrum Facilitation](https://www.valu
 
 
 There are so many formats that you can use to run the Sprint Retrospectives and its always good for the facilitator of the Sprint Retrospective to think about a format that might serve the team better, taking into consideration the current state of the team.
+
+To learn about the Scrum Framework and its associated principles, join one or our [Scrum workshops](https://www.valuehut.co/services/training/professional-scrum-master) in the coming weeks.

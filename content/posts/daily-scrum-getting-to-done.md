@@ -8,7 +8,7 @@ author: "samueladesoga"
 image: "images/blog/daily-scrum.jpg"
 ---
 
-I often get attendees at our Scrum Training asks what is my preferred format for a Daily Scrum. I don’t know have a preferred format.
+I often get attendees at our Scrum Training asks what is my preferred format for a Daily Scrum. I don’t know that I have a preferred format.
 However, if I can get you to reflect on the purpose of the Scrum Guide:
 
 {{< quote author="Scrum Guide, 2020">}} 
@@ -28,5 +28,6 @@ Regardless of the format that your teams choose to adopt, it is important that d
 
 We all know that the Daily Scrum should not be a status updates to the Scrum Master, Delivery Lead or the Product Owner but a planning meeting for the developers; however I have observed that when teams do not use a Sprint Goal, the Daily Scrum very quickly degenerates into a status update.
 
+To learn about the Scrum Framework and its associated principles, join one or our [Scrum workshops](https://www.valuehut.co/services/training/professional-scrum-master) in the coming weeks.
 
 
