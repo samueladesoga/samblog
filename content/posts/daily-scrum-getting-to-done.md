@@ -8,8 +8,7 @@ author: "samueladesoga"
 image: "images/blog/daily-scrum.jpg"
 ---
 
-I often get attendees at our Scrum Training asks what is my preferred format for a Daily Scrum. I don’t know that I have a preferred format.
-However, if I can get you to reflect on the purpose of the Scrum Guide:
+I often get attendees at our Scrum Training ask me for my preferred format for a Daily Scrum. I don’t know that I have a preferred format, but definitely not "What I did yesterday, what I plan to do today and discussion about Blockers". However, if I can get you to reflect on the purpose of the Scrum Guide:
 
 {{< quote author="Scrum Guide, 2020">}} 
 … to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary, adjusting the upcoming planned work.
