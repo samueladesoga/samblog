@@ -82,6 +82,6 @@ If your team is struggling with prioritisation, alignment, or morale, consider t
 Scrum isn’t a magic bullet but a powerful tool for building agility and delivering value. The question isn’t whether Scrum can work for you—it’s whether you’re willing to embrace the principles that make it work.
 
 
-Photo by <a href="https://unsplash.com/@curranrob?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Rob Curran</a> on <a href="https://unsplash.com/photos/grascale-photo-of-people-standing-on-ground-sUXXO3xPBYo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+*I run a several courses on Agile Leadership and Scrum, if you are interested in learning more about the Scrum Framework, check out the ValueHut Consulting [Academy page](https://www.valuehut.co/academy)*
 
-
+Photo by [Rob Curran](https://unsplash.com/@curranrob?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/grascale-photo-of-people-standing-on-ground-sUXXO3xPBYo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
