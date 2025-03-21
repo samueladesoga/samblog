@@ -12,7 +12,7 @@ The process of ideating and developing products (including software products) fa
 
 There are several Agile Frameworks and Practices used within Software Development & Design that help with solving complex (adaptive) problems e.g Discovery process; and sometimes the manner in which these practices are executed seem as though the very nature of Software development is forgotten or undermined..
 
-Agile Framework and Agile Practices attempt to solve complex adaptive problems by optimising for Value using one of more of these principles:
+Agile Framework and Agile Practices attempts to solve complex adaptive problems by optimising for Value using one of more of these principles:
  * Promote the use of experiments in other to Understand the problem.
  * Provide transparency to the process and the outcome.
  * Encourage Feedback as a critical path to Learning.

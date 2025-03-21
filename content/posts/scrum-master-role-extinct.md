@@ -10,7 +10,7 @@ image: "images/blog/scrum-master-extinct.jpg"
  
 With the recent news about Scrum Masters and Agile Coaches being laid off in organizations, the question that comes to mind is whether we are at the end of the road with regard to these roles that have in the past focused on building agile capabilities in organizations on a full time basis.
  
-My opinion is that organizations will continue to have a need for people who are focused on helping teams to continuously improve their ways of working, improving team and organizational effectiveness.
+My opinion is that organizations will continue to have a need for people focused on helping teams to continuously improve their ways of working, improving team and organizational effectiveness.
  
 In the Scrum Guide 2020, roles were replaced with accountabilities and I advise our clients that the implication of this change includes the notion that adopting the Scrum Framework doesn’t require recruiting people with the Scrum Master job title; however, for a successful adoption of the Scrum Framework, an individual will be required to fulfil the accountability of the Scrum Master as defined within the Scrum Framework.
  
