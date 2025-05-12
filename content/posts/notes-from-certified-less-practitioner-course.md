@@ -1,5 +1,5 @@
 ---
-title: "Notes From Certified Less Practitioner Course"
+title: "Notes From Certified LESS Practitioner Course"
 date: 2025-05-11T20:13:37+01:00
 draft: false
 categories: ["Agile Delivery", "Organisational Design"]
