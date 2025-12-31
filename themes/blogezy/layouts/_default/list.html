@@ -35,7 +35,7 @@
 
 					        <div class="post-preview">
 					        	{{ if and (isset .Params "image") .Params.image }}
-					            	<a href="{{.Permalink}}"><img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="" class="img-fluid rounded"></a>
+					            	<a href="{{.Permalink}}"><img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="{{ $.Title }}" class="img-fluid rounded"></a>
 					            {{ end }}
 					        </div>
 
