@@ -1,6 +1,6 @@
 baseURL = "https://samadesoga.me/"
 languageCode = "en-us"
-enableRobotsTXT = true
+enableRobotsTXT = false
 canonifyURLs = true
 title = "Sam Adesoga's Personal Blog"
 theme = "blogezy"
