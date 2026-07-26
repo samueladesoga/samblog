@@ -3,7 +3,7 @@ date = "2011-11-11 16:29:46"
 title = "Stumbled on Chrome Net Internal"
 draft = "false"
 categories = ["Technical"]
-tags = ["Exploratory testing", "Software Testing"]
+tags = ["Exploratory Testing", "Software Testing"]
 author = "samueladesoga"
 +++
 

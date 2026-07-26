@@ -2,7 +2,7 @@
 title = "Working Extended Hours Within Agile Teams"
 date = 2020-05-25T00:49:09+01:00
 draft = false
-categories = ["Coaching"]
+categories = ["Agile Coaching"]
 tags = ["Agile Coaching", "Team Coaching", "Scrum"]
 author = "samueladesoga"
 image = "images/blog/extended-hours.jpg"

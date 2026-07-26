@@ -3,7 +3,7 @@ title = "User Acceptance Testing on Agile Teams"
 date = "2020-01-28T20:08:40+01:00"
 draft = "false"
 categories = ["Agile Delivery"]
-tags = ["Agile Coaching", "Transformation", "User Acceptance Testing"]
+tags = ["Agile Coaching", "Agile Transformation", "User Acceptance Testing"]
 author = "samueladesoga"
 +++
 

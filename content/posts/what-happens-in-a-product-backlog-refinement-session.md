@@ -3,7 +3,7 @@ title: "What Happens in a Product Refinement Session"
 date: 2023-03-30T00:35:29+01:00
 draft: false
 categories: ["Agile Coaching", "Agile Delivery"]
-tags: ["Scrum", "Product Backlog Refinement", "Sprint Planning"]
+tags: ["Scrum", "Product Backlog", "Product Backlog Refinement", "Sprint Planning"]
 author: "samueladesoga"
 image: "images/blog/transparency.jpg"
 ---

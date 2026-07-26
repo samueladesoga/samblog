@@ -3,7 +3,7 @@ date = "2012-02-01 15:30:39"
 title = "Performance Testing experience using Ant and Jmeter - Part 2"
 draft = "false"
 categories = ["Technical"]
-tags = ["performance testing", "Jmeter" , "Test Automation"]
+tags = ["Performance Testing", "Jmeter", "Test Automation"]
 author = "samueladesoga"
 +++
 

@@ -3,7 +3,7 @@ title: "Daily Scrum - A simple format for getting to “Done”"
 date: 2024-08-05T14:36:42+01:00
 draft: false
 categories: ["Agile Coaching", "Agile Delivery"]
-tags: ["Scrum", "Developers", "Daily Scrum"]
+tags: ["Scrum", "Developers", "Daily Scrum", "Scrum Events"]
 author: "samueladesoga"
 image: "images/blog/daily-scrum.jpg"
 ---

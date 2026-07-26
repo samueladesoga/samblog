@@ -2,7 +2,7 @@
 title =  "Estimation in Discovery Phase"
 date = 2020-12-23T17:06:35Z
 draft = false
-categories = ["Agile Delivery", "Coaching"]
+categories = ["Agile Delivery", "Agile Coaching"]
 tags = ["Estimation", "Discovery", "Product Development", "Agile"]
 author =  "samueladesoga"
 image = "images/blog/measure.jpg"

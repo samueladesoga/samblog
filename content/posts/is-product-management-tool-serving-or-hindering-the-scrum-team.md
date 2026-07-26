@@ -3,7 +3,7 @@ title: "Is the Product Backlog Management Tool Serving or Hindering the Scrum Te
 date: 2023-01-27T00:09:38Z
 draft: false
 categories: ["Agile Coaching", "Agile Delivery"]
-tags: ["Scrum", "Scrum Master", "jira", "Product Backlog"]
+tags: ["Scrum", "Scrum Master", "Jira", "Product Backlog"]
 author: "samueladesoga"
 image: "images/blog/pbmt.jpg"
 ---

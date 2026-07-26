@@ -2,8 +2,8 @@
 title = "Sprint Retrospective: Dealing with difficult team members’ behaviours."
 date = 2024-07-16T19:18:47+01:00
 draft = false
-categories = ["Agile Delivery", "Coaching"]
-tags = ["Scrum", "Sperint Retrospectives", "Self Management", "LIberarting Structures"]
+categories = ["Agile Delivery", "Agile Coaching"]
+tags = ["Scrum", "Sprint Retrospectives", "Self Management", "Liberating Structures"]
 author =  "samueladesoga"
 image = "images/blog/sprint-retro-difficult-team-member.jpeg"
 +++

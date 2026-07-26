@@ -3,7 +3,7 @@ date = "2011-04-26 14:16:00"
 title = "Redirecting blogger post to wordpress.com"
 draft = "false"
 categories = ["Technical"]
-tags = ["blogger", "wordpress"]
+tags = ["Blogger", "WordPress"]
 author = "samueladesoga"
 +++
 
