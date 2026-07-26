@@ -3,7 +3,7 @@ date = "2017-01-06 13:59:12"
 title = "Testing an Asynchronous System - Part 2"
 draft = "false"
 categories = ["Technical"]
-tags = ["Test Automation", "CQRS", "Event based Architecture"]
+tags = ["Test Automation", "CQRS", "Event-Driven Architecture"]
 author = "samueladesoga"
 +++
 

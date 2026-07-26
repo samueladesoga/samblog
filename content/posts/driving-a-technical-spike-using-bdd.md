@@ -3,7 +3,7 @@ title =  "Driving a Technical Spike Using Behaviour Driven Development"
 date = 2018-10-22T23:37:26+01:00
 draft = false
 categories = ["Agile Delivery"]
-tags = ["BDD", "Technical Spike", "Coaching"]
+tags = ["BDD", "Technical Spike"]
 author =  "samueladesoga"
 image = "images/blog/spike-bdd.jpg"
 +++

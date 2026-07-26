@@ -3,7 +3,7 @@ title = "Shu Ha Ri Model"
 date =  2020-07-25T13:31:10+01:00
 draft = "false"
 categories = ["Agile Delivery", "Feature"]
-tags = ["Personal Development", "Learning", "Coaching" ]
+tags = ["Coaching"]
 author = "samueladesoga"
 image = "images/blog/shuhari.jpg"
 +++

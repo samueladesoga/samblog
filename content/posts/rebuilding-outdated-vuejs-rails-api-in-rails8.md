@@ -3,7 +3,7 @@ title = "Rebuilding Outdated Vuejs Rails Api in Rails8"
 date =  2025-08-26T10:24:43+01:00
 draft = false
 categories = ["Technical"]
-tags = ["Rails8", "VueJS", "Kamal2"]
+tags = ["Rails 8", "VueJS", "Kamal 2"]
 author = "samueladesoga"
 image = "images/blog/deploy-with-kamal2.png"
 +++

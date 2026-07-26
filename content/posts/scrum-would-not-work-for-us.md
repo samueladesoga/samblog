@@ -3,7 +3,7 @@ title: "Scrum Would Never Work for Us Here… Or Would It?"
 date: 2025-03-21T07:56:13Z
 draft: false
 categories: ["Agile Delivery", "Agile Coaching"]
-tags:  ["Scrum Framework", "Goal Setting"]
+tags:  ["Scrum Framework", "Goal Setting", "Sprint Goal"]
 author: "samueladesoga"
 image: "images/blog/resistance.jpg"
 ---

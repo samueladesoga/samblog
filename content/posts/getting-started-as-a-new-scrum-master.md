@@ -3,7 +3,7 @@ date = "2022-06-08 09:00:00"
 title = "Getting Started as a New Scrum Master"
 draft = "false"
 categories = ["Agile Coaching", "Agile Delivery"]
-tags = ["Scrum", "Scrum Master", "Career" ]
+tags = ["Scrum", "Scrum Master", "Career", "PSM"]
 author = "samueladesoga"
 image = "images/blog/psm-live-class.jpg"
 +++

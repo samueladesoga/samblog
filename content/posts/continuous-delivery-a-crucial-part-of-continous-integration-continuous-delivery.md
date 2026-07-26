@@ -3,7 +3,7 @@ title = "Tests automation, a crucial part of Continuous Integration and Continuo
 date = 2018-06-15T09:56:27+01:00
 draft = false
 categories = ["Agile Delivery"]
-tags = ["Test Automation", "Continuous Delivery", "Continuous Integration"]
+tags = ["Test Automation", "CI/CD"]
 +++
 
 I was recently contacted to write an article for a [devops online](http://www.devopsonline.co.uk/continuous-integration-testing-and-delivery/) which has been published here but i wanted to post same article on my blog. This is by no means a detailed tutorial but i hope it gives a very quick overview on Continuous Integration and Continous Delivery.

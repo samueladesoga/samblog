@@ -1,6 +1,6 @@
 ---
 title: "Too Many Meetings at Work? It's Rarely the Meetings"
-date: 2026-07-26T09:58:11-04:00
+date: 2026-07-26T00:05:00-04:00
 draft: false
 categories: ["Agile Delivery", "Agile Coaching"]
 tags: ["Work in Progress", "Context Switching", "Kanban"]

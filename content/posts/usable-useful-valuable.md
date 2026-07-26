@@ -3,7 +3,7 @@ title = "Usable, Useful & Valuable"
 date =  2021-11-14T13:29:31Z
 draft = false
 categories = ["Agile Coaching"]
-tags = ["Scrum", "Valuable", "Increment", "Product Thinking"]
+tags = ["Scrum", "Increment"]
 author = "samueladesoga"
 image = "images/blog/UsableUsefulValuable.png"
 +++

@@ -3,7 +3,7 @@ title: "The Many Faces of Micro Management"
 date: 2024-03-01T23:26:17Z
 draft: false
 categories: ["Agile Coaching"]
-tags:  ["Scrum Team", "Leadership", "Micro Management", "Self Management"]
+tags:  ["Scrum Team", "Micro Management", "Self Management"]
 author: "samueladesoga"
 image: "images/blog/faces-micro-management.jpg"
 ---

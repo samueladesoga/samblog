@@ -3,7 +3,7 @@ title =  "Remote working in Agile Organisations Post Covid19"
 date = 2020-04-15T19:30:04+01:00
 draft = false
 categories = ["Agile Coaching", "Agile Delivery"]
-tags = ["Remote Working", "Enterprise Agility", "Coaching"]
+tags = ["Remote Working", "Business Agility", "Coaching"]
 author =  "samueladesoga"
 image = "images/blog/remote-work.jpg"
 +++

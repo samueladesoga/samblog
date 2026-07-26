@@ -3,7 +3,7 @@ title: "Is the Scrum Master role extinct?"
 date: 2023-11-21T09:40:49Z
 draft: false
 categories: ["Agile Delivery", "Agile Coaching"]
-tags:  ["Scrum Master", "Delivery Manager", "Agile Roles", "Agile Coaches"]
+tags:  ["Scrum Master", "Delivery Manager", "Career"]
 author: "samueladesoga"
 image: "images/blog/scrum-master-extinct.jpg"
 ---

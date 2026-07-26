@@ -3,7 +3,7 @@ title: "How to improve the Scrum team effectiveness with the sprint goal"
 date: 2023-01-29T20:51:12Z
 draft: false
 categories: ["Agile Coaching", "Agile Delivery"]
-tags: ["Scrum", "Scrum Master", "Sprint Goal", "Scrum Events"]
+tags: ["Scrum", "Scrum Master", "Sprint Goal", "Scrum Events", "Sprint Planning"]
 author: "samueladesoga"
 image: "images/blog/scrum-framework.png"
 ---

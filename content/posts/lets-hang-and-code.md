@@ -3,7 +3,7 @@ title: "Lets Hang and Code"
 date: 2024-05-16T18:05:09+01:00
 draft: false
 categories: ["Agile Coaching"]
-tags:  ["Team Work", "Future of Work", "Remote Working"]
+tags:  ["Remote Working", "Team Coaching"]
 author: "samueladesoga"
 image: "images/blog/hang-and-code.jpeg"
 ---
