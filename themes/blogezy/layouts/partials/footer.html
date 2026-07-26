@@ -1,0 +1,57 @@
+<footer class="site-footer">
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-col footer-about">
+                <img src="{{ .Site.BaseURL }}images/photo.jpg" alt="{{ .Site.Params.author }}" class="footer-avatar">
+                <p>Managing Consultant at <a target="_blank" href="https://www.valuehut.co">ValueHut Consulting</a>, an agile Management consultancy, helping organisations adopt alternative practices for building better products. Sam has a lot of experience supporting Leaders and their Teams on Enterprise Agility with an overaching goal; helping organisations develop capabilities that is required to stay ahead of competition.</p>
+                <ul class="socials">
+                    <li><a href="{{ .Site.Params.social.facebook }}" aria-label="Facebook"><i class="mdi mdi-facebook"></i></a></li>
+                    <li><a href="{{ .Site.Params.social.twitter }}" aria-label="Twitter"><i class="mdi mdi-twitter"></i></a></li>
+                    <li><a href="{{ .Site.Params.social.instagram }}" aria-label="Instagram"><i class="mdi mdi-instagram"></i></a></li>
+                    <li><a href="{{ .Site.Params.social.linkedin }}" aria-label="LinkedIn"><i class="mdi mdi-linkedin"></i></a></li>
+                    <li><a href="{{ .Site.Params.social.github }}" aria-label="GitHub"><i class="mdi mdi-github-circle"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <div class="widget-title">Categories</div>
+                <ul>
+                    {{ range $name, $items := .Site.Taxonomies.categories }}
+                        <li><a href="{{ $.Site.BaseURL }}categories/{{ $name | urlize | lower }}">{{ humanize $name }} <span>({{ len $items }})</span></a></li>
+                    {{ end }}
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <div class="widget-title">Recent Posts</div>
+                <ul>
+                    {{ range first 4 (where (where .Site.RegularPages "Section" "posts").ByDate.Reverse "Permalink" "!=" .Permalink) }}
+                        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+
+        </div>
+
+        {{ $tagCounts := slice }}
+        {{ range $name, $items := .Site.Taxonomies.tags }}
+            {{ $tagCounts = $tagCounts | append (dict "name" $name "count" (len $items)) }}
+        {{ end }}
+        {{ $topTags := sort (first 15 (sort $tagCounts "count" "desc")) "name" }}
+        <div class="footer-tags">
+            <div class="widget-title">Popular Tags</div>
+            <div class="tagcloud">
+                {{ range $topTags }}
+                    <a href="{{ $.Site.BaseURL }}tags/{{ .name | urlize }}">{{ .name }}</a>
+                {{ end }}
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>{{ now.Year }} &copy; {{ .Site.Params.author }}</p>
+        </div>
+
+    </div>
+</footer>

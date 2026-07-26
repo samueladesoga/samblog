@@ -1,28 +1,64 @@
 /*  Theme Name: Blogezy - Responsive Blog Template
     Author: Zoyothemes
     Version: 1.0.0
-    File Description: Default color file of the template
+    File Description: Default color / design token file of the template
 */
 
+:root {
+    --color-bg: #ffffff;
+    --color-bg-subtle: #f6f8fa;
+    --color-text: #24292f;
+    --color-text-muted: #6a737d;
+    --color-border: #eaecef;
+    --color-accent: #0db3e3;
+    --color-accent-dark: #0a8fb8;
+    --font-body: 'Nunito Sans', sans-serif;
+    --font-mono: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+    --content-width: 720px;
+}
+
 .widget-title:after {
-    border-bottom: 1px solid #0db3e3;
+    border-bottom: 2px solid var(--color-accent);
 }
 
 .quote-post .blockquote {
-    border: 2px solid #0db3e3;
+    border: 2px solid var(--color-accent);
 }
 
-.quote-post .blockquote:before,.related-post .post-header a:hover,.media-heading a:hover,.widget ul li a:hover,
-.widget ol li a:hover,.search-button:hover,.post-meta a:hover,.post-meta a:focus,.post-title a:hover,.btn-outline-custom{
-    color: #0db3e3;
+.site-nav a:hover,
+.site-nav a:focus,
+.related-post .post-header a:hover,
+.widget ul li a:hover,
+.widget ol li a:hover,
+.search-button:hover,
+.post-meta a:hover,
+.post-meta a:focus,
+.post-title a:hover,
+.footer-col a:hover,
+.btn-outline-custom {
+    color: var(--color-accent);
 }
 
-.link-post,.post-author-box .socials li a:hover,.tagcloud > a:hover,.post-tags a:hover,.post-tags a:focus,.btn-outline-custom.active,
-.btn-outline-custom:hover,.btn-outline-custom:active,.show>.btn-outline-custom.dropdown-toggle{
-    background-color: #0db3e3;
+.link-post,
+.tagcloud > a:hover,
+.post-tags a:hover,
+.post-tags a:focus,
+.btn-outline-custom.active,
+.btn-outline-custom:hover,
+.btn-outline-custom:active,
+.show > .btn-outline-custom.dropdown-toggle {
+    background-color: var(--color-accent);
 }
 
-.widget select:focus,.post-author-box .socials li a:hover,.btn-outline-custom.active,.btn-outline-custom:hover,
-.btn-outline-custom:active,.show>.btn-outline-custom.dropdown-toggle,.btn-outline-custom{
-    border-color: #0db3e3;
+.widget select:focus,
+.btn-outline-custom.active,
+.btn-outline-custom:hover,
+.btn-outline-custom:active,
+.show > .btn-outline-custom.dropdown-toggle,
+.btn-outline-custom {
+    border-color: var(--color-accent);
+}
+
+.socials li a:hover {
+    background-color: var(--color-accent-dark) !important;
 }

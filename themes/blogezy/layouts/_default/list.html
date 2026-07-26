@@ -14,7 +14,7 @@
 
 	        <div class="row">
 	            <!-- Content-->
-				<div class="col-xl-8">
+				<div class="col-lg-10 col-xl-8 mx-auto">
 				    {{ range where .Paginator.Pages "Section" "posts" }}
 					    <article class="post">
 
@@ -24,10 +24,11 @@
 					                <li><i class="mdi mdi-calendar"></i> {{ .Date.Format "January 2, 2006" }}</li>
 					                <li><i class="mdi mdi-tag-text-outline"></i>
 								        {{ with .Params.tags }}
-									      {{ range . }}
-									        <a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ . }}</a>,
-									      {{ end }}
-							            {{ end }} 
+									      {{ range $i, $tag := . -}}
+									        {{ if $i }}, {{ end -}}
+									        <a href="{{ "tags" | absURL }}/{{ $tag | urlize }}">{{ $tag }}</a>
+									      {{- end }}
+							            {{ end }}
 					                </li>
 					                <li><i class="mdi mdi-clock"></i> {{ .ReadingTime }} minutes read</li>
 					            </ul>
@@ -58,12 +59,6 @@
 				    </div>
 				</div>
 	            <!-- Content end-->
-
-			    <!-- Sidebar-->
-			    <div class="col-xl-4">
-			        {{ partial  "right-side-components.html" . }}
-			    </div>
-			    <!-- Sidebar end-->	          
 	        </div>
 
 	    </div>

@@ -7,25 +7,31 @@
 
     'use strict';
 
-    function initMetisMenu() {
-        //metis menu
-        $("#side-menu").metisMenu();
+    function initNavToggle() {
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            var expanded = $(this).attr('aria-expanded') === 'true';
+            $(this).attr('aria-expanded', !expanded);
+            $('#site-nav').toggleClass('is-open');
+        });
     }
 
-    function initLeftMenuCollapse() {
-        // Left menu collapse
-        $('.button-menu-mobile').on('click', function (event) {
+    function initSearchToggle() {
+        $('#search-toggle').on('click', function (event) {
             event.preventDefault();
-            $("body").toggleClass("enlarged");
+            var expanded = $(this).attr('aria-expanded') === 'true';
+            $(this).attr('aria-expanded', !expanded);
+            $('#site-search').toggleClass('is-open');
+            if (!expanded) {
+                $('#search-input').trigger('focus');
+            }
         });
     }
 
     function init() {
-        initMetisMenu();
-        initLeftMenuCollapse();
+        initNavToggle();
+        initSearchToggle();
     }
     init();
 
 })(jQuery)
-
-

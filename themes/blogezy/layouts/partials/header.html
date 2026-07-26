@@ -1,0 +1,30 @@
+<header class="site-header">
+    <div class="container">
+        <div class="site-header-inner">
+            <a href="{{ .Site.BaseURL }}" class="site-brand">
+                <img src="{{ .Site.BaseURL }}images/logo.png" alt="{{ .Site.Title }}" class="site-brand-logo">
+            </a>
+
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
+                <ul>
+                    {{ range .Site.Menus.main }}
+                    <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </nav>
+
+            <div class="site-header-actions">
+                <button type="button" class="icon-btn" id="search-toggle" aria-label="Search" aria-expanded="false" aria-controls="site-search">
+                    <i class="mdi mdi-magnify"></i>
+                </button>
+                <button type="button" class="icon-btn nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+            </div>
+        </div>
+
+        <form class="site-search" id="site-search" role="search">
+            <input id="search-input" class="form-control" type="search" placeholder="Search posts…" aria-label="Search posts">
+        </form>
+    </div>
+</header>

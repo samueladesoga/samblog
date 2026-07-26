@@ -61,9 +61,6 @@
         <!-- Bootstrap core CSS -->
         <link href="{{ .Site.BaseURL }}css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- MENU CSS -->
-        <link href="{{ .Site.BaseURL }}css/metismenu.min.css" rel="stylesheet" type="text/css" />
-
         <!-- MATERIALDESIGN ICON -->
         <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/materialdesignicons.min.css">
 
@@ -74,26 +71,20 @@
     </head>
 
     <body>
-        <!-- Begin page -->
-        <div id="wrapper">
-            <!-- Top Bar Start -->
-            {{ partial "topbar-mobile.html" . }}
-            <!-- Top Bar End -->
-            <!-- ========== Left Sidebar Start ========== -->
-            {{ partial "left-side-menu.html" . }}
-            <!-- Left Sidebar End -->
+        {{ partial "header.html" . }}
 
-            <div class="page-wrapper">
-                {{ block "main" . }}
+        <main>
+            {{ block "main" . }}
 
-                {{ end }}
-            </div>
-        </div>
+            {{ end }}
+        </main>
+
+        {{ partial "footer.html" . }}
+
         <!-- js placed at the end of the document so the pages load faster -->
         <script src="{{ .Site.BaseURL }}js/jquery.min.js"></script>
         <script src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
         <script src="{{ .Site.BaseURL }}js/jquery.easing.min.js"></script>
-        <script src="{{ .Site.BaseURL }}js/metisMenu.min.js"></script>
         <script src="{{ .Site.BaseURL }}js/lunr.js"></script>
         <script src="{{ .Site.BaseURL }}js/custom.js"></script>
         <!--common script for all pages-->
