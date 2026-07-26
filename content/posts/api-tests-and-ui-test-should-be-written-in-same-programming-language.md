@@ -1,6 +1,7 @@
 +++
 date = "2017-08-24 22:07:38"
 title = "Should API test and UI Acceptance Tests be written in the same programming language?"
+description = "Why writing API tests and UI acceptance tests in the same language (Groovy, Geb, Spock) reduces duplication, silos, and maintenance cost."
 draft = "false"
 categories = ["Agile Delivery", "Technical"]
 tags = ["Test Automation", "BDD"]

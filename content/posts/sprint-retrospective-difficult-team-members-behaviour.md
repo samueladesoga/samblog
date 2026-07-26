@@ -1,5 +1,6 @@
 +++
 title = "Sprint Retrospective: Dealing with difficult team members’ behaviours."
+description = "A Liberating Structures-inspired Sprint Retrospective format for surfacing and addressing an overbearing team member's behaviour."
 date = 2024-07-16T19:18:47+01:00
 draft = false
 categories = ["Agile Delivery", "Agile Coaching"]

@@ -1,5 +1,6 @@
 ---
 title: "The Many Faces of Micro Management"
+description: "Ten recognizable micro-management behaviours and why they burn out teams and stifle creativity in complex, knowledge-work domains."
 date: 2024-03-01T23:26:17Z
 draft: false
 categories: ["Agile Coaching"]

@@ -1,5 +1,6 @@
 +++
 title = "Transforming Funnels Into Pipes"
+description = "Strategies - eliminating key-person dependencies, shift-left, task swarming - for turning bottleneck-shaped delivery processes into steady pipelines."
 date = 2019-09-25T13:57:12+01:00
 draft = false
 categories = ["Agile Delivery"]

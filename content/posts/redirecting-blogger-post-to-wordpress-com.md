@@ -1,6 +1,7 @@
 +++
 date = "2011-04-26 14:16:00"
 title = "Redirecting blogger post to wordpress.com"
+description = "A JavaScript redirect script for sending visitors from individual old Blogger posts to their equivalent page on WordPress.com."
 draft = "false"
 categories = ["Technical"]
 tags = ["Blogger", "WordPress"]

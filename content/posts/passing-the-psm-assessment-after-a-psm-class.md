@@ -1,5 +1,6 @@
 ---
 title: "Passing the PSM 1 Assessment After a Professional Scrum Master Class"
+description: "Study advice for passing the Professional Scrum Master I (PSM 1) assessment after a Professional Scrum Master class."
 date: 2022-08-26T22:55:18+01:00
 draft: false
 categories: ["Agile Delivery", "Agile Coaching"]

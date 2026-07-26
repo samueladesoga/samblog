@@ -1,5 +1,6 @@
 ---
 title: "Lets Hang and Code"
+description: "An informal \"let's hang and code\" co-working ritual that builds connection and psychological safety on a fully remote team."
 date: 2024-05-16T18:05:09+01:00
 draft: false
 categories: ["Agile Coaching"]

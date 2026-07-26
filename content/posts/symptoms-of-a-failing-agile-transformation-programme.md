@@ -1,5 +1,6 @@
 +++
 title = "5 Symptoms of a Failing Agile Transformation Programme"
+description = "Five recognisable symptoms of a failing Agile transformation, from fixation on tools to lack of management buy-in."
 date = "2019-10-15T22:27:44+01:00"
 draft = "false"
 categories = ["Agile Delivery"]

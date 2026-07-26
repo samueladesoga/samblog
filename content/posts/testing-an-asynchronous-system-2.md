@@ -1,6 +1,7 @@
 +++
 date = "2017-01-06 13:59:12"
 title = "Testing an Asynchronous System - Part 2"
+description = "Writing automated negative-path tests for a CQRS, event-driven system where failed writes never appear in the read side."
 draft = "false"
 categories = ["Technical"]
 tags = ["Test Automation", "CQRS", "Event-Driven Architecture"]

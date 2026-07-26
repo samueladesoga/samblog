@@ -1,6 +1,7 @@
 +++
 date = "2012-02-01 15:30:39"
 title = "Performance Testing experience using Ant and Jmeter - Part 2"
+description = "Running JMeter performance tests from the command line with an Ant task, so they can run inside a CI pipeline. Part 2 of 2."
 draft = "false"
 categories = ["Technical"]
 tags = ["Performance Testing", "Jmeter", "Test Automation"]

@@ -1,6 +1,7 @@
 +++
 date = "2011-11-11 16:29:46"
 title = "Stumbled on Chrome Net Internal"
+description = "A quick pointer to chrome://net-internals as a useful, underused resource for testers debugging web applications."
 draft = "false"
 categories = ["Technical"]
 tags = ["Exploratory Testing", "Software Testing"]

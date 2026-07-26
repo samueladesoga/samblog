@@ -15,21 +15,33 @@
    <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}"/>
     <link rel="canonical" href="{{ .Permalink }}" />
 
+    {{ $socialImage := "" }}
+    {{ if and (isset .Params "image") .Params.image }}
+        {{ $socialImage = printf "%s%s" .Site.BaseURL .Params.image }}
+    {{ else if eq .Section "posts" }}
+        {{ $socialImage = printf "%simages/blog/default-blog-image.jpg" .Site.BaseURL }}
+    {{ else }}
+        {{ $socialImage = printf "%simages/logo.png" .Site.BaseURL }}
+    {{ end }}
+
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
     <meta name="twitter:title" content="{{ .Title }}{{ if .IsHome }} - {{ .Site.Params.Tagline }}{{ else }} - {{ .Site.Title }}{{ end }}" />
+    <meta name="twitter:image" content="{{ $socialImage }}" />
     <meta name="twitter:site" content="{{ .Site.Params.twitter }}" />
     <meta name="twitter:creator" content="{{ .Site.Params.twitter }}" />
     <!-- OG data -->
     <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+    <meta property="og:type" content="{{ if eq .Section "posts" }}article{{ else }}website{{ end }}" />
     <meta content="{{ .Title }}{{ if .IsHome }} - {{ .Site.Params.Tagline }}{{ else }} - {{ .Site.Title }}{{ end }}" property="og:title">
     <meta content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" property="og:description">
+    <meta property="og:image" content="{{ $socialImage }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:site_name" content="{{ .Site.Title }}" />
     {{ range .Params.categories }}<meta property="article:section" content="{{ . }}" />{{ end }}
     {{ if isset .Params "date" }}<meta property="article:published_time" content="{{ time .Date }}" />{{ end }}
+    {{ if isset .Params "tags" }}{{ range .Params.tags }}<meta property="article:tag" content="{{ . }}" />{{ end }}{{ end }}
 
 
 

@@ -1,5 +1,6 @@
 +++
 title = "User Acceptance Testing on Agile Teams"
+description = "Why a separate User Acceptance Testing phase is usually a sign an \"agile\" team hasn't yet built real customer collaboration into its Definition of Done."
 date = "2020-01-28T20:08:40+01:00"
 draft = "false"
 categories = ["Agile Delivery"]

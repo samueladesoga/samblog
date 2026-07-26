@@ -1,46 +1,79 @@
-    {{ if .IsHome }}
-    <script type="application/ld+json">
-    { 
-      "@context": "http://schema.org", 
-      "@type": "WebSite", 
-      "url": "{{ .Permalink }}", 
-      "name": "{{ .Site.Title }}",
-       "author": {
-          "@type": "Person",
-          "name": "{{ .Site.Params.author }}"
-        },
-      "description": "{{ .Site.Params.description }}"
+{{ $sameAs := slice }}
+{{ with .Site.Params.social.linkedin }}{{ $sameAs = $sameAs | append . }}{{ end }}
+{{ with .Site.Params.social.twitter }}{{ $sameAs = $sameAs | append . }}{{ end }}
+{{ with .Site.Params.social.github }}{{ $sameAs = $sameAs | append . }}{{ end }}
+{{ with .Site.Params.social.facebook }}{{ $sameAs = $sameAs | append . }}{{ end }}
+{{ with .Site.Params.social.instagram }}{{ $sameAs = $sameAs | append . }}{{ end }}
+
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "{{ .Permalink }}",
+  "name": "{{ .Site.Title }}",
+  "description": "{{ .Site.Params.description }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.author }}",
+    "sameAs": {{ $sameAs }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Params.author }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.BaseURL }}images/logo.png"
     }
-    </script>
-    {{ end }}
-    {{ if .IsPage }}
-        <script type="application/ld+json">
-        {{if eq .Section "post"}}
-        { 
-            "@context": "http://schema.org", 
-            "@type": "BlogPosting",
-            "headline": "{{ .Title }}",
-            "genre": "{{ range .Params.categories }}{{ . }}{{ end }}",  
-            "url": "{{ .Permalink }}",
-            "datePublished": "{{ time .Date }}",
-            "description": "{{ .Description }}",
-            "author": {
-                "@type": "Person",
-                "name": "{{ .Site.Params.author }}"
-            }
-         }
-        {{ else }}
-        { 
-          "@context": "http://schema.org", 
-          "@type": "WebSite", 
-          "url": "{{ .Permalink }}", 
-          "name": "{{ .Title }}",
-           "author": {
-              "@type": "Person",
-              "name": "{{ .Site.Params.author }}"
-            },
-          "description": "{{ .Site.Params.description }}"
-        }
-        {{ end }}
-        </script>
-    {{ end }}
+  }
+}
+</script>
+{{ end }}
+{{ if .IsPage }}
+<script type="application/ld+json">
+{{ if eq .Section "posts" }}
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ .Title }}",
+  "articleSection": "{{ delimit .Params.categories ", " }}",
+  "keywords": "{{ delimit .Params.tags ", " }}",
+  "url": "{{ .Permalink }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "description": "{{ .Description }}",
+  "image": "{{ if and (isset .Params "image") .Params.image }}{{ .Site.BaseURL }}{{ .Params.image }}{{ else }}{{ .Site.BaseURL }}images/blog/default-blog-image.jpg{{ end }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.author }}",
+    "sameAs": {{ $sameAs }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Params.author }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.BaseURL }}images/logo.png"
+    }
+  }
+}
+{{ else }}
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "{{ .Permalink }}",
+  "name": "{{ .Title }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.author }}",
+    "sameAs": {{ $sameAs }}
+  },
+  "description": "{{ .Site.Params.description }}"
+}
+{{ end }}
+</script>
+{{ end }}

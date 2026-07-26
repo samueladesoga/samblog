@@ -1,6 +1,7 @@
 +++
 date = "2011-07-20 14:24:55"
 title = "Test automation click might not completely simulate an actual human click"
+description = "Debugging a Watir/Selenium click that visually worked but failed, by manually firing the missing onclick event."
 draft = "false"
 categories = ["Agile Delivery", "Technical"]
 tags = ["Test Automation", "JavaScript"]

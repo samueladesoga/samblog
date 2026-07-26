@@ -1,5 +1,6 @@
 +++
 title = "Tests automation, a crucial part of Continuous Integration and Continuous Delivery"
+description = "Why automated tests, not just automated builds, are what make Continuous Integration and Continuous Delivery actually work."
 date = 2018-06-15T09:56:27+01:00
 draft = false
 categories = ["Agile Delivery"]

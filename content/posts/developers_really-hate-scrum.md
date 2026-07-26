@@ -1,5 +1,6 @@
 ---
 title: "Developers Really Hate Scrum? No!"
+description: "Why developers' frustration with Scrum usually comes from \"Mechanical Scrum\" rather than the framework itself, and how self-management fixes it."
 date: 2023-09-07T23:00:16+01:00
 draft: false
 categories: ["Agile Coaching", "Agile Delivery"]

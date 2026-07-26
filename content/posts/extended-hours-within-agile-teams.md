@@ -1,5 +1,6 @@
 +++
 title = "Working Extended Hours Within Agile Teams"
+description = "Why extended-hours contracts backfire on agile teams, and why two full-time consultants usually outperform one working 70-80 hours a week."
 date = 2020-05-25T00:49:09+01:00
 draft = false
 categories = ["Agile Coaching"]

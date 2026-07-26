@@ -1,6 +1,7 @@
 +++
 date = "2017-08-28 13:27:49"
 title = "Why do you need to learn SQL as a tester?"
+description = "Three practical reasons testers should be comfortable querying the database directly, from debugging to building test data."
 draft = "false"
 categories = ["Agile Delivery", "Technical"]
 tags = ["Software Testing", "SQL"]

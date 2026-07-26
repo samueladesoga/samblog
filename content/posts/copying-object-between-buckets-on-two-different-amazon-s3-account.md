@@ -1,6 +1,7 @@
 +++
 date = "2013-02-27 15:15:03"
 title = "Copying objects between two different amazon s3 accounts"
+description = "A Python script using boto for copying objects between two S3 buckets that live in different AWS accounts."
 draft = "false"
 categories = ["Technical"]
 tags = ["AWS S3"]

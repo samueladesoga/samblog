@@ -1,5 +1,6 @@
 ---
 title: "Scrum Values for Product Teams"
+description: "How the five Scrum Values - Commitment, Focus, Openness, Respect, Courage - build the trust and collaboration any product team needs."
 date: 2024-10-01T21:41:00+01:00
 draft: false
 categories: ["Agile Delivery", "Agile Coaching"]

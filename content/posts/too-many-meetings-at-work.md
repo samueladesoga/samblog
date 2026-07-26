@@ -1,5 +1,6 @@
 ---
 title: "Too Many Meetings at Work? It's Rarely the Meetings"
+description: "Ad-hoc meetings are usually a symptom, not the cause - why meeting overload is really a sign of too much work in progress."
 date: 2026-07-26T00:05:00-04:00
 draft: false
 categories: ["Agile Delivery", "Agile Coaching"]

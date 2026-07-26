@@ -1,5 +1,6 @@
 ---
 title: "What Happens in a Product Refinement Session"
+description: "The core activities of an effective Product Backlog Refinement session: slicing PBIs, estimating, reviewing acceptance criteria, and ordering the backlog."
 date: 2023-03-30T00:35:29+01:00
 draft: false
 categories: ["Agile Coaching", "Agile Delivery"]

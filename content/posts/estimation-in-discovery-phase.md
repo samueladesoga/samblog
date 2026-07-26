@@ -1,5 +1,6 @@
 +++
 title =  "Estimation in Discovery Phase"
+description = "Why absolute, man-day estimates fail during product Discovery, and why relative estimation fits complex, uncertain problems better."
 date = 2020-12-23T17:06:35Z
 draft = false
 categories = ["Agile Delivery", "Agile Coaching"]

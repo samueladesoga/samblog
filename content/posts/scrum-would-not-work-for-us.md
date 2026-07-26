@@ -1,5 +1,6 @@
 ---
 title: "Scrum Would Never Work for Us Here… Or Would It?"
+description: "Addressing the common \"Scrum would never work here\" objection through the lens of Product and Sprint Goals, trust, and focus."
 date: 2025-03-21T07:56:13Z
 draft: false
 categories: ["Agile Delivery", "Agile Coaching"]

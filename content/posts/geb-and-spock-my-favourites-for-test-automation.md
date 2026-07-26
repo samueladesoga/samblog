@@ -1,6 +1,7 @@
 +++
 date = "2016-02-29 22:47:57"
 title = "Geb and Spock: My favourites for test automation"
+description = "Why Geb and Spock have replaced raw WebDriver and Cucumber as a preferred test automation toolset, with a working example project."
 draft = "false"
 categories = ["Agile Delivery", "Technical"]
 tags = ["BDD", "Test Automation"]

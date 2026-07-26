@@ -1,6 +1,7 @@
 +++
 date = "2016-02-29 21:53:14"
 title = "Never too early to start thinking about your tests"
+description = "Why test strategy needs to be part of system design from day one, and how to keep an automated UI test suite lean over time."
 draft = "false"
 categories = ["Agile Delivery", "Technical"]
 tags = ["Test Strategy", "Test Automation"]

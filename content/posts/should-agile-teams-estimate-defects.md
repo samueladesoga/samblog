@@ -1,5 +1,6 @@
 +++
 title = "Should Agile Teams Estimate Defects?"
+description = "Two approaches to handling defect estimation on agile teams: estimating every defect, or reserving sprint capacity for fixes."
 date = 2022-11-02T08:26:49Z
 draft = false
 categories = ["Agile Coaching", "Agile Delivery"]

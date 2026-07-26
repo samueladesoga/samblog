@@ -1,5 +1,6 @@
 ---
 title: "Shape Up vs. Scrum: Two Philosophies of Building Software"
+description: "Six shared principles behind Basecamp's Shape Up and the Scrum Framework, and what practitioners of each can learn from the other."
 date: 2026-04-28T23:26:17Z
 draft: true
 categories: ["Agile Coaching"]

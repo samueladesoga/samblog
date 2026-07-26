@@ -1,6 +1,7 @@
 +++
 date = "2010-09-03 14:55:00"
 title = "A tester's reflection on kanban plus BDD"
+description = "A tester's experience report on combining Kanban flow with BDD (Cucumber, Watir, RSpec) to keep defect rates low and testing close to development time."
 draft = "false"
 categories = ["Agile Delivery", "Technical"]
 tags = ["Kanban", "Test Automation", "BDD" ]

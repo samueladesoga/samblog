@@ -1,5 +1,6 @@
 ---
 title: "Is the Product Backlog Management Tool Serving or Hindering the Scrum Team"
+description: "What a product backlog management tool like Jira should actually do to support the Product Owner, Developers, and Scrum Master."
 date: 2023-01-27T00:09:38Z
 draft: false
 categories: ["Agile Coaching", "Agile Delivery"]

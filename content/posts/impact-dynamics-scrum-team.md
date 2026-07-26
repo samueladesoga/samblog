@@ -1,5 +1,6 @@
 ---
 title: "Impact of privileges on Self Management"
+description: "How hierarchical, expertise, and cultural privilege quietly undermine a Scrum team's ability to self-manage, and how a Scrum Master can intervene."
 date: 2023-12-01T22:27:41+03:00
 draft: false
 categories: ["Agile Coaching"]

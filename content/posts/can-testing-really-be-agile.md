@@ -1,5 +1,6 @@
 +++
 title = "Can Testing Really Be Agile?"
+description = "A conference talk applying the four Agile Manifesto values directly to software testing, and why a UAT phase is often a sign testing isn't yet agile."
 date = "2019-05-21T23:29:55+01:00"
 draft = "false"
 categories = ["Agile Delivery", "Conference Talk"]

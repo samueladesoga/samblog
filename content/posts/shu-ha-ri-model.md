@@ -1,5 +1,6 @@
 +++
 title = "Shu Ha Ri Model"
+description = "A short explainer of the Shu-Ha-Ri model for mapping personal and organisational growth through a learning journey."
 date =  2020-07-25T13:31:10+01:00
 draft = "false"
 categories = ["Agile Delivery", "Feature"]

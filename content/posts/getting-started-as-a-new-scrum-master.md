@@ -1,6 +1,7 @@
 +++
 date = "2022-06-08 09:00:00"
 title = "Getting Started as a New Scrum Master"
+description = "Practical ways to gain real Scrum Master experience after passing PSM 1 - from your current job to start-ups, local communities, and remote volunteering."
 draft = "false"
 categories = ["Agile Coaching", "Agile Delivery"]
 tags = ["Scrum", "Scrum Master", "Career", "PSM"]

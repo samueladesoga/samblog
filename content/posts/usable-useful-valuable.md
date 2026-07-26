@@ -1,5 +1,6 @@
 +++
 title = "Usable, Useful & Valuable"
+description = "Why Usable, Useful, and Valuable aren't interchangeable terms in the Scrum Guide's definition of a Sprint Increment."
 date =  2021-11-14T13:29:31Z
 draft = false
 categories = ["Agile Coaching"]

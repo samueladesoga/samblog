@@ -1,5 +1,6 @@
 ---
 title: "Notes From Certified LESS Practitioner Course"
+description: "Key takeaways from a 3-day Certified LeSS Practitioner course with Bas Vodde, on people-thinking, feature teams, and multi-team backlog refinement."
 date: 2025-05-11T20:13:37+01:00
 draft: false
 categories: ["Agile Delivery", "Organisational Design"]

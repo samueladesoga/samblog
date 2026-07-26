@@ -1,5 +1,6 @@
 ---
 title: "Scrum Master as a Coach, Teacher and Mentor"
+description: "Applying Barry Overeem's Scrum Master stances of Coach, Teacher, and Mentor, and why all three matter for an effective Scrum Master."
 date: 2025-09-23T17:24:35+01:00
 draft: false
 categories: ["Agile Delivery", "Agile Coaching"]

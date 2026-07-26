@@ -1,6 +1,7 @@
 +++
 date = "2017-01-06 13:13:31"
 title = "Testing an Asynchronous System"
+description = "How eventual consistency in a CQRS, event-driven architecture changes the way testers have to think about end-to-end tests."
 draft = "false"
 categories = ["Technical"]
 tags = ["Test Automation", "CQRS", "Event-Driven Architecture"]

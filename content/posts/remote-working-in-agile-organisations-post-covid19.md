@@ -1,5 +1,6 @@
 +++
 title =  "Remote working in Agile Organisations Post Covid19"
+description = "Lessons on regular catch-ups, outcome-based work, and \"golden hours\" for making agile ways of working succeed on remote teams post-Covid."
 date = 2020-04-15T19:30:04+01:00
 draft = false
 categories = ["Agile Coaching", "Agile Delivery"]

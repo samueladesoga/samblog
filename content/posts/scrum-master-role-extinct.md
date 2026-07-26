@@ -1,5 +1,6 @@
 ---
 title: "Is the Scrum Master role extinct?"
+description: "Whether the Scrum Master role is disappearing as organisations lay off agile roles, or whether the accountability just moves to managers."
 date: 2023-11-21T09:40:49Z
 draft: false
 categories: ["Agile Delivery", "Agile Coaching"]

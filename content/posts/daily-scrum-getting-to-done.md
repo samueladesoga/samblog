@@ -1,5 +1,6 @@
 ---
 title: "Daily Scrum - A simple format for getting to “Done”"
+description: "A practical Daily Scrum format built around the Sprint Goal and Definition of Done, instead of a status-update round-robin."
 date: 2024-08-05T14:36:42+01:00
 draft: false
 categories: ["Agile Coaching", "Agile Delivery"]

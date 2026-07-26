@@ -1,6 +1,7 @@
 +++
 date = "2011-07-25 15:06:02"
 title = "Writing acceptance test before development or implementation starts"
+description = "A page-object pattern for writing failing Cucumber acceptance tests before UI implementation begins, so development can start test-first."
 draft = "false"
 categories = ["Agile Delivery"]
 tags = ["BDD", "Test Automation"]

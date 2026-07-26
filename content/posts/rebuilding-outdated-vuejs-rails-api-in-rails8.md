@@ -1,5 +1,6 @@
 +++
 title = "Rebuilding Outdated Vuejs Rails Api in Rails8"
+description = "Rebuilding a 9-year-old Rails/VueJS app on Rails 8, deployed with Kamal 2, SQLite, Litestream, and Solid Queue on a cheap VPS."
 date =  2025-08-26T10:24:43+01:00
 draft = false
 categories = ["Technical"]

@@ -1,0 +1,16 @@
+# {{ .Site.Title }}
+
+> {{ .Site.Params.description }}. Written by {{ .Site.Params.author }}, an Enterprise Delivery & Product Leader and Professional Scrum Trainer with Scrum.org.
+
+Site: {{ .Site.BaseURL }}
+About the author: {{ .Site.BaseURL }}about/
+
+{{ range $term, $weighted := .Site.Taxonomies.categories -}}
+## {{ replace $term "-" " " | title }}
+
+{{ range $weighted.Pages.ByDate.Reverse -}}
+- [{{ .Title }}]({{ .Permalink }}){{ with .Description }}: {{ . }}{{ end }}
+{{ end }}
+{{ end -}}
+
+Author sameAs: {{ .Site.Params.social.linkedin }}, {{ .Site.Params.social.github }}, {{ .Site.Params.social.twitter }}

@@ -1,6 +1,7 @@
 +++
 date = "2012-02-01 15:18:59"
 title = "Performance Testing experience using Ant and Jmeter - Part 1"
+description = "Setting up JMeter with the jmeter-plugins library to get readable, CI-friendly performance test graphs. Part 1 of 2."
 draft = "false"
 categories = ["Technical"]
 tags = ["Performance Testing", "Jmeter", "Test Automation"]

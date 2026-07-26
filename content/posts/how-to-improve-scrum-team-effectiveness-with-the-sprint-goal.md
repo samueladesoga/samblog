@@ -1,5 +1,6 @@
 ---
 title: "How to improve the Scrum team effectiveness with the sprint goal"
+description: "Five ways a well-crafted Sprint Goal improves Sprint Planning, collaboration, focus, and the Daily Scrum for a Scrum team."
 date: 2023-01-29T20:51:12Z
 draft: false
 categories: ["Agile Coaching", "Agile Delivery"]

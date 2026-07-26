@@ -1,5 +1,6 @@
 +++
 title = "Reflections From 2025"
+description = "Year-end reflections on the state of agile coaching roles, Scrum misinformation, and why flow metrics beat velocity in large organisations."
 date = 2025-12-31T11:51:51Z
 draft = "false"
 categories = ["Agile Delivery"]
