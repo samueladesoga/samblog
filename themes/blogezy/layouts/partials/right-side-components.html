@@ -42,13 +42,13 @@
 
     <!-- Recent entries widget-->
     <aside class="widget widget_recent_entries_custom">
-        <div class="widget-title">Popular Posts</div>
+        <div class="widget-title">Recent Posts</div>
         <ul>
-            {{ range shuffle (where .Data.Pages "Section" "posts")  | first 3 }}
+            {{ range first 3 (where (where .Site.RegularPages "Section" "posts").ByDate.Reverse "Permalink" "!=" .Permalink) }}
                 <li class="clearfix">
                     <div class="wi">
-                        {{ if and (isset .Params "image") .Params.image }}                         
-                            <a href="#"><img src="{{ .Site.BaseURL  }}{{ .Params.image }}" alt="{{ .Title }}" class="img-fluid"></a>
+                        {{ if and (isset .Params "image") .Params.image }}
+                            <a href="{{ .Permalink }}"><img src="{{ .Site.BaseURL  }}{{ .Params.image }}" alt="{{ .Title }}" class="img-fluid"></a>
                         {{ end }}
                     </div>
                     <div class="wb"><a href="{{.Permalink}}">{{ .Title }}</a> <span class="post-date"> {{ .Date.Format "January 2, 2006" }}</span></div>
