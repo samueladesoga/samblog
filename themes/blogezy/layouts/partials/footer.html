@@ -36,9 +36,9 @@
         </div>
 
         {{ $tagCounts := slice }}
-        {{ range $name, $items := .Site.Taxonomies.tags }}
-            {{ $tagCounts = $tagCounts | append (dict "name" $name "count" (len $items)) }}
-        {{ end }}
+        {{- range $name, $items := .Site.Taxonomies.tags }}
+            {{- $tagCounts = $tagCounts | append (dict "name" $name "count" (len $items)) }}
+        {{- end }}
         {{ $topTags := sort (first 15 (sort $tagCounts "count" "desc")) "name" }}
         <div class="footer-tags">
             <div class="widget-title">Popular Tags</div>

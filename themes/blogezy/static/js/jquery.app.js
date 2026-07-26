@@ -24,6 +24,9 @@
             $('#site-search').toggleClass('is-open');
             if (!expanded) {
                 $('#search-input').trigger('focus');
+            } else {
+                $('#search-input').val('');
+                $('#search-results').removeClass('is-open').empty();
             }
         });
     }

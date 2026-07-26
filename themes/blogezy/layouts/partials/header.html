@@ -23,8 +23,11 @@
             </div>
         </div>
 
-        <form class="site-search" id="site-search" role="search">
-            <input id="search-input" class="form-control" type="search" placeholder="Search posts…" aria-label="Search posts">
-        </form>
+        <div class="site-search-wrapper" id="site-search-wrapper">
+            <form class="site-search" id="site-search" role="search">
+                <input id="search-input" class="form-control" type="search" placeholder="Search posts…" aria-label="Search posts" autocomplete="off">
+            </form>
+            <ul id="search-results" class="search-results" role="listbox" aria-label="Search results"></ul>
+        </div>
     </div>
 </header>
