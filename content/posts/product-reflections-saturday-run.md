@@ -1,5 +1,5 @@
 ---
-title: "Product Reflections from my last Saturday Run"
+title: "Product Reflections from my last Saturday run"
 description: "What replanning at every kilometre taught me about short-term goals and the quarterly ones they add up to."
 date: 2026-09-14T20:26:17Z
 draft: false
