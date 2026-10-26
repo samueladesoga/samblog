@@ -13,6 +13,6 @@ jobs:
         extended: true
     - run: hugo
     - run: |
-        npx --yes firebase-tools@13 deploy --only hosting -m "Trigger: $GITHUB_EVENT_NAME, commit SHA: $GITHUB_SHA" --non-interactive
+        npx --yes firebase-tools deploy --only hosting -m "Trigger: $GITHUB_EVENT_NAME, commit SHA: $GITHUB_SHA" --non-interactive
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
