@@ -4,10 +4,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v4
       with:
         submodules: true
-    - uses: samueladesoga/github-action-hugo-deploy-to-firebase@master
+    - uses: peaceiris/actions-hugo@v3
       with:
-        firebase-token: ${{ secrets.FIREBASE_TOKEN }}
-        alias: ${{ secrets.PROJECT_ID }} // OPTIONAL
+        hugo-version: 'latest'
+        extended: true
+    - run: hugo
+    - run: npx --yes firebase-tools deploy --only hosting -m "Trigger: $GITHUB_EVENT_NAME, commit SHA: $GITHUB_SHA" --non-interactive
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
